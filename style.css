@@ -1,0 +1,41 @@
+/*
+ Theme Name:   Xeory Base Child
+ Theme URI:    http://worldclub-soka.com/xeory_base-child/
+ Description:  Xeory Base Child Theme
+ Author:       Masahiro Mikami
+ Author URI:   https://worldclub-soka.com
+ Template:     xeory_base
+*/
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+:root {
+  	--main-logo-color: rgba(50, 60, 153, .5);
+	--main-color: #2581c4;
+}
+#header #logo a{
+	font-weight: bold;
+	color: var(--main-color);
+}
+#header #logo a:hover{
+	text-decoration: none;
+}
+#gnav li{
+	padding: 0;
+	margin-top: -2px;
+	border-top: 2px transparent solid;
+	border-left: 1px #efefef solid;
+    border-right: 1px #efefef solid;
+}
+#gnav li:hover{
+	border-top: 2px var(--main-color) solid;
+}
+#gnav li a{
+	width: 100%;
+	height: 100%;
+	padding: 20px 24px;
+}
