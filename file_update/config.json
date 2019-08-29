@@ -1,5 +1,0 @@
-{
-    "watch_dir": "C:/Users/masahiro/Documents/GitHub/xeory_theme",
-    "target_dir": "C:/Users/masahiro/Local Sites/worldclubsokadevelop/app/public/wp-content/themes/xeory_theme",
-    "ignore": ["file_update/*", ".github/*", ".gitignore"]
-}
