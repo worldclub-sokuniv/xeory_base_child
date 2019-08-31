@@ -20,7 +20,6 @@ class ChangeHandler(FileSystemEventHandler):
 
     def on_created(self, event):
         srcpath = event.src_path
-        print(self.ignore)
         if not srcpath in self.ignore:
             updpath = self.get_updpath(srcpath)
             name = os.path.basename(srcpath)
