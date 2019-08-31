@@ -1,5 +1,0 @@
-{
-    "watch_dir": "local directory you want watch",
-    "target_dir": "local directory you want reflect changes in watch directory",
-    "ignore": ["directories you want to ignore to watch"]
-}
