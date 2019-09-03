@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-
 <div id="content">
 	<div class="wrap">
 		<?php bzb_breadcrumb(); ?>
@@ -23,24 +22,20 @@
 						?>
 
 						<article id="post-<?php echo the_ID(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-
 							<header class="post-header">
 								<ul class="post-meta list-inline">
 									<li class="date updated" itemprop="datePublished" datetime="<?php the_time( 'c' ); ?>"><i class="fa fa-clock-o"></i> <?php the_time( 'Y.m.d' ); ?></li>
 								</ul>
-								<h2 class="post-title" itemprop="headline"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+								<h2 class="post-title" itemprop="headline"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
 							</header>
 
 							<section class="post-content" itemprop="text">
-
 							<?php if ( get_the_post_thumbnail() ) { ?>
-								<div class="post-thumbnail">
-									<a href="<?php the_permalink(); ?>" rel="nofollow"><?php the_post_thumbnail(); ?></a>
-								</div>
+								<div class="post-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
 							<?php } ?>
-							<?php the_content( '続きを読む' ); ?>
+							<?php the_excerpt(); ?>
+							<a href="<?php the_permalink(); ?>" class=read_more>続きを読む</a>
 							</section>
-
 						</article>
 							<?php
 
