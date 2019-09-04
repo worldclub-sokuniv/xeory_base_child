@@ -111,7 +111,7 @@ body{
 .cat-content, article.post, 
 article.page, article.wp101,
 article.seo101{
-	border: none
+	border: none;
 }
 .post-content h2{
 	padding: 12px 10px;
