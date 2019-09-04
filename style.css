@@ -19,6 +19,7 @@
 	--main-line-color: #efefef;
 	--header-main: #2196f3;
 	--header-sub: #ffffff;
+	--background: #F7F7F7;
 }
 #header, #gnav{
 	background: var(--header-main)
@@ -81,6 +82,11 @@
 .breadcrumb{
 	margin: 20px 0;
 	font-size: 18px;
+}
+.cat-content, article.post, 
+article.page, article.wp101,
+article.seo101{
+	border: none
 }
 @media screen and (max-width: 991px){
 	#gnav{
