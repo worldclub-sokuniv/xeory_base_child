@@ -62,6 +62,19 @@
 	text-decoration: none;
 	color: white;
 }
+.responsive_img{
+	width: 100%;
+	padding: 0;
+}
+.responsive_img img{
+	display: block;
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+.post-content{
+	padding: 0 42px 
+}
 @media screen and (min-width: 991px){
 	#gnav li{
 		padding: 0;
