@@ -175,6 +175,6 @@ article.seo101{
 		background: var(--header-sub);
 	}
 	#side{
-		display: none;
+		display: none; 
 	}
 }
