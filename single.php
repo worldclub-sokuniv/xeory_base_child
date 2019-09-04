@@ -6,62 +6,62 @@
 
 <div class="wrap">
   
-  <?php do_action( 'xeory_prepend_wrap' ); ?>
+	<?php do_action( 'xeory_prepend_wrap' ); ?>
   
-    <?php bzb_breadcrumb(); ?>
+	<?php bzb_breadcrumb(); ?>
 
-  <div id="main" <?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+	<div id="main" <?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 
-  <?php do_action( 'xeory_prepend_main' ); ?>
-    
-    <div class="main-inner">
-    
-    <?php do_action( 'xeory_prepend_main-inner' ); ?>
+	<?php do_action( 'xeory_prepend_main' ); ?>
 
-    <?php
-      if ( have_posts() ) :
+	<div class="main-inner">
 
-        while ( have_posts() ) : the_post();
-        
-        ?>
-        
-    <?php 
-    global $post;
-    $cf = get_post_meta($post->ID);
-    ?>
-    <article id="post-<?php the_id(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+	<?php do_action( 'xeory_prepend_main-inner' ); ?>
 
-      <header class="post-header">
-        <ul class="post-meta list-inline">
-          <li class="date updated" itemprop="datePublished" datetime="<?php the_time('c');?>"><i class="fa fa-clock-o"></i> <?php the_time('Y.m.d');?></li>
-        </ul>
-        <h1 class="post-title" itemprop="headline"><?php the_title(); ?></h1>
-        <div class="post-header-meta">
-          <?php bzb_social_buttons();?>
-        </div>
-      </header>
+	<?php
+		if ( have_posts() ) :
 
-      <section class="post-content" itemprop="text">
+		while ( have_posts() ) : the_post();
+
+	?>
+
+	<?php 
+	global $post;
+	$cf = get_post_meta( $post->ID );
+	?>
+	<article id="post-<?php the_id(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+
+	<header class="post-header">
+		<ul class="post-meta list-inline">
+			<li class="date updated" itemprop="datePublished" datetime="<?php the_time('c');?>"><i class="fa fa-clock-o"></i> <?php the_time('Y.m.d');?></li>
+		</ul>
+		<h1 class="post-title" itemprop="headline"><?php the_title(); ?></h1>
+		<div class="post-header-meta">
+			<?php bzb_social_buttons();?>
+		</div>
+	</header>
+
+	<section class="post-content" itemprop="text">
       
-        <?php if( get_the_post_thumbnail() ) : ?>
+		<?php if( get_the_post_thumbnail() ) : ?>
         <div class="post-thumbnail">
           <?php the_post_thumbnail(); ?>
         </div>
         <?php endif; ?>
         <?php
-          the_content(); 
+			the_content(); 
 
-          $args = array(
-           'before' => '<div class="pagination">',
-           'after' => '</div>',
-           'link_before' => '<span>',
-           'link_after' => '</span>'
-          );
+			$args = array(
+				'before' => '<div class="pagination">',
+				'after' => '</div>',
+				'link_before' => '<span>',
+				'link_after' => '</span>'
+			);
 
-          wp_link_pages($args);
+			wp_link_pages($args);
         ?>
 
-      </section>
+	</section>
 
       <footer class="post-footer">
 
