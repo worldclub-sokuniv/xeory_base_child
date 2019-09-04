@@ -158,7 +158,7 @@ article.seo101{
 		padding: 0;
 	}
 	#main{
-		width: 100%;
+		width: 100% !important;
 	}
 	#gnav{
 		padding: 0;
