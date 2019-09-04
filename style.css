@@ -45,7 +45,10 @@ body{
 	text-decoration: none;
 }
 #main{
-	width: 75% !important;
+	width: 75%;
+}
+.left-content #main{
+	width: 75%;
 }
 #main .main-inner{
 	margin-right: 30px;
@@ -89,10 +92,13 @@ body{
 	transform: scale(1, 1);
 }
 #side{
-	width: 25% !important;
+	width: 25%;
 	padding: 20px 10px;
 	margin: 0 !important;
 	background: #ffffff;
+}
+.left-content #side{
+	width: 25%;
 }
 #content .wrap{
 	width: 100%;
