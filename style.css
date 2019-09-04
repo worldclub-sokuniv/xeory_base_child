@@ -78,6 +78,10 @@
 #gnav li a:hover:after{
 	transform: scale(1, 1);
 }
+.breadcrumb{
+	margin: 20px 0;
+	font-size: 18px;
+}
 @media screen and (max-width: 991px){
 	#gnav{
 		padding: 0;
