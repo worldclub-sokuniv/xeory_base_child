@@ -21,6 +21,9 @@
 	--header-sub: #ffffff;
 	--background: #F7F7F7;
 }
+body{
+	background: var(--background);
+}
 #header, #gnav{
 	background: var(--header-main)
 }
