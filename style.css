@@ -44,6 +44,12 @@ body{
 #header #logo a:hover{
 	text-decoration: none;
 }
+#main{
+	width: 75%;
+}
+#main .main-inner{
+	margin-right: 30px;
+}
 #gnav{
 	border: none;
 	box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .18);
@@ -82,8 +88,18 @@ body{
 #gnav li a:hover:after{
 	transform: scale(1, 1);
 }
+#side{
+	width: 25%;
+	padding: 20px 10px;
+	margin: 0;
+	background: #ffffff;
+}
+#content .wrap{
+	width: 100%;
+	padding: 0 100px;
+}
 .breadcrumb{
-	margin: 20px 0;
+	margin: 20px 10px;
 	font-size: 18px;
 }
 .cat-content, article.post, 
@@ -92,6 +108,13 @@ article.seo101{
 	border: none
 }
 @media screen and (max-width: 991px){
+	#content .wrap{
+		width: auto;
+		padding: 0;
+	}
+	#main{
+		width: 100%;
+	}
 	#gnav{
 		padding: 0;
 		margin: 0;
@@ -111,5 +134,8 @@ article.seo101{
 	} 
 	#gnav ul li.current-menu-item a{
 		background: var(--header-sub);
+	}
+	#side{
+		display: none;
 	}
 } 
