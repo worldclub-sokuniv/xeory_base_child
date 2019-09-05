@@ -24,7 +24,7 @@
 		<article id="post-<?php the_id(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
 			<header class="post-header">
 				<ul class="post-meta list-inline">
-					<li class="date updated" itemprop="datePublished" datetime="<?php the_time('c');?>"><i class="fa fa-clock-o"></i> <?php the_time('Y.m.d');?></li>
+					<li class="date updated" itemprop="datePublished" datetime="<?php the_time('c');?>"><i class="fa fa-clock-o"></i><?php the_time('Y.m.d');?></li>
 				</ul>
 				<h1 class="post-title" itemprop="headline"><?php the_title(); ?></h1>
 				<div class="post-header-meta">
