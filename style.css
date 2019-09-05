@@ -20,6 +20,8 @@
 	--header-main: #2196f3;
 	--header-sub: #ffffff;
 	--background: #F7F7F7;
+	--card-background: #ffffff;
+	--new-entry: #4d4b4b;
 }
 body{
 	background: var(--background);
@@ -52,6 +54,10 @@ body{
 }
 #main .main-inner{
 	margin-right: 30px;
+}
+.front-page #main .main-inner{
+	padding: 0 5vh;
+	margin-right: 10vh;
 }
 #gnav{
 	border: none;
@@ -102,7 +108,7 @@ body{
 }
 #content .wrap{
 	width: 100%;
-	padding: 0 100px;
+	padding: 0 10vh;
 }
 .breadcrumb{
 	margin: 20px 10px;
@@ -152,6 +158,60 @@ article.seo101{
 .post-content{
 	padding: 0 42px 
 }
+.new-entry{
+	position: relative;
+	text-align: center;
+}
+.new-entry:before{
+	position: absolute;
+	border-bottom: 2px var(--new-entry) solid;
+	top: 50%;
+	left: 0%;
+	width: 100%;
+	content: ""; 
+	z-index: -1;
+}
+.fp-category-title{
+	display: inline-block;
+	padding: 20px;
+	font-size: 1.5em;
+	font-weight: bold;
+	background: var(--background);
+}
+.card{
+	color: black;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	padding: 20px 15px;
+	background: var(--card-background);
+}
+.card:hover{
+	box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+	text-decoration: none;
+}
+.card h2{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+.card-wrapper{
+	padding: 10px;
+	width: 50%;
+}
+.card-wrapper:first-child{
+	width: 100%;
+}
+.card-content-wrapper{
+	margin: 0 !important;
+}
+.cards-section-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+.fa-clock-o{
+	padding-right: 5px;
+}
 @media screen and (max-width: 991px){
 	#content .wrap{
 		width: auto;
@@ -182,5 +242,11 @@ article.seo101{
 	}
 	#side{
 		display: none; 
+	}
+}
+@media screen and (max-width: 767px){
+	.card-wrapper{
+		padding: 10px 0;
+		width: 100%;
 	}
 }
