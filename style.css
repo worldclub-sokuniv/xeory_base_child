@@ -48,23 +48,14 @@ body{
 	text-decoration: none;
 }
 
-/* main */
-#main{
-	width: 75%;
-}
-.left-content #main{
-	width: 75%;
-}
-#main .main-inner{
-	margin-right: 30px;
-}
-.front-page #main .main-inner{
-	padding: 0 5vh;
-	margin-right: 10vh;
-}
+/* nav */
 #gnav{
 	border: none;
 	box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .18);
+}
+#gnav ul{
+	display: flex;
+	justify-content: center;
 }
 #gnav li{
 	padding: 0;
@@ -100,22 +91,24 @@ body{
 #gnav li a:hover:after{
 	transform: scale(1, 1);
 }
-#side{
-	width: 25%;
-	padding: 20px 10px;
-	margin: 0 !important;
-	background: #ffffff;
+
+/* main */
+#main{
+	width: 75%;
 }
-.left-content #side{
-	width: 25%;
+.left-content #main{
+	width: 75%;
+}
+#main .main-inner{
+	margin-right: 30px;
+}
+.front-page #main .main-inner{
+	padding: 0 5vh;
+	margin-right: 10vh;
 }
 #content .wrap{
 	width: 100%;
 	padding: 0 10vh;
-}
-.breadcrumb{
-	margin: 20px 10px;
-	font-size: 18px;
 }
 .cat-content, article.post, 
 article.page, article.wp101,
@@ -202,6 +195,17 @@ article.seo101{
 	padding-right: 5px;
 }
 
+/* side */
+#side{
+	width: 25%;
+	padding: 20px 10px;
+	margin: 0 !important;
+	background: #ffffff;
+}
+.left-content #side{
+	width: 25%;
+}
+
 /* contact */
 div.wpcf7{
 	padding: 22px;
@@ -243,12 +247,19 @@ div.wpcf7-response-output{
 	background-color: var(--main-color) !important;
 	color: white !important;
 }
+.breadcrumb{
+	margin: 20px 10px;
+	font-size: 18px;
+}
 @media screen and (max-width: 991px){
-	/* header */
+	/* nav */
 	#gnav{
 		padding: 0;
 		margin: 0;
 		border: none;
+	}
+	#gnav ul{
+		display: block;
 	}
 	#gnav li{
 		width: 100%;
