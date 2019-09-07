@@ -34,7 +34,7 @@
 								<div class="post-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
 							<?php } ?>
 							<?php the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>" class=read_more>続きを読む</a>
+							<a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a>
 							</section>
 						</article>
 							<?php

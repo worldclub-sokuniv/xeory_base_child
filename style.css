@@ -26,6 +26,7 @@
 body{
 	background: var(--background);
 }
+/* header */
 #header, #gnav{
 	background: var(--header-main)
 }
@@ -46,6 +47,8 @@ body{
 #header #logo a:hover{
 	text-decoration: none;
 }
+
+/* main */
 #main{
 	width: 75%;
 }
@@ -131,20 +134,6 @@ article.seo101{
 	padding-top: 56.25%;
 	width: 100% !important;
  }
-.read_more{
-	font-size: 20px;
-	background-color: white;
-	border-radius: 3px;
-	color: var(--main-color);
-	padding: 15px 20px;
-	margin: 15px 0;
-	border: 2px var(--main-color) solid;
-}
-.read_more:hover{
-	background-color: var(--main-color);
-	text-decoration: none;
-	color: white;
-}
 .responsive_img{
 	width: 100%;
 	padding: 0;
@@ -212,14 +201,50 @@ article.seo101{
 .fa-clock-o{
 	padding-right: 5px;
 }
+
+/* contact */
+div.wpcf7{
+	padding: 22px;
+}
+div.wpcf7-response-output{
+	border-radius: 3px;
+}
+.your-message textarea{
+	width: 100%;
+}
+
+/* btns */
+.hover-btn{
+	border-radius: 3px;
+	padding: 15px 20px;
+	margin: 15px 0;
+	transition: all ease-in-out .3s;
+}
+.hover-btn:hover{
+	text-decoration: none;
+}
+.read_more{
+	font-size: 20px;
+	background-color: white;
+	color: var(--main-color);
+	border: 2px var(--main-color) solid;
+}
+.read_more:hover{
+	background-color: var(--main-color);
+	color: white;
+}
+.submit{
+	font-size: 20px;
+	background-color: white !important;
+	color: var(--main-color) !important;
+	border: 2px var(--main-color) solid!important;
+}
+.submit:hover{
+	background-color: var(--main-color) !important;
+	color: white !important;
+}
 @media screen and (max-width: 991px){
-	#content .wrap{
-		width: auto;
-		padding: 0;
-	}
-	#main{
-		width: 100% !important;
-	}
+	/* header */
 	#gnav{
 		padding: 0;
 		margin: 0;
@@ -240,11 +265,28 @@ article.seo101{
 	#gnav ul li.current-menu-item a{
 		background: var(--header-sub);
 	}
+
+	/* main */
+	#main{
+		width: 100% !important;
+	}
+	#content .wrap{
+		width: auto;
+		padding: 0;
+	}
+
+	/* side */
 	#side{
 		display: none; 
 	}
+
+	/* contact */
+	div .wpcf7{
+		padding: 0;
+	}
 }
 @media screen and (max-width: 767px){
+	/* main */
 	.card-wrapper{
 		padding: 10px 0;
 		width: 100%;
