@@ -26,6 +26,7 @@
 body{
 	background: var(--background);
 }
+
 /* header */
 #header, #gnav{
 	background: var(--header-main)
@@ -53,8 +54,15 @@ body{
 	border: none;
 	box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .18);
 }
+#gnav{
+	border: none;
+	box-shadow: 0 6px 3px -3px rgba(0, 0, 0, .18);
+}
 #gnav ul{
+	max-height: 72px;
+	width: 100vw;
 	display: flex;
+	flex-wrap: nowrap;
 	justify-content: center;
 }
 #gnav li{
@@ -87,7 +95,7 @@ body{
 	transition: transform .3s ease-in-out;
 	transform: scale(0, 1);
 	transform-origin: center;
-  }
+}
 #gnav li a:hover:after{
 	transform: scale(1, 1);
 }
@@ -260,6 +268,7 @@ div.wpcf7-response-output{
 	}
 	#gnav ul{
 		display: block;
+		max-height: none;
 	}
 	#gnav li{
 		width: 100%;
