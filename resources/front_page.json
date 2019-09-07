@@ -1,14 +1,16 @@
 {
 	"0": {
+		"meta_key" : "views",
 		"posts_per_page" : 5, 
-		"orderby" : "date",
+		"orderby" : "meta_value_num",
 		"order" : "DESC",
-		"category_name" : "experience"
+		"cat_title": "人気記事"
 	},
 	"1": {
 		"posts_per_page" : 5, 
 		"orderby" : "date",
 		"order" : "DESC",
-		"category_name" : "experience"
+		"category_name" : "experience",
+		"cat_title": "留学体験記"
 	}
 }

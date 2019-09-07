@@ -12,13 +12,13 @@
 					$data = json_decode($json, true);
 					foreach ( $data as $arg ) :
 						$posts = get_posts( $arg );
-						$cat_title = get_the_category( $posts[0]->ID )[0]->cat_name; 	
+						$cat_title = $arg["cat_title"]; 	
 						if( $posts ): ?>
 							<div class="new-entry"><span class="fp-category-title"><?php echo $cat_title; ?></span></div>
 							<div class="post-loop-wrap cards-section-wrapper">
 							<?php
 								foreach ( $posts as $post ) :
-									setup_postdata( $post ); 
+									setup_postdata( $post );
 							?>
 								<div class="card-wrapper">
 									<a href="<?php the_permalink(); ?>" class="card front-page-card">
