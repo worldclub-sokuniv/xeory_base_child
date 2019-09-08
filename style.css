@@ -60,7 +60,6 @@ body{
 }
 #gnav ul{
 	max-height: 72px;
-	width: 100vw;
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: center;
