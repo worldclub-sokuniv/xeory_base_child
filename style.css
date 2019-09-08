@@ -305,16 +305,16 @@ article.seo101{
 }
 .side-2 ul li a span{
     display: inline-block;
-	width: 30px;
-    height: 30px;
-    line-height: 30px;
+	width: 25px;
+    height: 25px;
+    line-height: 25px;
     margin-left: 10px;
     text-align: center;
     border: 1px transparent solid;
     border-radius: 50%;
 	background: var(--category-num-back);
 	color: var(--search-sub);
-	font-weight: normal;
+	font-size: 12px;
 }
 
 /* contact */
