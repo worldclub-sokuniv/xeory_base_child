@@ -221,7 +221,8 @@ article.seo101{
 	padding: 0;
 	padding: 30px 0;
 }
-.side-widget-area .widget{
+.side-widget-area .widget>ul,
+.side-widget-area .widget>div{
 	background: #ffffff;
 }
 #side #searchform,
