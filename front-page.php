@@ -5,7 +5,7 @@
 		<div id="main" <?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 			<div class="main-inner">
 				<?php
-					$json = file_get_contents(__DIR__ . '/resources/front_page.json');
+					$json = file_get_contents(__DIR__ . '/libs/json/front_page.json');
 					if ($json === false) {
 						throw new \RuntimeException('file not found.');
 					}

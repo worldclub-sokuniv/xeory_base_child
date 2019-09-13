@@ -207,7 +207,9 @@ article.seo101{
 .fa-clock-o{
 	padding-right: 5px;
 }
-
+.post-footer{
+	padding: 0 64px;
+}
 /* side */
 #side{
 	width: 25%;
@@ -363,6 +365,89 @@ div.wpcf7-response-output{
 	margin: 20px 10px;
 	font-size: 18px;
 }
+.share{
+	margin-bottom: 50px;
+}
+.share>ul{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.share .new-entry{
+	z-index: 0;
+}
+.share-title{
+	display: inline-block;
+	padding: 20px;
+	font-size: 40px;
+	font-weight: bold;
+	background: #ffffff;
+	z-index: 1;
+}
+.sns-btn{
+	display: inline-block;
+	height: 1.5em;
+	width: 1.5em;
+	font-size: 50px;
+	border-radius: 0.3125em;
+	box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+	margin: 0.2em;
+	-webkit-transition: all ease .3s;
+	-moz-transition: all ease .3s;
+	transition: all ease .3s;
+	overflow: hidden;
+}
+.sns-btn-wrapper{
+	display: inline-block;
+	text-align: center;
+}
+.sns-btn a{
+    width: 100%;
+    height: 100%;
+	display: inline-block;
+	text-align: center;
+	text-decoration: none !important;
+}
+.sns-btn i{
+	line-height: 1.5em;
+	height: 100%;
+	width: 100%;
+	color: #ffffff;
+}
+.sns-btn:hover{
+	transform: scale(1.2);
+	box-shadow: 0 12px 24px -6px rgba(0,0,0,.3);
+}
+.sns-btn:active {
+	transform: scale(0.9);
+	box-shadow: 0 9px 18px -4.5px rgba(0,0,0,.3);
+}
+.facebook{
+	background: #3B5998;
+}
+.twitter{
+	background: #1DA1F2;
+}
+.hatena{
+	background: #008fde;
+}
+.line i:before{
+	font-size: 85.75px;
+	color: #00c300;
+}
+.pocket{
+	background: #ee4056;
+}
+.feedly{
+	background: #6cc655;
+}
+.fa-hatena:before {
+    content: "B!";
+    font-family: Verdana;
+	font-weight: bold;
+	width: 100%;
+	height:100%;
+}
 @media screen and (max-width: 991px){
 	/* nav */
 	#gnav{
@@ -408,11 +493,22 @@ div.wpcf7-response-output{
 	div .wpcf7{
 		padding: 0;
 	}
+
+	/* btn */
+	.share li{
+		width: 33%;
+	}
 }
 @media screen and (max-width: 767px){
 	/* main */
 	.card-wrapper{
 		padding: 10px 0;
 		width: 100%;
+	}
+	.sns-btn{
+		font-size: 40px;
+	}
+	.line i:before {
+		font-size: 68.5px;
 	}
 }
