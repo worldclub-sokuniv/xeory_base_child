@@ -27,9 +27,6 @@
 					<li class="date updated" itemprop="datePublished" datetime="<?php the_time('c');?>"><i class="fa fa-clock-o"></i><?php the_time('Y.m.d');?></li>
 				</ul>
 				<h1 class="post-title" itemprop="headline"><?php the_title(); ?></h1>
-				<div class="post-header-meta">
-					<?php bzb_social_buttons();?>
-				</div>
 			</header>
 			<section class="post-content" itemprop="text">
 				<?php if( get_the_post_thumbnail() ) : ?>
