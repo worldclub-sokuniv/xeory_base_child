@@ -1,0 +1,29 @@
+{
+	"0": {
+		"posts_per_page" : 5, 
+		"orderby" : "date",
+		"order" : "DESC",
+		"cat_title": "最新記事"
+	},
+	"1": {
+		"meta_key" : "views",
+		"posts_per_page" : 5, 
+		"orderby" : "meta_value_num",
+		"order" : "DESC",
+		"cat_title": "人気記事"
+	},
+	"2": {
+		"posts_per_page" : 5, 
+		"orderby" : "date",
+		"order" : "DESC",
+		"category_name" : "experience",
+		"cat_title": "留学体験記"
+	},
+	"3": {
+		"posts_per_page" : 5, 
+		"orderby" : "date",
+		"order" : "DESC",
+		"category_name" : "useful-info",
+		"cat_title": "お役立ち情報"
+	}
+}
