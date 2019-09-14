@@ -26,7 +26,7 @@
 											<?php if ( get_the_post_thumbnail() ) { ?>
 												<div class="post-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
 											<?php } ?>
-											<h2><?php the_title(); ?></h2>
+											<h2 class="card-title"><?php the_title(); ?></h2>
 											<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
 										</article>
 									</a>
