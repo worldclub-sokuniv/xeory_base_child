@@ -20,8 +20,8 @@
 								foreach ( $posts as $post ) :
 									setup_postdata( $post );
 							?>
-								<div class="card-wrapper">
-									<a href="<?php the_permalink(); ?>" class="card front-page-card">
+								<div class="card-wrapper  front-page-card">
+									<a href="<?php the_permalink(); ?>" class="card">
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>
 												<div class="post-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
