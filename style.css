@@ -534,6 +534,14 @@ div.wpcf7-response-output{
 		width: auto;
 		padding: 0;
 	}
+	.relatedposts .post-thumbnail{
+		float: right;
+	}
+	.relatedposts .post-thumbnail:after{
+		display: block;
+		content: "";
+		clear: both;
+	}
 
 	/* side */
 	#side{
@@ -561,5 +569,9 @@ div.wpcf7-response-output{
 	}
 	.line i:before {
 		font-size: 68.5px;
+	}
+	.relatedposts .card-wrapper{
+		width: 100%;
+		padding: 20 0px;
 	}
 }
