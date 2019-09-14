@@ -48,6 +48,7 @@
 
 			<footer class="post-footer">
 			<?php include "libs/functions/sns.php"?>
+			<?php include "libs/functions/related-posts.php"?>
 				<ul class="post-footer-list">
 					<li class="cat"><i class="fa fa-folder"></i> <?php the_category(', ');?></li>
 				<?php 
