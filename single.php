@@ -47,8 +47,8 @@
 			</section>
 
 			<footer class="post-footer">
-			<?php include "libs/functions/sns.php"?>
-			<?php include "libs/functions/related-posts.php"?>
+			<?php include "libs/components/sns.php"?>
+			<?php include "libs/components/related-posts.php"?>
 				<ul class="post-footer-list">
 					<li class="cat"><i class="fa fa-folder"></i> <?php the_category(', ');?></li>
 				<?php 
@@ -60,7 +60,7 @@
 			</footer>
 			
 			<?php echo bzb_get_cta($post->ID); ?>
-			<?php bzb_show_avatar();?>	
+			<?php include "libs/components/show-avatar.php"?>
 			<?php comments_template( '', true ); ?>
 		</article>
 		<?php

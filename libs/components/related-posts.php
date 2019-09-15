@@ -3,13 +3,9 @@
 <!-- <div class="new-entry"><span class="relatedposts-title">関連記事</span></div> -->
 
 <?php
-	// echo $post->ID;
-	// echo "\n";
 	$orig_post = $post;
 	global $post;
-	// echo $post->ID;
 	$tags = wp_get_post_tags($post->ID);
-	// var_dump($tags);
 	if ($tags) {
 		$tag_ids = array();
 

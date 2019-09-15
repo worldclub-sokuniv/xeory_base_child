@@ -495,10 +495,32 @@ div.wpcf7-response-output{
 	text-decoration: none;
 }
 
+/* coments form */
+.form-submit{
+	margin-top: 10px;
+}
+.comment-form-author,
+.comment-form-email {
+    width: 50%;
+	margin: 0;
+}
+.comment-form-author{
+	padding-right: 10px;
+}
+.comment-form-email{
+    padding-left: 10px;
+}
+.comment-form-author input,
+.comment-form-email input,
+.comment-form-comment textarea{
+    width: 100%;
+}
+
 /* others */
 .up:hover{
 	transform: translate(0, -20px);
 }
+
 @media screen and (max-width: 991px){
 	/* nav */
 	#gnav{
@@ -557,6 +579,15 @@ div.wpcf7-response-output{
 	.share li{
 		width: 33%;
 	}
+
+	/* contact */
+
+	.comment-form-author{
+		padding-right: 0px;
+	}
+	.comment-form-email{
+		padding-left: 0px;
+	}
 }
 @media screen and (max-width: 767px){
 	/* main */
@@ -573,5 +604,11 @@ div.wpcf7-response-output{
 	.relatedposts .card-wrapper{
 		width: 100%;
 		padding: 20 0px;
+	}
+	
+	/* contact */
+	.comment-form-author,
+	.comment-form-email {
+		width: 100%;
 	}
 }
