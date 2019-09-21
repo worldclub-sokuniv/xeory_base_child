@@ -6,6 +6,34 @@ function theme_enqueue_styles() {
 	);
 }
 
+add_shortcode( 'mem', 'createMemberCard' );
+function createMemberCard( $args ) {
+	extract(shortcode_atts(array(
+		'img_url' => '../wp-content/themes/xeory_base_child/libs/img/no_image.png',
+		'name' => '入力してください',
+		'countries' => '入力してください',
+		'career' => '入力してください',
+		'shift' => '入力してください',
+		'contact' => '入力してください',
+	), $args ));
+
+	$contents=<<<eof
+	<div itemscope itemtype="http://schema.org/ImageObject" class="member-container card-wrapper">
+		<div class="card up">
+			<article class="card-content-wrapper scale-change">
+				<a style="background-image:url({$img_url});" href="" title="{$name}" itemprop="url" class="post-thumbnail member-img"></a>
+				<h2 class="card-title">$name</h2>
+				<p>{$countries}</p>
+				<p>{$career}</p>
+				<p>{$shift}</p>
+				<p>{$contact}</p>
+			</article>
+		</div>
+	</div>
+eof;
+	return $contents;
+}
+
 add_filter( 'excerpt_mblength', 'my_excerpt_length');
 function my_excerpt_length ( $lenght ) {
 	return 200;

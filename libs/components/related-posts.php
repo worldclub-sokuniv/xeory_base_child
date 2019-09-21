@@ -40,7 +40,7 @@
 				<article class="card-content-wrapper scale-change">
 					<a style="background-image:url(<?=$url?>);" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" itemprop="url" class="post-thumbnail"></a>
 					<h2 class="card-title">
-						<a style=""href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+						<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
 						<?php if (strlen($post->post_title) > 50) {
 						echo mb_substr(the_title($before = '', $after = '', FALSE), 0, 50,  'UTF-8') . '...'; } else {
 						the_title();
