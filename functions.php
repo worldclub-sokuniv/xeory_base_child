@@ -23,29 +23,30 @@ function createMemberCard( $args ) {
 
 	$id = randomId();
 
-	$contents=<<<eof
-	<dialog id="d-{$id}" class="dialog">
-		<div class="card">
-			<div class="card-content-wrapper">
-				<div style="background-image:url({$img_url});" href="" title="{$name}" itemprop="url" class="post-thumbnail member-img"></div>
-				<h2 class="card-title">$name</h2>
-				<p>{$countries}</p>
-				<p>{$career}</p>
-				<p>{$shift}</p>
-				<p>{$contact}</p>
+	$contents = <<< eof
+	<dialog id="d-{$id}" class="dialog member-dialog">
+		<div class="d-wrapper">
+			<h2>$name</h2>
+			<div class="d-img-wrapper">
+				<div style="background-image:url({$img_url});" title="{$name}" class="post-thumbnail member-img"></div>
 			</div>
+			<div class="d-content-wrapper">
+				<ul>
+					<li>留学先<br><p>{$countries}</p></li>
+					<li>経歴<br><p>{$career}</p></li>
+					<li>シフト<br><p>{$shift}</p></li>
+					<li>連絡先<br><p>{$contact}</p></li>
+				</ul>
+			</div>
+			<p class="close">close</p>
 		</div>
-		<button class="close">close</button>
 	</dialog>
 	<div itemscope itemtype="http://schema.org/ImageObject" class="member-container card-wrapper" id={$id}>
-		<div class="card up">
+		<div class="card">
 			<article class="card-content-wrapper scale-change">
-				<div style="background-image:url({$img_url});" href="" title="{$name}" itemprop="url" class="post-thumbnail member-img"></div>
+				<div style="background-image:url({$img_url});" title="{$name}" class="post-thumbnail member-img"></div>
 				<h2 class="card-title">$name</h2>
-				<p>{$countries}</p>
-				<p>{$career}</p>
-				<p>{$shift}</p>
-				<p>{$contact}</p>
+				<p>留学先： {$countries}</p>
 			</article>
 		</div>
 	</div>

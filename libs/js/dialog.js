@@ -4,7 +4,7 @@ $(function(){
 		const dialog = document.getElementById(d_id)
 
 		dialog.showModal()
-		$(`#${d_id} > .close`).click(function() {
+		$(`#${d_id} .close`).click(function() {
 			dialog.close()
 		})
 	})
