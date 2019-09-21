@@ -35,8 +35,8 @@
 				$url = '../wp-content/themes/xeory_base_child/libs/img/no_image.png';
 		} ?>
 
-		<div itemscope itemtype='http://schema.org/ImageObject' class="relatedpost-container card-wrapper up">
-			<div class="card">
+		<div itemscope itemtype='http://schema.org/ImageObject' class="relatedpost-container card-wrapper">
+			<div class="card up">
 				<article class="card-content-wrapper scale-change">
 					<a style="background-image:url(<?=$url?>);" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" itemprop="url" class="post-thumbnail"></a>
 					<h2 class="card-title">
