@@ -6,6 +6,10 @@ function theme_enqueue_styles() {
 	);
 }
 
+function randomId ($length = 8){
+	return substr(str_shuffle(str_repeat('0123456789abcdefghijklmnopqrstuvwxyz', $length)), 0, $length);
+}
+
 add_shortcode( 'mem', 'createMemberCard' );
 function createMemberCard( $args ) {
 	extract(shortcode_atts(array(
@@ -17,11 +21,26 @@ function createMemberCard( $args ) {
 		'contact' => '入力してください',
 	), $args ));
 
+	$id = randomId();
+
 	$contents=<<<eof
-	<div itemscope itemtype="http://schema.org/ImageObject" class="member-container card-wrapper">
+	<dialog id="d-{$id}" class="dialog">
+		<div class="card">
+			<div class="card-content-wrapper">
+				<div style="background-image:url({$img_url});" href="" title="{$name}" itemprop="url" class="post-thumbnail member-img"></div>
+				<h2 class="card-title">$name</h2>
+				<p>{$countries}</p>
+				<p>{$career}</p>
+				<p>{$shift}</p>
+				<p>{$contact}</p>
+			</div>
+		</div>
+		<button class="close">close</button>
+	</dialog>
+	<div itemscope itemtype="http://schema.org/ImageObject" class="member-container card-wrapper" id={$id}>
 		<div class="card up">
 			<article class="card-content-wrapper scale-change">
-				<a style="background-image:url({$img_url});" href="" title="{$name}" itemprop="url" class="post-thumbnail member-img"></a>
+				<div style="background-image:url({$img_url});" href="" title="{$name}" itemprop="url" class="post-thumbnail member-img"></div>
 				<h2 class="card-title">$name</h2>
 				<p>{$countries}</p>
 				<p>{$career}</p>
@@ -31,7 +50,7 @@ function createMemberCard( $args ) {
 		</div>
 	</div>
 eof;
-	return $contents;
+	echo $contents;
 }
 
 add_filter( 'excerpt_mblength', 'my_excerpt_length');
@@ -94,7 +113,18 @@ function my_list_categories( $output, $args ) {
 
 add_action( 'wp_head', 'add_meta_to_head' );
 function add_meta_to_head() {
-  echo '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">';
+	echo '<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
+	echo '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">';
 }
 
+add_action( 'wp_enqueue_scripts', 'twpp_enqueue_scripts' );
+function twpp_enqueue_scripts() {
+	wp_enqueue_script( 
+		'dialog-script', 
+		get_template_directory_uri() . '_child/libs/js/dialog.js',
+		array(),
+		false,
+		true
+	);
+}
 ?>

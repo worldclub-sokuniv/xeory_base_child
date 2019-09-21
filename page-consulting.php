@@ -17,12 +17,10 @@
 				<?php
 					if ( have_posts() ) :
 						while ( have_posts() ) :
-							the_post();?>
-							<p><?php the_content(); ?></p>
-				<?php
+							the_post();
+							the_content(); 
 						endwhile;
 					else :?>
-
 					<article id="post-404"class="cotent-none post" itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
 						<section class="post-content" itemprop="text">
 							<?php echo get_template_part( 'content', 'none' ); ?>
