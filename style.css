@@ -142,6 +142,7 @@ article.seo101{
 	background-position: center center;
 	padding-top: 56.25%;
 	width: 100% !important;
+	height: auto !important
  }
 .responsive_img{
 	width: 100%;
@@ -212,6 +213,24 @@ article.seo101{
 	flex-wrap: wrap;
 	margin-bottom: 80px;
 }
+.member-container{
+	width: 33%;
+	padding: 20px 10px;
+}
+.member-container .card{
+	height: 100%;
+	transition: all ease .3s;
+}
+.member-container .card:hover{
+	box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+}
+.members-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+.member-img{
+	padding-top: 75%;
+}
 .relatedposts{
 	margin-bottom: 50px;
 }
@@ -220,17 +239,17 @@ article.seo101{
 	justify-content: space-around;
 	flex-wrap: wrap;
 }
-.relatedposts .card-wrapper{
+.relatedpost-container{
 	width: 50%;
 	padding: 20px 10px;
 	transition: all ease .3s;
 }
-.relatedposts .card{
+.relatedpost-container .card{
 	height: 100%;
 	transition: all ease .3s;
 	border: 1px var(--main-line-color) solid;
 }
-.relatedposts .card:hover{
+.relatedpost-container .card:hover{
 	border: 1px transparent solid;
 	box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
 }

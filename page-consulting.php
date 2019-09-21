@@ -13,11 +13,12 @@
 					<p>まだ、どこに留学しようか、どんな留学にしようか迷っている人はまずは<a href="../category/experience/">留学体験記</a>を確認してみよう！</p>
 				</section>
 
-				<div class="post-loop-wrap">
+				<div class="post-loop-wrap members-wrapper">
 				<?php
 					if ( have_posts() ) :
 						while ( have_posts() ) :
 							the_post();?>
+							<p><?php the_content(); ?></p>
 				<?php
 						endwhile;
 					else :?>
