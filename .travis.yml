@@ -6,7 +6,7 @@ branches:
   only:
   - master
 install:
-- nvm install 4.2
+- nvm install 10.16.3
 - npm install
 after_success:
 - npm run build
