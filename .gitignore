@@ -1,1 +1,5 @@
-/file_update
+/node_modules
+/libs/styles/style.css
+/libs/styles/style.min.css
+/package-lock.json
+/bundle.js
