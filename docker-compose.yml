@@ -1,0 +1,25 @@
+version: "3"
+services:
+
+  wordpress:
+    build: .
+    container_name: ssa
+    ports: 
+      - 8080:80
+    environment:
+      WORDPRESS_DB_PASSWORD: password
+    volumes:
+      - ./:/var/www/html/wp-content/themes/xeory_base_child
+      - plugins:/var/www/html/wp-content/plugins
+
+  mysql:
+    image: mysql:5.7
+    container_name: ssa_db
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
+  plugins:
