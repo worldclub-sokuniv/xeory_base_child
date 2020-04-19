@@ -1,8 +1,5 @@
 # xeory_base_child
 
-## where to install
-ローカル開発環境の`ワードプレスがインストールされているディレクトリ\public\wp-content\themes`
-
 ## development process
 1. issueを作る
 2. issueを解決するためのbranchをmasterから作る
