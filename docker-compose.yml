@@ -4,7 +4,7 @@ services:
   node:
     build:
       context: ./
-      dockerfile: docker/Dockerfile-tr
+      dockerfile: docker/Dockerfile-TR
     container_name: ssa_task_runner
     volumes:
       - ./:/app
