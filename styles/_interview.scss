@@ -1,0 +1,24 @@
+.category-interview{
+  .question{
+    color: $question-color;
+    font-size: 110%;
+    font-weight: bold;
+    &:before{
+      content: "\2014";
+      margin-right: 10px;
+    }
+  }
+  .sub_title{
+    font-size: 130%;
+    font-weight: bold;
+    margin: 50px 0;
+    &:before{
+      content: "<";
+      margin-right: 10px;
+    }
+    &:after{
+      content: ">";
+      margin-left: 10px;
+    }
+  }
+}
