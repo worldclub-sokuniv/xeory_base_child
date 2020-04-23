@@ -49,14 +49,6 @@
 			<footer class="post-footer">
 			<?php include "libs/components/sns.php"?>
 			<?php include "libs/components/related-posts.php"?>
-				<ul class="post-footer-list">
-					<li class="cat"><i class="fa fa-folder"></i> <?php the_category(', ');?></li>
-				<?php 
-					$posttags = get_the_tags();
-					if($posttags){ ?>
-						<li class="tag"><i class="fa fa-tag"></i> <?php the_tags('');?></li>
-				<?php } ?>
-				</ul>
 			</footer>
 			
 			<?php echo bzb_get_cta($post->ID); ?>
