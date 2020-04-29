@@ -47,7 +47,7 @@
 			</section>
 
 			<footer class="post-footer">
-      <?php include dirname(__FILE__)."/../libs/components/sns.php"?>
+      <?php // include dirname(__FILE__)."/../libs/components/sns.php"?>
 			</footer>
 			
 			<?php echo bzb_get_cta($post->ID); ?>
