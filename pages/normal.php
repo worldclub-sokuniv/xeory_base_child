@@ -30,7 +30,7 @@
 			</header>
 			<section class="post-content" itemprop="text">
 				<?php if( get_the_post_thumbnail() ) : ?>
-				<div class="post-thumbnail rp_img">
+				<div class="card-thumbnail rp_img">
 					<?php the_post_thumbnail(); ?>
 				</div>
 				<?php endif; ?>

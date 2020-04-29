@@ -28,7 +28,7 @@ function createMemberCard( $args ) {
 		<div class="d-wrapper">
 			<h2>$name</h2>
 			<div class="d-img-wrapper">
-				<div style="background-image:url({$img_url});" title="{$name}" class="post-thumbnail member-img"></div>
+				<div style="background-image:url({$img_url});" title="{$name}" class="card-thumbnail member-img"></div>
 			</div>
 			<div class="d-content-wrapper">
 				<ul>
@@ -44,7 +44,7 @@ function createMemberCard( $args ) {
 	<div itemscope itemtype="http://schema.org/ImageObject" class="member-container card-wrapper" id={$id}>
 		<div class="card">
 			<article class="card-content-wrapper scale-change">
-				<div style="background-image:url({$img_url});" title="{$name}" class="post-thumbnail member-img"></div>
+				<div style="background-image:url({$img_url});" title="{$name}" class="card-thumbnail member-img"></div>
 				<h2 class="card-title">$name</h2>
 				<p>留学先： {$countries}</p>
 			</article>

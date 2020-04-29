@@ -31,7 +31,7 @@
 
 							<section class="post-content" itemprop="text">
 							<?php if ( get_the_post_thumbnail() ) { ?>
-								<div class="post-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
+								<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
 							<?php } ?>
 							<?php the_excerpt(); ?>
 							<a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a>

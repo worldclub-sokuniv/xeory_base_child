@@ -137,7 +137,7 @@ article.seo101{
 	border-left: 5px var(--main-color) solid;
 	background: #f7f7f7;
 }
-.post-thumbnail{
+.card-thumbnail{
 	background-size: cover;
 	background-position: center center;
 	padding-top: 56.25%;
@@ -640,10 +640,10 @@ dialog[open]{
 		width: auto;
 		padding: 0;
 	}
-	.relatedposts .post-thumbnail{
+	.relatedposts .card-thumbnail{
 		float: right;
 	}
-	.relatedposts .post-thumbnail:after{
+	.relatedposts .card-thumbnail:after{
 		display: block;
 		content: "";
 		clear: both;
