@@ -1,0 +1,15 @@
+@mixin responsive-img($width: 100%){
+  background-size: cover;
+  background-position: center center;
+  padding-top: 56.25%;
+  width: $width;
+  height: auto;
+  padding: 0;
+  text-align: center;
+  img{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+ }

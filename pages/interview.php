@@ -29,10 +29,10 @@
 				<h1 class="post-title" itemprop="headline"><?php the_title(); ?></h1>
 			</header>
 			<section class="post-content" itemprop="text">
-				<?php if( get_the_post_thumbnail() ) : ?>
-				<div class="post-thumbnail responsive_img">
-					<?php the_post_thumbnail(); ?>
-				</div>
+        <?php if( get_the_post_thumbnail() ) : ?>
+        <div class="post-thumbnail">
+          <?php the_post_thumbnail(); ?>
+        </div>
 				<?php endif; ?>
 				<?php
 					the_content(); 
@@ -47,7 +47,7 @@
 			</section>
 
 			<footer class="post-footer">
-      <?php include dirname(__FILE__)."/../libs/components/sns.php"?>
+      <?php // include dirname(__FILE__)."/../libs/components/sns.php"?>
 			</footer>
 			
 			<?php echo bzb_get_cta($post->ID); ?>

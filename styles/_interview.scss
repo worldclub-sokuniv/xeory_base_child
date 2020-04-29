@@ -13,13 +13,11 @@
     font-size: 130%;
     font-weight: bold;
     margin: 50px 0;
-    &:before{
-      content: "<";
-      margin-right: 10px;
-    }
-    &:after{
-      content: ">";
-      margin-left: 10px;
-    }
+  }
+  .post-thumbnail{
+    @include responsive-img(80%);
+  }
+  .wp-block-image{
+    @include responsive-img(80%);
   }
 }

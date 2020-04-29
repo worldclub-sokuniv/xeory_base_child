@@ -31,6 +31,6 @@ RUN apt-get clean
 RUN rm -rf /tmp/*
 
 # サーバが読めるように wp-content 以下の所有者を変更
-RUN chown www-data:www-data /usr/src/wordpress/wp-content
+RUN chown -R www-data:www-data /usr/src/wordpress/wp-content
 
 WORKDIR /var/www/html
