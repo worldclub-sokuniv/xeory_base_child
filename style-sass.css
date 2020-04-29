@@ -19,16 +19,6 @@
   margin: 50px 0;
 }
 
-.category-interview .sub_title:before {
-  content: "<";
-  margin-right: 10px;
-}
-
-.category-interview .sub_title:after {
-  content: ">";
-  margin-left: 10px;
-}
-
 .category-interview .thumbnai-wrapper {
   width: 100%;
   display: flex;
