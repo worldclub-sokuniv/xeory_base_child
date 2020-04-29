@@ -14,13 +14,10 @@
     font-weight: bold;
     margin: 50px 0;
   }
-  .thumbnai-wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-    .post-thumbnail{
-      max-width: 80%;
-    }
+  .post-thumbnail{
+    @include responsive-img(80%);
+  }
+  .wp-block-image{
+    @include responsive-img(80%);
   }
 }

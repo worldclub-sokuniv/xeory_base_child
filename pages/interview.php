@@ -30,10 +30,8 @@
 			</header>
 			<section class="post-content" itemprop="text">
         <?php if( get_the_post_thumbnail() ) : ?>
-        <div class="thumbnai-wrapper">
-          <div class="post-thumbnail responsive_img">
-            <?php the_post_thumbnail(); ?>
-          </div>
+        <div class="post-thumbnail">
+          <?php the_post_thumbnail(); ?>
         </div>
 				<?php endif; ?>
 				<?php

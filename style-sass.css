@@ -1,3 +1,13 @@
+.post-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.post-content p {
+  width: 100%;
+}
+
 .category-interview {
   padding-bottom: 20px;
 }
@@ -19,13 +29,36 @@
   margin: 50px 0;
 }
 
-.category-interview .thumbnai-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+.category-interview .post-thumbnail {
+  background-size: cover;
+  background-position: center center;
+  padding-top: 56.25%;
+  width: 80%;
+  height: auto;
+  padding: 0;
+  text-align: center;
 }
 
-.category-interview .thumbnai-wrapper .post-thumbnail {
-  max-width: 80%;
+.category-interview .post-thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.category-interview .wp-block-image {
+  background-size: cover;
+  background-position: center center;
+  padding-top: 56.25%;
+  width: 80%;
+  height: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.category-interview .wp-block-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
 }
