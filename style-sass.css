@@ -28,3 +28,14 @@
   content: ">";
   margin-left: 10px;
 }
+
+.category-interview .thumbnai-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.category-interview .thumbnai-wrapper .post-thumbnail {
+  max-width: 80%;
+}

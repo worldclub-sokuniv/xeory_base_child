@@ -22,4 +22,13 @@
       margin-left: 10px;
     }
   }
+  .thumbnai-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    .post-thumbnail{
+      max-width: 80%;
+    }
+  }
 }
