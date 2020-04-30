@@ -8,6 +8,10 @@
   width: 100%;
 }
 
+.post-content .post-thumbnail {
+  margin-left: 0;
+}
+
 .category-interview {
   padding-bottom: 20px;
 }
