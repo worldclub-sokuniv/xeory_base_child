@@ -30,35 +30,45 @@
 }
 
 .category-interview .post-thumbnail {
-  background-size: cover;
-  background-position: center center;
-  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
   width: 80%;
-  height: auto;
-  padding: 0;
-  text-align: center;
+}
+
+.category-interview .post-thumbnail:before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
 }
 
 .category-interview .post-thumbnail img {
-  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  padding: 0;
+  margin: auto;
 }
 
 .category-interview .wp-block-image {
-  background-size: cover;
-  background-position: center center;
-  padding-top: 56.25%;
+  position: relative;
+  overflow: hidden;
   width: 80%;
-  height: auto;
-  padding: 0;
-  text-align: center;
+}
+
+.category-interview .wp-block-image:before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
 }
 
 .category-interview .wp-block-image img {
-  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   width: 100%;
-  height: auto;
-  padding: 0;
+  margin: auto;
 }
