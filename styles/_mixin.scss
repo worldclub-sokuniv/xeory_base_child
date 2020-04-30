@@ -1,4 +1,6 @@
 @mixin responsive-img($width: 100%){
+  //this mixin sholud be included 
+  //to the class that contains img 
   position: relative;
   overflow: hidden;
   width: $width;
