@@ -4,7 +4,7 @@ services:
   node:
     build:
       context: ./
-      dockerfile: docker/Dockerfile-tr
+      dockerfile: docker/Dockerfile-TR
     container_name: ssa_task_runner
     volumes:
       - ./:/app
@@ -13,7 +13,7 @@ services:
   wordpress:
     build:
       context: ./docker
-      dockerfile: Dockerfile-wp
+      dockerfile: Dockerfile-WP
     container_name: ssa
     ports: 
       - 8080:80
