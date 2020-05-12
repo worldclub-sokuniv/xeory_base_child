@@ -29,11 +29,7 @@
 				<h1 class="post-title" itemprop="headline"><?php the_title(); ?></h1>
 			</header>
 			<section class="post-content" itemprop="text">
-        <?php if( get_the_post_thumbnail() ) : ?>
-        <div class="post-thumbnail">
-          <?php the_post_thumbnail( 'full' ); ?>
-        </div>
-				<?php endif; ?>
+        
 				<?php
 					the_content(); 
 					$args = array(
