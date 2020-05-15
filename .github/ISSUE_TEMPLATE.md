@@ -1,5 +1,9 @@
-## What is an issue
-< describe what is issue >
+## 【環境】
 
-## How to solve it
-< describe or list the solution of the issue >
+## 【ブラウザ / 端末】
+
+## 【URL（どのページか）】
+
+## 【内容 / 条件】
+
+## 【改善案】
