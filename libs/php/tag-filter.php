@@ -21,7 +21,7 @@ function tag_filter($tags, $selectedTags){
     <form class="filter-by-tags" action="" method="post">
       <input id="tag-search">
       <button id="send" type="submit">検索</button>
-      <div id="available-tags" style="display:none;">{$encodedTags}</div>
+      <input id="available-tags" type="hidden" value={$encodedTags}>
       <div id="filter-tags">{$chips}</div>
     </form>
   EOF;

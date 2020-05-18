@@ -11,7 +11,7 @@ $(() => {
   $(document).on("click", ".closebtn", e => removeChipComponents(e))
 
   function getAvailableTags(){
-    return JSON.parse($("#available-tags").text())
+    return JSON.parse($("#available-tags").attr("value"))
   }
   function getAvailableNameTags(){
     return availableTags.map(v => v.name)

@@ -20,6 +20,21 @@ if ( isset( $_POST ) ) {
   $args["tag__in"] = $tagIDs;
 }
 
+$tags = [];
+$includedIds = [];
+if (have_posts()){
+  while(have_posts()){
+    the_post();
+    $postTags = get_the_tags();
+    foreach($postTags as $tag){
+      if(!in_array($tag->term_id, $includedIds)){
+        array_push($tags, $tag);
+        array_push($includedIds, $tag->term_id);
+      }
+    }
+  }
+}
+
 $my_query = new wp_query( $args );
 ?>
 
@@ -33,7 +48,7 @@ $my_query = new wp_query( $args );
 				<section class="cat-content">
 					<header class="cat-header">
             <h1 class="post-title"><?php bzb_title(); ?></h1>
-            <?php tag_filter(get_the_tags(), $tagIDs); ?>
+            <?php tag_filter($tags, $tagIDs); ?>
 					</header>
 					<?php if ( is_category() ) { ?>
 						<?php bzb_category_description(); ?>
