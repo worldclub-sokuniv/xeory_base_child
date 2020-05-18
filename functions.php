@@ -1,4 +1,6 @@
 <?php
+require dirname(__FILE__)."/libs/php/tag-filter.php";
+
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 function theme_enqueue_styles() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
@@ -114,10 +116,19 @@ function my_list_categories( $output, $args ) {
 
 add_action( 'wp_head', 'add_meta_to_head' );
 function add_meta_to_head() {
-	echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
-	echo '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">';
+  echo '<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">';
 	echo '<link rel="stylesheet" href="'. get_template_directory_uri() . '_child/style-sass.css">';
-	echo '<link rel="stylesheet" href="'. get_template_directory_uri() . '_child/libs/styles/dialog-pollyfill.css">';
+	// echo '<link rel="stylesheet" href="'. get_template_directory_uri() . '_child/libs/styles/dialog-pollyfill.css">';
+}
+
+add_action( 'wp_footer', 'add_function_to_bottom_of_body' );
+function add_function_to_bottom_of_body() {
+  echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
+  if ( in_category( array( 'interview' )) ){
+    echo '<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">';
+    echo '<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>';
+    echo '<script src="'. get_template_directory_uri() . '_child/libs/js/tag-filter.js"></script>';
+  }
 }
 
 add_action( 'wp_enqueue_scripts', 'twpp_enqueue_scripts' );
