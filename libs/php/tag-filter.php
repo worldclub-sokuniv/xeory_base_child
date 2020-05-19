@@ -9,7 +9,7 @@ function tag_filter($tags, $selectedTags){
       $chips .= <<< EOF
       <div class="chip" value="{$tagId}">
         <div class="chip-name">{$tagName}</div>
-        <span class="closebtn">&times;</span>
+        <div class="closebtn"></div>
         <input name={$tagId} type="hidden" value={$encodedTag}>
       </div>
       EOF;
@@ -22,7 +22,7 @@ function tag_filter($tags, $selectedTags){
       <input id="tag-search">
       <button id="send" type="submit">検索</button>
       <input id="available-tags" type="hidden" value={$encodedTags}>
-      <div id="filter-tags">{$chips}</div>
+      <div id="filter-tags" class="chip-wrapper">{$chips}</div>
     </form>
   EOF;
 

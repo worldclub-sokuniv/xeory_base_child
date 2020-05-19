@@ -4,9 +4,14 @@ $(() => {
   let selectedTags = getSelectedTags()
   let selectedNameTags = getSelectedNameTags()
 
-  $("#tag-search").autocomplete({
+  $("#tag-search")
+  .autocomplete({
     source: (req, res) => unselected(req, res),
-    select: (e, ui) => addTagChips(e, ui)
+    select: (e, ui) => addTagChips(e, ui),
+    minLength: 0
+  })
+  .focus(function () {
+    $(this).autocomplete('search', $(this).val())
   })
   $(document).on("click", ".closebtn", e => removeChipComponents(e))
 
@@ -39,6 +44,7 @@ $(() => {
     $.when(addChipComponents(ui.item.value))
     .done(addSelectedTags())
     .done(addSelectedNameTags(ui.item.value))
+    ui.item.value = ""
   }
   function unselected(req, res){
     unselect = availableNameTags.filter(v => {
@@ -58,7 +64,7 @@ $(() => {
       $("#filter-tags").append(`
         <div class="chip" value="${tagInfo.term_id}">
           <div class="chip-name">${name}</div>
-          <span class="closebtn">&times;</span>
+          <div class="closebtn"></div>
           <input name=${tagInfo.term_id} type="hidden" value=${JSON.stringify(tagInfo)}>
         </div>
       `)
