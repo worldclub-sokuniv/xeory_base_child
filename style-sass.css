@@ -58,7 +58,7 @@
 .category-interview .wp-block-image {
   position: relative;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
 }
 
 .category-interview .wp-block-image:before {
