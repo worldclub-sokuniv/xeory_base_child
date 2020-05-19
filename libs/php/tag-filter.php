@@ -12,7 +12,7 @@ function tag_filter($tags, $selectedTags){
         <div class="closebtn"></div>
         <input name={$tagId} type="hidden" value={$encodedTag}>
       </div>
-      EOF;
+EOF;
     }
   }
 
@@ -24,7 +24,7 @@ function tag_filter($tags, $selectedTags){
       <input id="available-tags" type="hidden" value={$encodedTags}>
       <div id="filter-tags" class="chip-wrapper">{$chips}</div>
     </form>
-  EOF;
+EOF;
 
   echo $form;
 }
