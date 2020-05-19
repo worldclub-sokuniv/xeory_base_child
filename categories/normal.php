@@ -26,10 +26,12 @@ if (have_posts()){
   while(have_posts()){
     the_post();
     $postTags = get_the_tags();
-    foreach($postTags as $tag){
-      if(!in_array($tag->term_id, $includedIds)){
-        array_push($tags, $tag);
-        array_push($includedIds, $tag->term_id);
+    if($postTags){
+      foreach($postTags as $tag){
+        if(!in_array($tag->term_id, $includedIds)){
+          array_push($tags, $tag);
+          array_push($includedIds, $tag->term_id);
+        }
       }
     }
   }
