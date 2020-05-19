@@ -28,3 +28,4 @@ function tag_filter($tags, $selectedTags){
 
   echo $form;
 }
+?>
