@@ -1,0 +1,46 @@
+.chip-wrapper{
+  $fs:16px;
+  .chip{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 $fs / 1.25;
+    height: $fs * 2;
+    font-size: $fs;
+    line-height: $fs * 2;
+    border-radius: $fs;
+    background-color: $chip-base-color;
+    .chip-name{
+      margin-right: $fs / 1.5;
+    }
+    $btn-size: $fs * 1.2;
+    .closebtn {
+      position: relative;
+      width: $btn-size;
+      height: $btn-size;
+      background-color: $chip-close-color;
+      border-radius: 50%;
+      cursor: pointer;
+      &:before {
+        content: '';
+        height: $btn-size / 2;
+        border-left: 2px solid $chip-base-color;
+        position: absolute;
+        transform: rotate(-45deg);
+        left: ($btn-size - 2px) / 2;
+        top: $btn-size / 4;
+      }
+      &:after {
+        content: '';
+        height: $btn-size / 2;
+        border-left: 2px solid $chip-base-color;
+        position: absolute;
+        transform: rotate(45deg);
+        left: ($btn-size - 2px) / 2;
+        top: $btn-size / 4;
+      }
+    }
+  }
+}
+
+
