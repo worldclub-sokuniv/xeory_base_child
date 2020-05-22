@@ -111,9 +111,13 @@ body{
 /* main */
 #main{
 	width: 75%;
+	margin: 0 auto;
+	float: none;
 }
 .left-content #main{
 	width: 75%;
+	margin: 0 auto;
+	float: none;
 }
 #main .main-inner{
 	margin-right: 30px;
@@ -264,115 +268,6 @@ article.seo101{
 }
 .post-footer{
 	padding: 0 64px;
-}
-/* side */
-#side{
-	width: 25%;
-	padding: 0;
-	margin: 0 !important;
-}
-.left-content #side{
-	width: 25%;
-}
-.side-widget-area{
-	padding: 0;
-	padding: 30px 0;
-}
-.side-widget-area .widget>ul,
-.side-widget-area .widget>div{
-	background: #ffffff;
-}
-#side #searchform,
-#side #searchform input{
-	border: none;
-	border-radius: 0;
-	background: var(--background);
-}
-#side #searchform{
-	height: 48px;
-	border-bottom: 2px var(--search-sub) solid;
-}
-#side #searchform{
-	height: 48px;
-	border-bottom: 2px var(--search-sub) solid;
-}
-#side #searchform button{
-    float: right;
-    position: absolute;
-    top: 0;
-    right: 0;
-    vertical-align: top;
-    line-height: 24px;
-    padding: 12px 5px;
-    background: transparent;
-    font-family: 'FontAwesome';
-    font-size: 28px;
-	color: #808080;
-}
-#side #searchform input{
-    line-height: 32px;
-    padding: 8px 13px;
-    font-size: 20px;
-    width: 100%;
-    float: left;
-}
-.side-title{
-	height: 40px;
-	line-height: 34px;
-	background: var(--main-color);
-	color: #ffffff;
-	font-size: 20px;
-	font-weight: bold;
-	border: 3px var(--main-color) solid;
-	border-radius: 10px 10px 0 0;
-}
-.side-title:before{
-	padding: 0 10px; 
-	font-family: 'FontAwesome';
-	font-size: 25px;
-}
-.side-2-title:before{
-	content: "\f0ca";
-}
-.side-3-title:before{
-	content: "\f099";
-}
-.side-4-title:before{
-	font-family: "Font Awesome 5 Brands";
-	content: "\f39e";
-}
-.side-2 ul{
-	padding: 20px 10px; 
-}
-.side-2 ul li{
-	height: 40px;
-	line-height: 40px;
-	padding: 0 5px;
-}
-.side-2 ul li:hover{
-	background: var(--background);
-}
-.side-2 ul li a{
-	display: block;
-	color: var(--category-side); 
-	width: 100%;
-	font-weight: bold;
-}
-.side-2 ul li a:hover{
-	text-decoration: none;
-}
-.side-2 ul li a span{
-    display: inline-block;
-	width: 25px;
-    height: 25px;
-    line-height: 25px;
-    margin-left: 10px;
-    text-align: center;
-    border: 1px transparent solid;
-    border-radius: 50%;
-	background: var(--category-num-back);
-	color: var(--category-num);
-	font-size: 12px;
 }
 
 /* contact */
