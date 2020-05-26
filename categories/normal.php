@@ -11,8 +11,10 @@ $args = array(
 
 $tagIDs = [];
 if ( isset( $_POST ) ) {
-	$tagIDs = array_map('intval', explode(",", $_POST["selectedTagIds"]));
-  $args["tag__in"] = $tagIDs;
+	if (!is_null($_POST["selectedTagIds"])) {
+		$tagIDs = array_map('intval', explode(",", $_POST["selectedTagIds"]));
+		$args["tag__in"] = $tagIDs;
+	}
 }
 
 $tags = [];
