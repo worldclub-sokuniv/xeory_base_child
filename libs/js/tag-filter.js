@@ -1,7 +1,7 @@
 $(() => {
   let selectedTagIds = $("#selectedTagIds").val() ? $("#selectedTagIds").val().split(",") : []
   
-  $(document).on("click", ".chip", e => {
+  $(document).on("click tap touchstart", ".chip", e => {
     val = parseInt(e.currentTarget.attributes.value.value)
     if ((val + 1) % 2 == 0) selected(e)
     else unselected(e)
