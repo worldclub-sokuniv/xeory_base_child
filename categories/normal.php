@@ -11,12 +11,7 @@ $args = array(
 
 $tagIDs = [];
 if ( isset( $_POST ) ) {
-  foreach($_POST as $p){
-    $decoded = str_replace("\\", "", json_encode($p));
-    $length  = strlen($decoded);
-    $encoded = json_decode(substr($decoded, 1, $length-2));
-    $tagIDs[] = $encoded->term_id;
-  }
+	$tagIDs = array_map('intval', explode(",", $_POST["selectedTagIds"]));
   $args["tag__in"] = $tagIDs;
 }
 
