@@ -9,6 +9,7 @@
     font-size: $fs;
     line-height: $fs * 2;
     border-radius: $fs;
+    touch-action: manipulation;
   }
   .selected{
     color: #ffffff;
