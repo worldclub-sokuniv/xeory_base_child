@@ -5,7 +5,7 @@
 }
 
 .post-content p {
-  width: 100%;
+  width: 80%;
 }
 
 .post-content .post-thumbnail {
@@ -58,7 +58,7 @@
 .category-interview .wp-block-image {
   position: relative;
   overflow: hidden;
-  width: 100%;
+  width: 80%;
 }
 
 .category-interview .wp-block-image:before {
