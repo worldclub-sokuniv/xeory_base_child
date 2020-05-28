@@ -86,14 +86,38 @@
   font-size: 16px;
   line-height: 32px;
   border-radius: 16px;
-  touch-action: manipulation;
-}
-
-.chip-wrapper .selected {
-  color: #ffffff;
-  background-color: #2196f3;
-}
-
-.chip-wrapper .unselected {
   background-color: #f1f1f1;
+}
+
+.chip-wrapper .chip .chip-name {
+  margin-right: 10.66667px;
+}
+
+.chip-wrapper .chip .closebtn {
+  position: relative;
+  width: 19.2px;
+  height: 19.2px;
+  background-color: #666666;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chip-wrapper .chip .closebtn:before {
+  content: '';
+  height: 9.6px;
+  border-left: 2px solid #f1f1f1;
+  position: absolute;
+  transform: rotate(-45deg);
+  left: 8.6px;
+  top: 4.8px;
+}
+
+.chip-wrapper .chip .closebtn:after {
+  content: '';
+  height: 9.6px;
+  border-left: 2px solid #f1f1f1;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 8.6px;
+  top: 4.8px;
 }
