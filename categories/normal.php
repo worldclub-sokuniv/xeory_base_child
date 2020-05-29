@@ -74,7 +74,7 @@ $my_query = new wp_query( $args );
 								<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 							<?php } ?>
 							<?php the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a>
+							<pre><a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a></pre>
 							</section>
 						</article>
 							<?php
