@@ -114,11 +114,7 @@ body{
 	margin: 0 auto;
 	float: none;
 }
-.left-content #main{
-	width: 75%;
-	margin: 0 auto;
-	float: none;
-}
+
 #main .main-inner{
 	margin-right: 30px;
 }
