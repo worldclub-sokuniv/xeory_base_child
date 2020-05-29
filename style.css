@@ -116,11 +116,10 @@ body{
 }
 
 #main .main-inner{
-	margin-right: 30px;
+	margin-right: 0px;
 }
 .front-page #main .main-inner{
 	padding: 0 5vh;
-	margin-right: 10vh;
 }
 #content .wrap{
 	width: 100%;
