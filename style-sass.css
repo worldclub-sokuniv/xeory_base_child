@@ -77,6 +77,11 @@
   margin: auto;
 }
 
+.category-interview .wp-block-image figcaption {
+  margin: 48px 0px 16px 0px;
+  text-align: center;
+}
+
 .chip-wrapper .chip {
   display: inline-flex;
   flex-direction: row;
