@@ -2,10 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 95px;
 }
 
 .post-content p {
-  width: 80%;
+  width: 100%;
 }
 
 .post-content .post-thumbnail {
@@ -58,7 +59,7 @@
 .category-interview .wp-block-image {
   position: relative;
   overflow: hidden;
-  width: 80%;
+  width: 100%;
 }
 
 .category-interview .wp-block-image:before {
