@@ -19,9 +19,9 @@
   }
   .wp-block-image{
     @include responsive-img(80%);
-  }
-  .wp-block-image figcaption {
-    margin: 48px 0px 16px 0px;
-    text-align: center;
+    .figcaption {
+      margin: 48px 0px 16px 0px;
+      text-align: center;
+    }
   }
 }
