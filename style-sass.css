@@ -1,14 +1,14 @@
-.post-content {
+.categories .category-interview .post-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.post-content p {
+.categories .category-interview .post-content p {
   width: 100%;
 }
 
-.post-content .post-thumbnail {
+.categories .category-interview .post-content .post-thumbnail {
   margin-left: 0;
 }
 
@@ -75,6 +75,20 @@
   left: 0;
   width: 100%;
   margin: auto;
+}
+
+.category-interview .post-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.category-interview .post-content p {
+  width: 80%;
+}
+
+.category-interview .post-content .post-thumbnail {
+  margin-left: 0;
 }
 
 .chip-wrapper .chip {
