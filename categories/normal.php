@@ -54,7 +54,7 @@ $my_query = new wp_query( $args );
 					<?php } ?>
 				</section>
 
-				<div class="post-loop-wrap categories">
+				<div class="post-loop-wrap articles">
         <?php
 				if ( $my_query->have_posts() ) :
 					while (  $my_query->have_posts() ) :

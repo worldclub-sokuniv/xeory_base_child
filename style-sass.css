@@ -1,14 +1,14 @@
-.categories .category-interview .post-content {
+.articles .category-interview .post-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.categories .category-interview .post-content p {
+.articles .category-interview .post-content p {
   width: 100%;
 }
 
-.categories .category-interview .post-content .post-thumbnail {
+.articles .category-interview .post-content .post-thumbnail {
   margin-left: 0;
 }
 
