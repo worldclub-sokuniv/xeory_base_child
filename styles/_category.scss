@@ -10,6 +10,20 @@
       .post-thumbnail{
         margin-left: 0;
       }
-    } 
+    }
+    .post-title {
+      margin: auto;
+      font-size: 28px;
+      clear: both;
+      font-weight: bold;
+      width: 100%;
+    }
+    .post-meta li {
+      background: #fff;
+      float: left;
+      margin: -0.7em 0px;
+      padding-right: 24px;
+      font-size: 14px;
+    }
   }
 }

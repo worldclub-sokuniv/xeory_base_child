@@ -12,6 +12,22 @@
   margin-left: 0;
 }
 
+.articles .category-interview .post-title {
+  margin: auto;
+  font-size: 28px;
+  clear: both;
+  font-weight: bold;
+  width: 100%;
+}
+
+.articles .category-interview .post-meta li {
+  background: #fff;
+  float: left;
+  margin: -0.7em 0px;
+  padding-right: 24px;
+  font-size: 14px;
+}
+
 .category-interview {
   padding-bottom: 20px;
 }
@@ -89,6 +105,22 @@
 
 .category-interview .post-content .post-thumbnail {
   margin-left: 0;
+}
+
+.category-interview .post-title {
+  margin: auto;
+  font-size: 28px;
+  clear: both;
+  font-weight: bold;
+  width: 84%;
+}
+
+.category-interview .post-meta li {
+  background: #fff;
+  float: left;
+  margin: -0.7em 20px 0 60px;
+  padding-right: 24px;
+  font-size: 14px;
 }
 
 .chip-wrapper .chip {
