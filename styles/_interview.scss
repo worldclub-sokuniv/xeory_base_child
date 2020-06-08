@@ -19,7 +19,7 @@
   }
   .wp-block-image{
     @include responsive-img(80%);
-    .figcaption {
+    figcaption {
       margin: 48px 0px 16px 0px;
       text-align: center;
     }
