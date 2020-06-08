@@ -52,7 +52,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 .category-interview .wp-block-image {
@@ -74,11 +74,10 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 .category-interview .wp-block-image figcaption {
-  margin: 48px 0px 16px 0px;
   text-align: center;
 }
 
