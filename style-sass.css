@@ -97,3 +97,46 @@
 .chip-wrapper .unselected {
   background-color: #f1f1f1;
 }
+
+.front-page .main {
+  width: 100%;
+}
+
+.front-page .main-inner {
+  margin-right: 10px;
+}
+
+.front-page .box {
+  width: 585px;
+}
+
+.front-page .boxContent {
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-flow: row wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.front-page .card-wrapper:first-child {
+  width: 50%;
+}
+
+.front-page .card-wrapper {
+  padding: 30px 15px 0;
+}
+
+.front-page .card {
+  padding: 0;
+}
+
+body.home #content {
+  padding-top: 0;
+}
+
+body.home #content .wrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}

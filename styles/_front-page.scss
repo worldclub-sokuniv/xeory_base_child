@@ -1,0 +1,38 @@
+.front-page {
+  .main {
+    width: 100%;
+  }
+  .main-inner{
+    margin-right: 10px;
+  }
+  .box {
+    width: 585px;
+  }
+  .boxContent {
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+  }
+  .card-wrapper:first-child {
+    width: 50%;
+  }
+  .card-wrapper {
+    padding: 30px 15px 0;
+  }
+  .card {
+    padding: 0;
+  }
+}
+body.home {
+  #content {
+    padding-top: 0;
+    .wrap {
+      width: 1200px;
+      margin: 0 auto;
+      padding: 0;
+    }
+  }
+}
