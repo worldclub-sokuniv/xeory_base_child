@@ -103,7 +103,7 @@
 }
 
 .front-page .main-inner {
-  margin-right: 10px;
+  margin-right: 0;
 }
 
 .front-page .boxContent {
@@ -116,9 +116,12 @@
 
 .front-page .card-wrapper:first-child {
   width: 50%;
+  height: 500px;
 }
 
 .front-page .card-wrapper {
+  width: 25%;
+  height: 235px;
   padding: 30px 15px 0;
 }
 
@@ -134,12 +137,17 @@
   height: auto;
 }
 
-.front-page .card-title {
-  padding: 0 0 10px;
+.front-page .titleset {
+  padding: 15px 15px 10px 15px;
 }
 
-.front-page .titleset {
-  padding: 25px 25px 15px 25px;
+.front-page .card-title {
+  font-size: 15px;
+  padding: 0 0 0px;
+}
+
+.front-page i, .front-page span {
+  font-size: 12px;
 }
 
 body.home #content {

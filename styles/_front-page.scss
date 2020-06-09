@@ -3,8 +3,11 @@
     width: 100%;
   }
   .main-inner{
-    margin-right: 10px;
+    margin-right: 0;
   }
+  // .box {
+  //   width: 585px;
+  // }
   .boxContent {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -14,11 +17,22 @@
   }
   .card-wrapper:first-child {
     width: 50%;
+    height: 500px;
   }
+  // .card-wrapper:first-child a {
+    
+  // }
   .card-wrapper {
+    width: 25%;
+    height: 235px;
     padding: 30px 15px 0;
   }
+  // .card:first-child {
+  //   // height: 500px;
+  //   padding: 0;
+  // }
   .card {
+    // height: 235px;
     padding: 0;
   }
   .card-thumbnail {
@@ -28,11 +42,15 @@
     width: 100%;
     height: auto;
   }
-  .card-title {
-    padding: 0 0 10px;
-  }
   .titleset {
-    padding: 25px 25px 15px 25px;
+    padding: 15px 15px 10px 15px;
+  }
+  .card-title {
+    font-size: 15px;
+    padding: 0 0 0px;
+  }
+  i, span {
+    font-size: 12px;
   }
 }
 body.home {
