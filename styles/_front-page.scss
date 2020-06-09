@@ -5,11 +5,7 @@
   .main-inner{
     margin-right: 10px;
   }
-  .box {
-    width: 585px;
-  }
   .boxContent {
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     flex-flow: row wrap;
@@ -24,6 +20,19 @@
   }
   .card {
     padding: 0;
+  }
+  .card-thumbnail {
+    background-size: cover;
+    background-position: center center;
+    padding-top: 62.4%;
+    width: 100%;
+    height: auto;
+  }
+  .card-title {
+    padding: 0 0 10px;
+  }
+  .titleset {
+    padding: 25px 25px 15px 25px;
   }
 }
 body.home {
