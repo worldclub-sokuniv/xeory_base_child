@@ -115,7 +115,7 @@
 }
 
 .front-page .cards-section-wrapper {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
   height: 530px;
   display: flex;
   flex-wrap: wrap;
@@ -148,11 +148,16 @@
 
 .front-page .titleset {
   padding: 15px 15px 10px 15px;
+  height: 93px;
 }
 
 .front-page .card-title {
   font-size: 15px;
   padding: 0 0 0px;
+  height: 48px;
+  text-align: justify;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .front-page i, .front-page span {
@@ -183,6 +188,11 @@
   width: 0px;
   height: 0px;
   z-index: 1;
+}
+
+.front-page .label:hover {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
 body.home #content {

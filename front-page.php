@@ -21,7 +21,7 @@
 									setup_postdata( $post );
 							?>
 								<div class="card-wrapper  front-page-card">
-								<div class="label">カテゴリー</div>
+								<a href="http://worldclubsokalocal.local/category/article/interview/" class="label">カテゴリー</a>
 									<a href="<?php the_permalink(); ?>" class="card">
 										<div class="box">
 											<div class="boxContent">
