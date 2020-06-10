@@ -16,26 +16,31 @@
 						if( $posts ): ?>
 							<!-- <div class="new-entry"><span class="fp-category-title"><?php echo $cat_title; ?></span></div> -->
 							<div class="post-loop-wrap cards-section-wrapper">
-							<?php
+								<div class="front-page category-link">
+								<a href="http://worldclubsokalocal.local/category/article/interview/" class="card">
+									<!-- <img src="ssa_logo.png" width="585px" height="365px">  -->
+									<div class="image"></div>
+									<div class="titleset">
+										<h2 class="card-title">カテゴリーへ</h2>
+									</div>
+								</a><!-- /category-link -->
+								</div>
+								<?php
 								foreach ( $posts as $post ) :
 									setup_postdata( $post );
 							?>
 								<div class="card-wrapper  front-page-card">
 								<a href="http://worldclubsokalocal.local/category/article/interview/" class="label">カテゴリー</a>
 									<a href="<?php the_permalink(); ?>" class="card">
-										<div class="box">
-											<div class="boxContent">
-												<article class="card-content-wrapper">
-													<?php if ( get_the_post_thumbnail() ) { ?>
-															<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
-													<?php } ?>
-													<div class ="titleset">
-														<h2 class="card-title"><?php the_title(); ?></h2>
-														<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
-													</div><!-- titleset -->
-												</article>
-											</div><!-- boxContent -->
-										</div><!-- box -->
+										<article class="card-content-wrapper">
+											<?php if ( get_the_post_thumbnail() ) { ?>
+													<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+											<?php } ?>
+											<div class ="titleset">
+												<h2 class="card-title"><?php the_title(); ?></h2>
+												<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
+											</div><!-- titleset -->
+										</article>
 									</a>
 								</div><!-- card-warapper -->
 							<?php endforeach; ?>

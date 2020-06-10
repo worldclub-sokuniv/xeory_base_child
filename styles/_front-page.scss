@@ -5,17 +5,43 @@
   .main-inner{
     margin-right: 0;
   }
-  // .box {
-  //   width: 585px;
-  // }
-  .boxContent {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    flex-flow: row wrap;
-    -webkit-box-pack: justify;
-    justify-content: space-between;
+  .category-link {
+    // margin-top: 30px;
+    width: 50%;
+    height: 235px;
+    padding: 30px 15px 0px 15px;
+    .image {
+      width: 100%;
+      height: 365px;
+      background: blue;
+    }
+    .titleset {
+      padding: 15px 20px 15px 20px;
+      height: 137px;
+      width: 100%;
+      background: white;
+      .card-title {
+        font-size: 20px;
+        color: black;
+        height: 90px;
+        width: 545px;
+        padding: 0 0 0px;
+        text-align: justify;
+        display: table-cell;
+        vertical-align: middle;
+      }
+    }
+    .card {
+      width: 100%;
+      height: 500px;
+    }
+    .card:hover{
+      box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+      text-decoration: none;
+      transition: all ease .3s;
+    }
   }
-  .cards-section-wrapper { //なぜ上の空白に入らない？？？
+  .cards-section-wrapper {
     // margin-top: 30px;
     margin-bottom: 30px;
     height: 530px;
@@ -30,24 +56,21 @@
     // grid-row: 1 / 2;
   }
   .card-wrapper:first-child {
-    width: 50%;
+    width: 25%;
     height: 235px;
-    .card-thumbnail {
-      height: 365px;
-    }
-    .titleset {
-      padding: 15px 20px 15px 20px;
-      height: 137px;
-    }
-    .card-title {
-      font-size: 20px;
-      height: 90px;
-      width: 545px;
-    }
+    // .card-thumbnail {
+    //   height: 365px;
+    // }
+    // .titleset {
+    //   padding: 15px 20px 15px 20px;
+    //   height: 137px;
+    // }
+    // .card-title {
+    //   font-size: 20px;
+    //   height: 90px;
+    //   width: 545px;
+    // }
   }
-  // .card-wrapper:first-child > h2 {
-  //   font-size: 50px;
-  // } //ここ操作できないの？？？？
   .card-wrapper {
     width: 25%;
     height: 235px;
@@ -58,10 +81,6 @@
     // justify-content: flex-end;
     // flex-flow: row wrap;
   }
-  // .card:first-child {
-  //   // height: 500px;
-  //   padding: 0;
-  // }
   .card {
     // height: 235px;
     padding: 0;
