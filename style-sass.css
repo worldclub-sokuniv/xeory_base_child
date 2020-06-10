@@ -128,6 +128,21 @@
   height: 235px;
 }
 
+.front-page .card-wrapper:first-child .card-thumbnail {
+  height: 365px;
+}
+
+.front-page .card-wrapper:first-child .titleset {
+  padding: 15px 20px 15px 20px;
+  height: 137px;
+}
+
+.front-page .card-wrapper:first-child .card-title {
+  font-size: 20px;
+  height: 90px;
+  width: 545px;
+}
+
 .front-page .card-wrapper {
   width: 25%;
   height: 235px;
@@ -151,7 +166,7 @@
   height: 93px;
 }
 
-.front-page .card-title {
+.front-page .titleset .card-title {
   font-size: 15px;
   padding: 0 0 0px;
   height: 48px;
@@ -160,8 +175,17 @@
   vertical-align: middle;
 }
 
-.front-page i, .front-page span {
+.front-page .titleset h2 {
+  display: block;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.front-page .titleset i, .front-page .titleset span {
   font-size: 12px;
+  vertical-align: middle;
 }
 
 .front-page .label {

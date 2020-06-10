@@ -32,6 +32,18 @@
   .card-wrapper:first-child {
     width: 50%;
     height: 235px;
+    .card-thumbnail {
+      height: 365px;
+    }
+    .titleset {
+      padding: 15px 20px 15px 20px;
+      height: 137px;
+    }
+    .card-title {
+      font-size: 20px;
+      height: 90px;
+      width: 545px;
+    }
   }
   // .card-wrapper:first-child > h2 {
   //   font-size: 50px;
@@ -64,17 +76,27 @@
   .titleset {
     padding: 15px 15px 10px 15px;
     height: 93px;
-  }
-  .card-title {
-    font-size: 15px;
-    padding: 0 0 0px;
-    height: 48px;
-    text-align: justify;
-    display: table-cell;
-    vertical-align: middle;
-  }
-  i, span {
-    font-size: 12px;
+    // padding-bottom: 28%;
+    // padding-top: 6%;
+    .card-title {
+      font-size: 15px;
+      padding: 0 0 0px;
+      height: 48px;
+      text-align: justify;
+      display: table-cell;
+      vertical-align: middle;
+    }
+    h2 {
+      display: block;
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+    i, span {
+      font-size: 12px;
+      vertical-align: middle;
+    }
   }
   .label {
     background-color: #66a6ff;
