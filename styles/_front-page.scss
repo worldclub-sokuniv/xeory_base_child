@@ -16,7 +16,9 @@
     justify-content: space-between;
   }
   .cards-section-wrapper { //なぜ上の空白に入らない？？？
-    margin-bottom: 80px;
+    // margin-top: 30px;
+    margin-bottom: 0px;
+    height: 530px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -37,7 +39,8 @@
   .card-wrapper {
     width: 25%;
     height: 235px;
-    padding: 30px 15px 0;
+    padding: 0px 15px 0;
+    // margin-top: 30px;
     // display: flex;
     // flex-wrap: wrap;
     // justify-content: flex-end;
@@ -54,7 +57,7 @@
   .card-thumbnail {
     background-size: cover;
     background-position: center center;
-    padding-top: 53.7%;
+    padding-top: 52.3%;
     width: 100%;
     height: auto;
   }
@@ -98,7 +101,7 @@ body.home {
   #content {
     padding-top: 0;
     .wrap {
-      width: 1200px;
+      width: 1230px;
       margin: 0 auto;
       padding: 0;
     }
