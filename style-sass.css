@@ -114,9 +114,17 @@
   justify-content: space-between;
 }
 
+.front-page .cards-section-wrapper {
+  margin-bottom: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  flex-flow: row wrap;
+}
+
 .front-page .card-wrapper:first-child {
   width: 50%;
-  height: 500px;
+  height: 235px;
 }
 
 .front-page .card-wrapper {
@@ -132,7 +140,7 @@
 .front-page .card-thumbnail {
   background-size: cover;
   background-position: center center;
-  padding-top: 62.4%;
+  padding-top: 53.7%;
   width: 100%;
   height: auto;
 }
@@ -148,6 +156,32 @@
 
 .front-page i, .front-page span {
   font-size: 12px;
+}
+
+.front-page .label {
+  background-color: #66a6ff;
+  background: linear-gradient(to right, #66a6ff 0%, #5de3e8 100%);
+  left: -10px;
+  top: 18px;
+  width: 120px;
+  height: 24px;
+  padding-left: 0.1em;
+  line-height: 26px;
+  font-size: 12px;
+  color: #fff;
+  letter-spacing: 0.1em;
+  text-align: center;
+  z-index: 2;
+  display: inline-block;
+  position: relative;
+}
+
+.front-page .label:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
 }
 
 body.home #content {
