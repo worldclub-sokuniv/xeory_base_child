@@ -1,0 +1,8 @@
+{
+	"0": {
+		"posts_per_page" : 4, 
+		"orderby" : "date",
+		"order" : "DESC",
+		"cat_title": "最新記事"
+	}
+}

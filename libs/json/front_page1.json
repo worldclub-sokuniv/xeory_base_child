@@ -1,0 +1,9 @@
+{
+	"0": {
+		"meta_key" : "views",
+		"posts_per_page" : 4, 
+		"orderby" : "meta_value_num",
+		"order" : "DESC",
+		"cat_title": "人気記事"
+	}
+}

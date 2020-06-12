@@ -98,34 +98,52 @@
   background-color: #f1f1f1;
 }
 
+body.home #content {
+  padding: 0 0 30px 0;
+  height: 2200px;
+}
+
+body.home #content .wrap {
+  width: 1230px;
+  height: 2200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
 .front-page .main {
   width: 100%;
+  height: 1630px;
 }
 
-.front-page .main-inner {
+.front-page .sections {
   margin-right: 0;
+  width: 1230px;
 }
 
-.front-page .category-link {
+.front-page .sections .latests {
+  justify-content: flex-end;
+}
+
+.front-page .sections .latests .latest-link {
   width: 50%;
   height: 235px;
-  padding: 30px 15px 0px 15px;
+  padding: 25px 15px 0px 15px;
 }
 
-.front-page .category-link .image {
+.front-page .sections .latests .latest-link .image {
   width: 100%;
   height: 365px;
   background: blue;
 }
 
-.front-page .category-link .titleset {
+.front-page .sections .latests .latest-link .titleset {
   padding: 15px 20px 15px 20px;
   height: 137px;
   width: 100%;
   background: white;
 }
 
-.front-page .category-link .titleset .card-title {
+.front-page .sections .latests .latest-link .titleset .card-title {
   font-size: 20px;
   color: black;
   height: 90px;
@@ -136,39 +154,243 @@
   vertical-align: middle;
 }
 
-.front-page .category-link .card {
+.front-page .sections .latests .latest-link .card {
   width: 100%;
-  height: 500px;
+  height: 505px;
 }
 
-.front-page .category-link .card:hover {
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  transition: all ease .3s;
+.front-page .sections .populars {
+  width: 75%;
 }
 
-.front-page .cards-section-wrapper {
-  margin-bottom: 30px;
-  height: 530px;
+.front-page .sections .populars .popular-link {
+  width: 615px;
+  height: 235px;
+  padding: 25px 15px 0px 15px;
+}
+
+.front-page .sections .populars .popular-link .image {
+  width: 50%;
+  height: 235px;
+  background: yellow;
+}
+
+.front-page .sections .populars .popular-link .titleset {
+  padding: 15px 20px 15px 20px;
+  height: 235px;
+  width: 50%;
+  background: white;
+}
+
+.front-page .sections .populars .popular-link .titleset .card-title {
+  font-size: 17px;
+  color: black;
+  height: 90px;
+  padding: 0 0 0px;
+  text-align: justify;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.front-page .sections .populars .popular-link .card {
+  width: 100%;
+  height: 235px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  flex-flow: row wrap;
 }
 
-.front-page .card-wrapper:first-child {
-  width: 25%;
+.front-page .sections .populars .hoge-link {
+  width: 307.5px;
+  height: 500px;
+  padding: 25px 15px 0px 15px;
+  position: absolute;
+  right: 105px;
+}
+
+.front-page .sections .populars .hoge-link .image {
+  width: 100%;
+  height: 350px;
+  background: pink;
+}
+
+.front-page .sections .populars .hoge-link .titleset {
+  padding: 15px 20px 15px 20px;
+  height: 150px;
+  width: 100%;
+  background: white;
+}
+
+.front-page .sections .populars .hoge-link .titleset .card-title {
+  font-size: 17px;
+  color: black;
+  height: 90px;
+  padding: 0 0 0px;
+  text-align: justify;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.front-page .sections .populars .hoge-link .card {
+  width: 100%;
+  height: 505px;
+}
+
+.front-page .sections .experiences {
+  width: 50%;
+}
+
+.front-page .sections .experiences .experience-link {
+  width: 615px;
+  height: 235px;
+  padding: 25px 15px 0px 15px;
+  position: absolute;
+  right: 105px;
+}
+
+.front-page .sections .experiences .experience-link .image {
+  width: 100%;
+  height: 365px;
+  background: green;
+}
+
+.front-page .sections .experiences .experience-link .titleset {
+  padding: 15px 20px 15px 20px;
+  height: 137px;
+  width: 100%;
+  background: white;
+}
+
+.front-page .sections .experiences .experience-link .titleset .card-title {
+  font-size: 17px;
+  color: black;
+  height: 90px;
+  padding: 0 0 0px;
+  text-align: justify;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.front-page .sections .experiences .card-wrapper:first-child {
+  width: 307.5px;
   height: 235px;
 }
 
+.front-page .sections .experiences .card-wrapper:first-child .card-thumbnail {
+  height: 355px;
+}
+
+.front-page .sections .experiences .card-wrapper:first-child .titleset {
+  padding: 15px 20px 15px 20px;
+  height: 150px;
+}
+
+.front-page .sections .experiences .card-wrapper:first-child .card-title {
+  font-size: 17px;
+  height: 90px;
+}
+
+.front-page .sections .useful-infos {
+  width: 75%;
+}
+
+.front-page .sections .useful-infos .useful-info-link {
+  width: 615px;
+  height: 235px;
+  padding: 25px 15px 0px 15px;
+  position: absolute;
+  top: 2125px;
+  left: 105px;
+}
+
+.front-page .sections .useful-infos .useful-info-link .image {
+  width: 50%;
+  height: 235px;
+  background: orange;
+}
+
+.front-page .sections .useful-infos .useful-info-link .titleset {
+  padding: 15px 20px 15px 20px;
+  height: 235px;
+  width: 50%;
+  background: white;
+}
+
+.front-page .sections .useful-infos .useful-info-link .titleset .card-title {
+  font-size: 17px;
+  color: black;
+  height: 90px;
+  padding: 0 0 0px;
+  text-align: justify;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.front-page .sections .useful-infos .useful-info-link .card {
+  width: 100%;
+  height: 235px;
+  display: flex;
+}
+
+.front-page .sections .useful-infos .card-wrapper:first-child {
+  width: 305px;
+  height: 235px;
+}
+
+.front-page .sections .useful-infos .hoge-link {
+  width: 307.5px;
+  height: 500px;
+  padding: 25px 15px 0px 15px;
+  position: absolute;
+  right: 105px;
+}
+
+.front-page .sections .useful-infos .hoge-link .image {
+  width: 100%;
+  height: 350px;
+  background: greenyellow;
+}
+
+.front-page .sections .useful-infos .hoge-link .titleset {
+  padding: 15px 20px 15px 20px;
+  height: 150px;
+  width: 100%;
+  background: white;
+}
+
+.front-page .sections .useful-infos .hoge-link .titleset .card-title {
+  font-size: 17px;
+  color: black;
+  height: 90px;
+  padding: 0 0 0px;
+  text-align: justify;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.front-page .sections .useful-infos .hoge-link .card {
+  width: 100%;
+  height: 505px;
+}
+
+.front-page .cards-section-wrapper {
+  margin-bottom: 10px;
+  height: 534px;
+  justify-content: flex-end;
+}
+
 .front-page .card-wrapper {
-  width: 25%;
+  width: 307.5px;
   height: 235px;
   padding: 0px 15px 0;
 }
 
 .front-page .card {
   padding: 0;
+}
+
+.front-page .card:hover {
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
+  transition: all ease .3s;
 }
 
 .front-page .card-thumbnail {
@@ -189,12 +411,10 @@
   padding: 0 0 0px;
   height: 48px;
   text-align: justify;
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .front-page .titleset h2 {
-  display: block;
+  overflow: hidden;
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
@@ -235,14 +455,4 @@
 .front-page .label:hover {
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
-}
-
-body.home #content {
-  padding-top: 0;
-}
-
-body.home #content .wrap {
-  width: 1230px;
-  margin: 0 auto;
-  padding: 0;
 }
