@@ -19,6 +19,9 @@
   }
   .wp-block-image{
     @include responsive-img(80%);
+    figcaption {
+      text-align: center;
+    }
   }
 }
 .interview-wrapper{
