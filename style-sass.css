@@ -83,6 +83,12 @@
   float: none;
 }
 
+.left-content #main {
+  width: 75%;
+  margin: 0 auto;
+  float: none;
+}
+
 .chip-wrapper .chip {
   display: inline-flex;
   flex-direction: row;
