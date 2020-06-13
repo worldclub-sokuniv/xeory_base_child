@@ -28,11 +28,11 @@ body.home {
         padding: 25px 15px 0px 15px;
         // position: absolute; // heightを調節する
         // float: left;
-        .image {
-          width: 100%;
-          height: 365px;
-          background: blue;
-        }
+        // .image {
+        //   width: 100%;
+        //   height: 365px;
+        //   background: blue;
+        // }
         .titleset {
           padding: 15px 20px 15px 20px;
           height: 137px;
@@ -65,11 +65,11 @@ body.home {
         padding: 25px 15px 0px 15px;
         // position: absolute; // heightを調節する
         // float: left;
-        .image {
-          width: 50%;
-          height: 235px;
-          background: yellow;
-        }
+        // .image {
+        //   width: 50%;
+        //   height: 235px;
+        //   background: yellow;
+        // }
         .titleset {
           padding: 15px 20px 15px 20px;
           height: 235px;
@@ -140,10 +140,10 @@ body.home {
         // justify-content: flex-end;
         position: absolute;
         right: 105px; 
-        .image {
-          width: 100%;
-          height: 365px;
-          background: green;
+        img {
+          // width: 100%;
+          height: 367px;
+          // background: green;
         }
         .titleset {
           padding: 15px 20px 15px 20px;
@@ -190,11 +190,11 @@ body.home {
         position: absolute;
         top: 2125px;
         left: 105px;
-        .image {
-          width: 50%;
-          height: 235px;
-          background: orange;
-        }
+        // .image {
+        //   width: 50%;
+        //   height: 235px;
+        //   background: orange;
+        // }
         .titleset {
           padding: 15px 20px 15px 20px;
           height: 235px;

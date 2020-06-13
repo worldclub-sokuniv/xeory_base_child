@@ -130,12 +130,6 @@ body.home #content .wrap {
   padding: 25px 15px 0px 15px;
 }
 
-.front-page .sections .latests .latest-link .image {
-  width: 100%;
-  height: 365px;
-  background: blue;
-}
-
 .front-page .sections .latests .latest-link .titleset {
   padding: 15px 20px 15px 20px;
   height: 137px;
@@ -167,12 +161,6 @@ body.home #content .wrap {
   width: 615px;
   height: 235px;
   padding: 25px 15px 0px 15px;
-}
-
-.front-page .sections .populars .popular-link .image {
-  width: 50%;
-  height: 235px;
-  background: yellow;
 }
 
 .front-page .sections .populars .popular-link .titleset {
@@ -246,10 +234,8 @@ body.home #content .wrap {
   right: 105px;
 }
 
-.front-page .sections .experiences .experience-link .image {
-  width: 100%;
-  height: 365px;
-  background: green;
+.front-page .sections .experiences .experience-link img {
+  height: 367px;
 }
 
 .front-page .sections .experiences .experience-link .titleset {
@@ -299,12 +285,6 @@ body.home #content .wrap {
   position: absolute;
   top: 2125px;
   left: 105px;
-}
-
-.front-page .sections .useful-infos .useful-info-link .image {
-  width: 50%;
-  height: 235px;
-  background: orange;
 }
 
 .front-page .sections .useful-infos .useful-info-link .titleset {

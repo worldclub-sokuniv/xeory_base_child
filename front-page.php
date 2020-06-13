@@ -46,7 +46,7 @@ if (have_posts()){
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="latest-link">
 									<a href="http://worldclubsokalocal.local/category/article/" class="card">
-									<!-- <img src="libs/img/ssa_logo.png" width="585px" height="365px">  -->
+									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685308-768x512.jpg" width="585px" height="365px"> 
 									<div class="image"></div>
 									<div class="titleset">
 										<h2 class="card-title">最新記事一覧</h2>
@@ -98,7 +98,7 @@ if (have_posts()){
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="popular-link">
 									<a href="http://worldclubsokalocal.local/category/article/" class="card">
-									<!-- <img src="libs/img/ssa_logo.png" width="585px" height="365px">  -->
+									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685324-1024x682.jpg" width="292.5px" height="235px"> 
 									<div class="image"></div>
 									<div class="titleset">
 										<h2 class="card-title">人気記事一覧</h2>
@@ -186,7 +186,7 @@ if (have_posts()){
 							} ?>
 								<div class="experience-link">
 									<a href="http://worldclubsokalocal.local/category/experience/" class="card">
-									<!-- <img src="libs/img/ssa_logo.png" width="585px" height="365px">  -->
+									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/soccer_1567685338-1024x587.jpg" width="585px" height="365px"> 
 									<div class="image"></div>
 									<div class="titleset">
 										<h2 class="card-title">留学体験記一覧</h2>
@@ -238,7 +238,7 @@ if (have_posts()){
 							} ?>
 								<div class="useful-info-link">
 									<a href="http://worldclubsokalocal.local/category/useful-info/" class="card">
-									<!-- <img src="libs/img/ssa_logo.png" width="585px" height="365px">  -->
+									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/question_1567857425-768x512.jpg" width="292.5px" height="235px"> 
 									<div class="image"></div>
 									<div class="titleset">
 										<h2 class="card-title">お役立ち情報一覧</h2>
