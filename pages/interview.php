@@ -4,7 +4,7 @@
 
 <?php do_action( 'xeory_prepend_content' ); ?>
 
-<div class="wrap">
+<div class="wrap interview-wrapper">
 	<?php do_action( 'xeory_prepend_wrap' ); ?>
 	<?php bzb_breadcrumb(); ?>
 
@@ -67,7 +67,7 @@
 	
 	</div><!-- /main -->
 	
-	<?php get_sidebar(); ?>
+	<!-- <?php get_sidebar(); ?> -->
 
 		<?php do_action( 'xeory_append_wrap' ); ?>
 

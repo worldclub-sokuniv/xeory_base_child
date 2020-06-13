@@ -102,7 +102,7 @@ $my_query = new wp_query( $args );
 			</div><!-- /main-inner -->
 		</div><!-- /main -->
 
-	<?php get_sidebar(); ?>
+	<!-- <?php get_sidebar(); ?> -->
 
 	</div><!-- /wrap -->
 

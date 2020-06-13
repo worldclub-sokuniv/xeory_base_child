@@ -82,7 +82,8 @@
 	
 	</div><!-- /main -->
 	
-	<?php get_sidebar(); ?>
+	<!-- <?php get_sidebar(); ?> -->
+	
 
 		<?php do_action( 'xeory_append_wrap' ); ?>
 
