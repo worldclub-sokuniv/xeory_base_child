@@ -1,30 +1,3 @@
-<?php
-$tagIDs = [];
-if ( isset( $_POST ) ) {
-	if (!is_null($_POST["selectedTagIds"])) {
-		$tagIDs = array_map('intval', explode(",", $_POST["selectedTagIds"]));
-		$args["tag__in"] = $tagIDs;
-	}
-}
-
-$tags = [];
-$includedIds = [];
-if (have_posts()){
-  while(have_posts()){
-    the_post();
-    $postTags = get_the_tags();
-    if($postTags){
-      foreach($postTags as $tag){
-        if(!in_array($tag->term_id, $includedIds)){
-          array_push($tags, $tag);
-          array_push($includedIds, $tag->term_id);
-        }
-      }
-    }
-  }
-}
-?>
-
 <?php get_header(); ?>
 
 <div id="content" class="front-page">
