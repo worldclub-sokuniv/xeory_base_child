@@ -4,7 +4,7 @@
 	<div class="front-page wrap">
 		<div id="front-page main" <?php bzb_layout_main(); ?> role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
 			<div class="sections">
-				<div class="latests">
+				<div class="section1">
 					<?php
 					$json = file_get_contents(__DIR__ . '/libs/json/front_page0.json');
 					if ($json === false) {
@@ -15,9 +15,8 @@
 						$cat_title = $arg["cat_title"]; 	
 						$posts = get_posts( $arg );
 						if( $posts ): ?>
-							<!-- <div class="new-entry"><span class="fp-category-title"><?php echo $cat_title; ?></span></div> -->
 							<div class="post-loop-wrap cards-section-wrapper">
-								<div class="latest-link">
+								<div class="section1-link">
 									<a href="http://worldclubsokalocal.local/category/article/" class="card">
 									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685308-768x512.jpg" width="585px" height="365px"> 
 									<div class="image"></div>
@@ -25,7 +24,7 @@
 										<h2 class="card-title">最新記事一覧</h2>
 									</div><!-- /titleset -->
 									</a><!-- /card -->
-								</div><!-- /latest-link -->
+								</div><!-- /section1-link -->
 								<?php
 								foreach ( $posts as $post ) :
 									setup_postdata( $post );
@@ -43,7 +42,7 @@
 										</div><!-- titleset -->
 									</article>
 								</a>
-								<h2 class="tags"><?php the_tags( '', ' / ' ); ?></h2>
+								<h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2>
 								</div><!-- card-warapper -->
 							<?php endforeach; ?>
 							<?php
@@ -55,8 +54,8 @@
 							} ?>
 							</div><!-- /post-loop-wrap -->
 					<?php endforeach; ?>
-				</div><!-- /latests -->
-				<div class="populars">
+				</div><!-- /section1 -->
+				<div class="section2">
 					<?php
 					$json = file_get_contents(__DIR__ . '/libs/json/front_page1.json');
 					if ($json === false) {
@@ -67,9 +66,8 @@
 						$cat_title = $arg["cat_title"]; 	
 						$posts = get_posts( $arg );
 						if( $posts ): ?>
-							<!-- <div class="new-entry"><span class="fp-category-title"><?php echo $cat_title; ?></span></div> -->
 							<div class="post-loop-wrap cards-section-wrapper">
-								<div class="popular-link">
+								<div class="section2-link">
 									<a href="http://worldclubsokalocal.local/category/article/" class="card">
 									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685324-1024x682.jpg" width="292.5px" height="235px"> 
 									<div class="image"></div>
@@ -77,10 +75,9 @@
 										<h2 class="card-title">人気記事一覧</h2>
 									</div><!-- /titleset -->
 									</a><!-- /card -->
-								</div><!-- /popular-link -->
+								</div><!-- /section2-link -->
 								<div class="hoge-link">
 									<a href="http://worldclubsokalocal.local/category/article/" class="card">
-									<!-- <img src="libs/img/ssa_logo.png" width="585px" height="365px">  -->
 									<div class="image"></div>
 									<div class="titleset">
 										<h2 class="card-title">??????</h2>
@@ -106,7 +103,7 @@
 											</div><!-- titleset -->
 										</article>
 									</a>
-									<h2 class="tags"><?php the_tags( '', ' / ' ); ?></h2>
+									<h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2>
 								</div><!-- card-warapper -->
 							<?php endforeach; ?>
 							<?php
@@ -118,8 +115,8 @@
 							} ?>
 							</div><!-- /post-loop-wrap -->
 					<?php endforeach; ?>
-				</div><!-- /populars -->
-				<div class="experiences">
+				</div><!-- /section2 -->
+				<div class="section3">
 					<?php
 					$json = file_get_contents(__DIR__ . '/libs/json/front_page2.json');
 					if ($json === false) {
@@ -130,7 +127,6 @@
 						$cat_title = $arg["cat_title"]; 	
 						$posts = get_posts( $arg );
 						if( $posts ): ?>
-							<!-- <div class="new-entry"><span class="fp-category-title"><?php echo $cat_title; ?></span></div> -->
 							<div class="post-loop-wrap cards-section-wrapper">
 								<?php
 								foreach ( $posts as $post ) :
@@ -149,7 +145,7 @@
 													</div><!-- titleset -->
 												</article>
 											</a>
-											<h2 class="tags"><?php the_tags( '', ' / ' ); ?></h2>
+											<h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2>
 										</div><!-- card-warapper -->
 										<?php endforeach; ?>
 										<?php
@@ -159,7 +155,7 @@
 							<?php if (function_exists("pagination")) {
 								pagination($wp_query->max_num_pages);
 							} ?>
-								<div class="experience-link">
+								<div class="section3-link">
 									<a href="http://worldclubsokalocal.local/category/experience/" class="card">
 									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/soccer_1567685338-1024x587.jpg" width="585px" height="365px"> 
 									<div class="image"></div>
@@ -167,11 +163,11 @@
 										<h2 class="card-title">留学体験記一覧</h2>
 									</div><!-- /titleset -->
 									</a><!-- /card -->
-								</div><!-- /experience-link -->
+								</div><!-- /section3-link -->
 							</div><!-- /post-loop-wrap -->
 					<?php endforeach; ?>
-				</div><!-- /ecperiences -->
-				<div class="useful-infos">
+				</div><!-- /section3 -->
+				<div class="section4">
 					<?php
 					$json = file_get_contents(__DIR__ . '/libs/json/front_page3.json');
 					if ($json === false) {
@@ -182,7 +178,6 @@
 						$cat_title = $arg["cat_title"]; 	
 						$posts = get_posts( $arg );
 						if( $posts ): ?>
-							<!-- <div class="new-entry"><span class="fp-category-title"><?php echo $cat_title; ?></span></div> -->
 							<div class="post-loop-wrap cards-section-wrapper">
 								<?php
 								foreach ( $posts as $post ) :
@@ -201,7 +196,7 @@
 													</div><!-- titleset -->
 												</article>
 											</a>
-											<h2 class="tags"><?php the_tags( '', ' / ' ); ?></h2>
+											<h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2>
 										</div><!-- card-warapper -->
 										<?php endforeach; ?>
 										<?php
@@ -211,7 +206,7 @@
 							<?php if (function_exists("pagination")) {
 								pagination($wp_query->max_num_pages);
 							} ?>
-								<div class="useful-info-link">
+								<div class="section4-link">
 									<a href="http://worldclubsokalocal.local/category/useful-info/" class="card">
 									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/question_1567857425-768x512.jpg" width="292.5px" height="235px"> 
 									<div class="image"></div>
@@ -219,10 +214,9 @@
 										<h2 class="card-title">お役立ち情報一覧</h2>
 									</div><!-- /titleset -->
 									</a><!-- /card -->
-								</div><!-- /usuful-info-link -->
+								</div><!-- /section4-link -->
 								<div class="hoge-link">
 									<a href="http://worldclubsokalocal.local/category/article/" class="card">
-									<!-- <img src="libs/img/ssa_logo.png" width="585px" height="365px">  -->
 									<div class="image"></div>
 									<div class="titleset">
 									<h2 class="card-title">??????</h2>
@@ -231,7 +225,7 @@
 								</div><!-- /hoge-link -->
 							</div><!-- /post-loop-wrap -->
 					<?php endforeach; ?>
-				</div><!-- /useful-infos -->
+				</div><!-- /section4 -->
 			</div><!-- /sections -->
 		</div><!-- /main -->
 		

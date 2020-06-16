@@ -19,9 +19,9 @@ body.home {
     margin-right: 0;
     width: 1230px;
     // justify-content: flex-end;
-    .latests {
+    .section1 {
       justify-content: flex-end;
-      .latest-link {
+      .section1-link {
         width: 50%;
         height: 235px;
         // height: 500px;
@@ -58,9 +58,9 @@ body.home {
         }
       }
     }
-    .populars {
+    .section2 {
       width: 75%;
-      .popular-link {
+      .section2-link {
         // margin-top: 30px;
         width: 615px;
         height: 235px;
@@ -133,9 +133,9 @@ body.home {
       //   padding-right: 100px;
       // }
     }
-    .experiences{
+    .section3 {
       width: 50%;
-      .experience-link {
+      .section3-link {
         width: 615px;
         height: 235px;
         padding: 25px 15px 0px 15px;
@@ -182,9 +182,9 @@ body.home {
         }
       }
     }
-    .useful-infos{
+    .section4 {
       width: 75%;
-      .useful-info-link {
+      .section4-link {
         // margin-top: 30px;
         width: 615px;
         height: 235px;
@@ -335,11 +335,12 @@ body.home {
     }
   }
   .tags {
-    font-size: 12px;
+    font-size: 11px;
     display: inline-block;
     position: relative;
-    right: -96px;
+    right: -100px;
     top: -30px;
+    color: #2581c4;
   }
   .tags:after {
     position: absolute;
