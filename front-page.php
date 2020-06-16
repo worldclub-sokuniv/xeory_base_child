@@ -40,10 +40,10 @@
 										<div class ="titleset">
 											<h2 class="card-title"><?php the_title(); ?></h2>
 											<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
-											<!-- <?php get_the_tags(); ?> -->
 										</div><!-- titleset -->
 									</article>
 								</a>
+								<h2 class="tags"><?php the_tags( '', ' / ' ); ?></h2>
 								</div><!-- card-warapper -->
 							<?php endforeach; ?>
 							<?php
@@ -100,11 +100,13 @@
 											<?php } ?>
 											<div class ="titleset">
 												<h2 class="card-title"><?php the_title(); ?></h2>
-												<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
-												<!-- <?php get_the_tags(); ?> -->
+												<span>
+													<i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?>
+												</span>
 											</div><!-- titleset -->
 										</article>
 									</a>
+									<h2 class="tags"><?php the_tags( '', ' / ' ); ?></h2>
 								</div><!-- card-warapper -->
 							<?php endforeach; ?>
 							<?php
@@ -144,10 +146,10 @@
 													<div class ="titleset">
 														<h2 class="card-title"><?php the_title(); ?></h2>
 														<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
-														<!-- <?php get_the_tags(); ?> -->
 													</div><!-- titleset -->
 												</article>
 											</a>
+											<h2 class="tags"><?php the_tags( '', ' / ' ); ?></h2>
 										</div><!-- card-warapper -->
 										<?php endforeach; ?>
 										<?php
@@ -196,10 +198,10 @@
 													<div class ="titleset">
 														<h2 class="card-title"><?php the_title(); ?></h2>
 														<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
-														<!-- <?php get_the_tags(); ?> -->
 													</div><!-- titleset -->
 												</article>
 											</a>
+											<h2 class="tags"><?php the_tags( '', ' / ' ); ?></h2>
 										</div><!-- card-warapper -->
 										<?php endforeach; ?>
 										<?php

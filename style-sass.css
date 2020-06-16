@@ -130,13 +130,6 @@ body.home #content .wrap {
   padding: 25px 15px 0px 15px;
 }
 
-.front-page .sections .latests .latest-link .titleset {
-  padding: 15px 20px 15px 20px;
-  height: 137px;
-  width: 100%;
-  background: white;
-}
-
 .front-page .sections .latests .latest-link .titleset .card-title {
   font-size: 20px;
   color: black;
@@ -161,13 +154,6 @@ body.home #content .wrap {
   width: 615px;
   height: 235px;
   padding: 25px 15px 0px 15px;
-}
-
-.front-page .sections .populars .popular-link .titleset {
-  padding: 15px 20px 15px 20px;
-  height: 235px;
-  width: 50%;
-  background: white;
 }
 
 .front-page .sections .populars .popular-link .titleset .card-title {
@@ -239,10 +225,7 @@ body.home #content .wrap {
 }
 
 .front-page .sections .experiences .experience-link .titleset {
-  padding: 15px 20px 15px 20px;
   height: 137px;
-  width: 100%;
-  background: white;
 }
 
 .front-page .sections .experiences .experience-link .titleset .card-title {
@@ -285,13 +268,6 @@ body.home #content .wrap {
   position: absolute;
   top: 2125px;
   left: 105px;
-}
-
-.front-page .sections .useful-infos .useful-info-link .titleset {
-  padding: 15px 20px 15px 20px;
-  height: 235px;
-  width: 50%;
-  background: white;
 }
 
 .front-page .sections .useful-infos .useful-info-link .titleset .card-title {
@@ -384,6 +360,8 @@ body.home #content .wrap {
 .front-page .titleset {
   padding: 15px 15px 10px 15px;
   height: 93px;
+  width: 100%;
+  background-color: white;
 }
 
 .front-page .titleset .card-title {
@@ -404,6 +382,20 @@ body.home #content .wrap {
 .front-page .titleset i, .front-page .titleset span {
   font-size: 12px;
   vertical-align: middle;
+}
+
+.front-page .tags {
+  font-size: 12px;
+  display: inline-block;
+  position: relative;
+  right: -96px;
+  top: -30px;
+}
+
+.front-page .tags:after {
+  position: absolute;
+  content: '';
+  z-index: 1;
 }
 
 .front-page .label {

@@ -34,10 +34,10 @@ body.home {
         //   background: blue;
         // }
         .titleset {
-          padding: 15px 20px 15px 20px;
-          height: 137px;
-          width: 100%;
-          background: white;
+          // padding: 15px 20px 15px 20px;
+          // height: 137px;
+          // width: 100%;
+          // background: white;
           .card-title {
             font-size: 20px;
             color: black;
@@ -48,6 +48,9 @@ body.home {
             display: table-cell;
             vertical-align: middle;
           }
+          // .front-cat-content {
+          //   padding: 0px;
+          // }
         }
         .card {
           width: 100%;
@@ -71,10 +74,10 @@ body.home {
         //   background: yellow;
         // }
         .titleset {
-          padding: 15px 20px 15px 20px;
-          height: 235px;
-          width: 50%;
-          background: white;
+          // padding: 15px 20px 15px 20px;
+          // height: 235px;
+          // width: 50%;
+          // background: white;
           .card-title {
             font-size: 17px;
             color: black;
@@ -146,10 +149,10 @@ body.home {
           // background: green;
         }
         .titleset {
-          padding: 15px 20px 15px 20px;
+          // padding: 15px 20px 15px 20px;
           height: 137px;
-          width: 100%;
-          background: white;
+          // width: 100%;
+          // background: white;
           .card-title {
             font-size: 17px;
             color: black;
@@ -196,10 +199,10 @@ body.home {
         //   background: orange;
         // }
         .titleset {
-          padding: 15px 20px 15px 20px;
-          height: 235px;
-          width: 50%;
-          background: white;
+          // padding: 15px 20px 15px 20px;
+          // height: 235px;
+          // width: 50%;
+          // background: white;
           .card-title {
             font-size: 17px;
             color: black;
@@ -306,6 +309,8 @@ body.home {
   .titleset {
     padding: 15px 15px 10px 15px;
     height: 93px;
+    width: 100%;
+    background-color: white;
     // padding-bottom: 28%;
     // padding-top: 6%;
     .card-title {
@@ -328,6 +333,18 @@ body.home {
       font-size: 12px;
       vertical-align: middle;
     }
+  }
+  .tags {
+    font-size: 12px;
+    display: inline-block;
+    position: relative;
+    right: -96px;
+    top: -30px;
+  }
+  .tags:after {
+    position: absolute;
+    content: '';
+    z-index: 1;
   }
   .label {
     background-color: #66a6ff;
