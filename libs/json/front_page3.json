@@ -1,9 +1,0 @@
-{
-	"0": {
-		"posts_per_page" : 4, 
-		"orderby" : "date",
-		"order" : "DESC",
-		"category_name" : "useful-info",
-		"cat_title": "お役立ち情報"
-	}
-}

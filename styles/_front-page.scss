@@ -18,26 +18,13 @@ body.home {
   .sections{
     margin-right: 0;
     width: 1230px;
-    // justify-content: flex-end;
     .section1 {
       justify-content: flex-end;
       .section1-link {
         width: 50%;
         height: 235px;
-        // height: 500px;
         padding: 25px 15px 0px 15px;
-        // position: absolute; // heightを調節する
-        // float: left;
-        // .image {
-        //   width: 100%;
-        //   height: 365px;
-        //   background: blue;
-        // }
         .titleset {
-          // padding: 15px 20px 15px 20px;
-          // height: 137px;
-          // width: 100%;
-          // background: white;
           .card-title {
             font-size: 20px;
             color: black;
@@ -48,9 +35,6 @@ body.home {
             display: table-cell;
             vertical-align: middle;
           }
-          // .front-cat-content {
-          //   padding: 0px;
-          // }
         }
         .card {
           width: 100%;
@@ -61,28 +45,14 @@ body.home {
     .section2 {
       width: 75%;
       .section2-link {
-        // margin-top: 30px;
         width: 615px;
         height: 235px;
-        // height: 500px;
         padding: 25px 15px 0px 15px;
-        // position: absolute; // heightを調節する
-        // float: left;
-        // .image {
-        //   width: 50%;
-        //   height: 235px;
-        //   background: yellow;
-        // }
         .titleset {
-          // padding: 15px 20px 15px 20px;
-          // height: 235px;
-          // width: 50%;
-          // background: white;
           .card-title {
             font-size: 17px;
             color: black;
             height: 90px;
-            // width: 545px;
             padding: 0 0 0px;
             text-align: justify;
             display: table-cell;
@@ -96,11 +66,9 @@ body.home {
         }
       }
       .hoge-link {
-        // margin-top: 30px;
         width: 307.5px;
         height: 500px;
         padding: 25px 15px 0px 15px;
-        // justify-content: flex-end;
         position: absolute; 
         right: 105px;
         .image {
@@ -117,7 +85,6 @@ body.home {
             font-size: 17px;
             color: black;
             height: 90px;
-            // width: 545px;
             padding: 0 0 0px;
             text-align: justify;
             display: table-cell;
@@ -129,9 +96,6 @@ body.home {
           height: 505px;
         }
       }
-      // .card-wrapper:first-child {
-      //   padding-right: 100px;
-      // }
     }
     .section3 {
       width: 50%;
@@ -139,25 +103,17 @@ body.home {
         width: 615px;
         height: 235px;
         padding: 25px 15px 0px 15px;
-        // position: absolute; // heightを調節する
-        // justify-content: flex-end;
         position: absolute;
         right: 105px; 
         img {
-          // width: 100%;
           height: 367px;
-          // background: green;
         }
         .titleset {
-          // padding: 15px 20px 15px 20px;
           height: 137px;
-          // width: 100%;
-          // background: white;
           .card-title {
             font-size: 17px;
             color: black;
             height: 90px;
-            // width: 545px;
             padding: 0 0 0px;
             text-align: justify;
             display: table-cell;
@@ -178,36 +134,23 @@ body.home {
         .card-title {
           font-size: 17px;
           height: 90px;
-          // width: 277.5px;
         }
       }
     }
     .section4 {
       width: 75%;
       .section4-link {
-        // margin-top: 30px;
         width: 615px;
         height: 235px;
-        // height: 500px;
         padding: 25px 15px 0px 15px;
         position: absolute;
-        top: 2125px;
+        top: 2092px;
         left: 105px;
-        // .image {
-        //   width: 50%;
-        //   height: 235px;
-        //   background: orange;
-        // }
         .titleset {
-          // padding: 15px 20px 15px 20px;
-          // height: 235px;
-          // width: 50%;
-          // background: white;
           .card-title {
             font-size: 17px;
             color: black;
             height: 90px;
-            // width: 545px;
             padding: 0 0 0px;
             text-align: justify;
             display: table-cell;
@@ -225,11 +168,9 @@ body.home {
         height: 235px;
       }
       .hoge-link {
-        // margin-top: 30px;
         width: 307.5px;
         height: 500px;
         padding: 25px 15px 0px 15px;
-        // justify-content: flex-end;
         position: absolute; 
         right: 105px;
         .image {
@@ -246,7 +187,6 @@ body.home {
             font-size: 17px;
             color: black;
             height: 90px;
-            // width: 545px;
             padding: 0 0 0px;
             text-align: justify;
             display: table-cell;
@@ -261,43 +201,22 @@ body.home {
     }
   }
   .cards-section-wrapper {
-    // margin-top: 30px;
     margin-bottom: 10px;
-    // height: 800px;
-    // height: 1070px;
     height: 534px;
-    // position: absolute;
-    // position: relative;
-    // display: flex;
-    // flex-wrap: wrap;
     justify-content: flex-end;
-    // flex-flow: row wrap;
-    // display: grid;
-    // gap: 30px;
-    // grid-template-columns: 585px 277.5px 277.5px;
-    // grid-template-rows: 235px;
-    // grid-row: 1 / 2;
   }
   .card-wrapper {
     width: 307.5px;
     height: 235px;
     padding: 0px 15px 0;
-    // position: absolute;
-    // bottom: 0;
-    // margin-top: 30px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: flex-end;
-    // flex-flow: row wrap;
   }
   .card {
-    // height: 235px;
     padding: 0;
-  }
-  .card:hover{
-    box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
-    text-decoration: none;
-    transition: all ease .3s;
+    &:hover{
+      box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+      text-decoration: none;
+      transition: all ease .3s;
+    }
   }
   .card-thumbnail {
     background-size: cover;
@@ -311,8 +230,6 @@ body.home {
     height: 93px;
     width: 100%;
     background-color: white;
-    // padding-bottom: 28%;
-    // padding-top: 6%;
     .card-title {
       font-size: 15px;
       padding: 0 0 0px;
@@ -320,10 +237,7 @@ body.home {
       text-align: justify;
     }
     h2 {
-      // display: block;
       overflow: hidden;
-      // display: table-cell;
-      // vertical-align: middle;
       margin-block-start: 0em;
       margin-block-end: 0em;
       margin-inline-start: 0px;
@@ -334,23 +248,9 @@ body.home {
       vertical-align: middle;
     }
   }
-  .tags {
-    font-size: 11px;
-    display: inline-block;
-    position: relative;
-    right: -100px;
-    top: -30px;
-    color: #2581c4;
-  }
-  .tags:after {
-    position: absolute;
-    content: '';
-    z-index: 1;
-  }
   .label {
     background-color: #66a6ff;
     background: linear-gradient(to right, #66a6ff 0%, #5de3e8 100%);
-    // position: fixed;
     left: -10px;
     top: 18px;
     width: 120px;
@@ -364,16 +264,24 @@ body.home {
     z-index: 2;
     display: inline-block;
     position: relative;
+    &:hover{
+      box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+      text-decoration: none;
+    }
+    &:after {
+      position: absolute;
+      content: '';
+      width: 0px;
+      height: 0px;
+      z-index: 1;
+    }
   }
-  .label:after {
-    position: absolute;
-    content: '';
-    width: 0px;
-    height: 0px;
-    z-index: 1;
-  }
-  .label:hover{
-    box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
-    text-decoration: none;
+  .tags {
+    font-size: 11px;
+    display: inline-block;
+    position: relative;
+    right: -100px;
+    top: -30px;
+    color: #2581c4;
   }
 }

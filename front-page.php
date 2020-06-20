@@ -6,14 +6,13 @@
 			<div class="sections">
 				<div class="section1">
 					<?php
-					$json = file_get_contents(__DIR__ . '/libs/json/front_page0.json');
-					if ($json === false) {
-						throw new \RuntimeException('file not found.');
-					}
-					$data = json_decode($json, true);
-					foreach ( $data as $arg ) :
-						$cat_title = $arg["cat_title"]; 	
-						$posts = get_posts( $arg );
+					$data = ["posts_per_page" => 4, 
+										"orderby" => "date",
+										"order" => "DESC",
+										"cat_title" => "最新記事"
+									];
+						$cat_title = $data["cat_title"];
+						$posts = get_posts( $data );
 						if( $posts ): ?>
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="section1-link">
@@ -53,18 +52,17 @@
 								pagination($wp_query->max_num_pages);
 							} ?>
 							</div><!-- /post-loop-wrap -->
-					<?php endforeach; ?>
 				</div><!-- /section1 -->
 				<div class="section2">
 					<?php
-					$json = file_get_contents(__DIR__ . '/libs/json/front_page1.json');
-					if ($json === false) {
-						throw new \RuntimeException('file not found.');
-					}
-					$data = json_decode($json, true);
-					foreach ( $data as $arg ) :
-						$cat_title = $arg["cat_title"]; 	
-						$posts = get_posts( $arg );
+					$data = ["meta_key" => "views",
+										"posts_per_page" => 4, 
+										"orderby" => "meta_value_num",
+										"order" => "DESC",
+										"cat_title" => "人気記事"
+									];
+						$cat_title = $data["cat_title"];
+						$posts = get_posts( $data );
 						if( $posts ): ?>
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="section2-link">
@@ -114,18 +112,17 @@
 								pagination($wp_query->max_num_pages);
 							} ?>
 							</div><!-- /post-loop-wrap -->
-					<?php endforeach; ?>
 				</div><!-- /section2 -->
 				<div class="section3">
 					<?php
-					$json = file_get_contents(__DIR__ . '/libs/json/front_page2.json');
-					if ($json === false) {
-						throw new \RuntimeException('file not found.');
-					}
-					$data = json_decode($json, true);
-					foreach ( $data as $arg ) :
-						$cat_title = $arg["cat_title"]; 	
-						$posts = get_posts( $arg );
+					$data = ["posts_per_page" => 3, 
+										"orderby" => "date",
+										"order" => "DESC",
+										"category_name" => "experience",
+										"cat_title" => "留学体験記"
+									];
+						$cat_title = $data["cat_title"]; 	
+						$posts = get_posts( $data );
 						if( $posts ): ?>
 							<div class="post-loop-wrap cards-section-wrapper">
 								<?php
@@ -165,18 +162,17 @@
 									</a><!-- /card -->
 								</div><!-- /section3-link -->
 							</div><!-- /post-loop-wrap -->
-					<?php endforeach; ?>
 				</div><!-- /section3 -->
 				<div class="section4">
 					<?php
-					$json = file_get_contents(__DIR__ . '/libs/json/front_page3.json');
-					if ($json === false) {
-						throw new \RuntimeException('file not found.');
-					}
-					$data = json_decode($json, true);
-					foreach ( $data as $arg ) :
-						$cat_title = $arg["cat_title"]; 	
-						$posts = get_posts( $arg );
+					$data = ["posts_per_page" => 4,
+										"orderby" => "date",
+										"order" => "DESC",
+										"category_name" => "useful-info",
+										"cat_title" => "お役立ち情報"
+									];
+						$cat_title = $data["cat_title"];
+						$posts = get_posts( $data );
 						if( $posts ): ?>
 							<div class="post-loop-wrap cards-section-wrapper">
 								<?php
@@ -224,7 +220,6 @@
 									</a><!-- /card -->
 								</div><!-- /hoge-link -->
 							</div><!-- /post-loop-wrap -->
-					<?php endforeach; ?>
 				</div><!-- /section4 -->
 			</div><!-- /sections -->
 		</div><!-- /main -->
