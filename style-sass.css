@@ -104,8 +104,8 @@ body.home #content {
 }
 
 body.home #content .wrap {
-  width: 1230px;
   height: 2200px;
+  width: 85%;
   margin: 0 auto;
   padding: 0;
 }
@@ -117,7 +117,7 @@ body.home #content .wrap {
 
 .front-page .sections {
   margin-right: 0;
-  width: 1230px;
+  width: 100%;
 }
 
 .front-page .sections .section1 {
@@ -134,7 +134,7 @@ body.home #content .wrap {
   font-size: 20px;
   color: black;
   height: 90px;
-  width: 545px;
+  width: 100%;
   padding: 0 0 0px;
   text-align: justify;
   display: table-cell;
@@ -146,17 +146,25 @@ body.home #content .wrap {
   height: 505px;
 }
 
+.front-page .sections .section1 .card-wrapper {
+  width: 25%;
+}
+
 .front-page .sections .section2 {
+  display: flex;
+}
+
+.front-page .sections .section2 .post-loop {
   width: 75%;
 }
 
-.front-page .sections .section2 .section2-link {
-  width: 615px;
+.front-page .sections .section2 .post-loop .section2-link {
+  width: 66.66%;
   height: 235px;
   padding: 25px 15px 0px 15px;
 }
 
-.front-page .sections .section2 .section2-link .titleset .card-title {
+.front-page .sections .section2 .post-loop .section2-link .titleset .card-title {
   font-size: 17px;
   color: black;
   height: 90px;
@@ -166,18 +174,16 @@ body.home #content .wrap {
   vertical-align: middle;
 }
 
-.front-page .sections .section2 .section2-link .card {
+.front-page .sections .section2 .post-loop .card {
   width: 100%;
   height: 235px;
   display: flex;
 }
 
 .front-page .sections .section2 .hoge-link {
-  width: 307.5px;
+  width: 25%;
   height: 500px;
   padding: 25px 15px 0px 15px;
-  position: absolute;
-  right: 105px;
 }
 
 .front-page .sections .section2 .hoge-link .image {
@@ -205,19 +211,48 @@ body.home #content .wrap {
 
 .front-page .sections .section2 .hoge-link .card {
   width: 100%;
-  height: 505px;
+  height: 500px;
+}
+
+.front-page .sections .section2 .card-wrapper {
+  width: 33.3%;
 }
 
 .front-page .sections .section3 {
+  display: flex;
+}
+
+.front-page .sections .section3 .post-loop {
+  width: 50%;
+}
+
+.front-page .sections .section3 .post-loop .card-wrapper:first-child {
+  width: 50%;
+  height: 235px;
+}
+
+.front-page .sections .section3 .post-loop .card-wrapper:first-child .card-thumbnail {
+  height: 355px;
+}
+
+.front-page .sections .section3 .post-loop .card-wrapper:first-child .titleset {
+  padding: 15px 20px 15px 20px;
+  height: 150px;
+}
+
+.front-page .sections .section3 .post-loop .card-wrapper:first-child .card-title {
+  font-size: 17px;
+  height: 90px;
+}
+
+.front-page .sections .section3 .post-loop .card-wrapper {
   width: 50%;
 }
 
 .front-page .sections .section3 .section3-link {
-  width: 615px;
+  width: 50%;
   height: 235px;
   padding: 25px 15px 0px 15px;
-  position: absolute;
-  right: 105px;
 }
 
 .front-page .sections .section3 .section3-link img {
@@ -238,36 +273,18 @@ body.home #content .wrap {
   vertical-align: middle;
 }
 
-.front-page .sections .section3 .card-wrapper:first-child {
-  width: 307.5px;
-  height: 235px;
-}
-
-.front-page .sections .section3 .card-wrapper:first-child .card-thumbnail {
-  height: 355px;
-}
-
-.front-page .sections .section3 .card-wrapper:first-child .titleset {
-  padding: 15px 20px 15px 20px;
-  height: 150px;
-}
-
-.front-page .sections .section3 .card-wrapper:first-child .card-title {
-  font-size: 17px;
-  height: 90px;
-}
-
 .front-page .sections .section4 {
+  display: flex;
+}
+
+.front-page .sections .section4 .post-loop {
   width: 75%;
 }
 
 .front-page .sections .section4 .section4-link {
-  width: 615px;
+  width: 66.66%;
   height: 235px;
   padding: 25px 15px 0px 15px;
-  position: absolute;
-  top: 2092px;
-  left: 105px;
 }
 
 .front-page .sections .section4 .section4-link .titleset .card-title {
@@ -286,17 +303,15 @@ body.home #content .wrap {
   display: flex;
 }
 
-.front-page .sections .section4 .card-wrapper:first-child {
-  width: 305px;
+.front-page .sections .section4 .card-wrapper {
+  width: 33.3%;
   height: 235px;
 }
 
 .front-page .sections .section4 .hoge-link {
-  width: 307.5px;
+  width: 25.4%;
   height: 500px;
   padding: 25px 15px 0px 15px;
-  position: absolute;
-  right: 105px;
 }
 
 .front-page .sections .section4 .hoge-link .image {
@@ -334,7 +349,6 @@ body.home #content .wrap {
 }
 
 .front-page .card-wrapper {
-  width: 307.5px;
   height: 235px;
   padding: 0px 15px 0;
 }
@@ -389,7 +403,7 @@ body.home #content .wrap {
   background: linear-gradient(to right, #66a6ff 0%, #5de3e8 100%);
   left: -10px;
   top: 18px;
-  width: 120px;
+  width: 43%;
   height: 24px;
   padding-left: 0.1em;
   line-height: 26px;

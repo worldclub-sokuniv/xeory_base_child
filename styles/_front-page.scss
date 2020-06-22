@@ -3,8 +3,8 @@ body.home {
     padding: 0 0 30px 0;
     height: 2200px;
     .wrap {
-      width: 1230px;
       height: 2200px;
+      width: 85%;
       margin: 0 auto;
       padding: 0;
     }
@@ -17,7 +17,7 @@ body.home {
   }
   .sections{
     margin-right: 0;
-    width: 1230px;
+    width: 100%;
     .section1 {
       justify-content: flex-end;
       .section1-link {
@@ -29,7 +29,7 @@ body.home {
             font-size: 20px;
             color: black;
             height: 90px;
-            width: 545px;
+            width: 100%;
             padding: 0 0 0px;
             text-align: justify;
             display: table-cell;
@@ -41,22 +41,28 @@ body.home {
           height: 505px;
         }
       }
+      .card-wrapper {
+        width: 25%;
+      }
     }
     .section2 {
-      width: 75%;
-      .section2-link {
-        width: 615px;
-        height: 235px;
-        padding: 25px 15px 0px 15px;
-        .titleset {
-          .card-title {
-            font-size: 17px;
-            color: black;
-            height: 90px;
-            padding: 0 0 0px;
-            text-align: justify;
-            display: table-cell;
-            vertical-align: middle;
+      display: flex;
+      .post-loop {
+        width: 75%;
+        .section2-link {
+          width: 66.66%;
+          height: 235px;
+          padding: 25px 15px 0px 15px;
+          .titleset {
+            .card-title {
+              font-size: 17px;
+              color: black;
+              height: 90px;
+              padding: 0 0 0px;
+              text-align: justify;
+              display: table-cell;
+              vertical-align: middle;
+            }
           }
         }
         .card {
@@ -66,11 +72,9 @@ body.home {
         }
       }
       .hoge-link {
-        width: 307.5px;
+        width: 25%;
         height: 500px;
         padding: 25px 15px 0px 15px;
-        position: absolute; 
-        right: 105px;
         .image {
           width: 100%;
           height: 350px;
@@ -93,18 +97,40 @@ body.home {
         }
         .card {
           width: 100%;
-          height: 505px;
+          height: 500px;
         }
+      }
+      .card-wrapper {
+        width: 33.3%;
       }
     }
     .section3 {
-      width: 50%;
+      display: flex;
+      .post-loop {
+        width: 50%;
+        .card-wrapper:first-child {
+          width: 50%;
+          height: 235px;
+          .card-thumbnail {
+            height: 355px;
+          }
+          .titleset {
+            padding: 15px 20px 15px 20px;
+            height: 150px;
+          }
+          .card-title {
+            font-size: 17px;
+            height: 90px;
+          }
+        }
+        .card-wrapper {
+          width: 50%;
+        }
+      }
       .section3-link {
-        width: 615px;
+        width: 50%;
         height: 235px;
         padding: 25px 15px 0px 15px;
-        position: absolute;
-        right: 105px; 
         img {
           height: 367px;
         }
@@ -121,31 +147,17 @@ body.home {
           }
         }
       }
-      .card-wrapper:first-child {
-        width: 307.5px;
-        height: 235px;
-        .card-thumbnail {
-          height: 355px;
-        }
-        .titleset {
-            padding: 15px 20px 15px 20px;
-            height: 150px;
-          }
-        .card-title {
-          font-size: 17px;
-          height: 90px;
-        }
-      }
     }
     .section4 {
-      width: 75%;
+      display: flex;
+      .post-loop {
+        width: 75%;
+
+      }
       .section4-link {
-        width: 615px;
+        width: 66.66%;
         height: 235px;
         padding: 25px 15px 0px 15px;
-        position: absolute;
-        top: 2092px;
-        left: 105px;
         .titleset {
           .card-title {
             font-size: 17px;
@@ -163,16 +175,14 @@ body.home {
           display: flex;
         }
       }
-      .card-wrapper:first-child {
-        width: 305px;
+      .card-wrapper {
+        width: 33.3%;
         height: 235px;
       }
       .hoge-link {
-        width: 307.5px;
+        width: 25.4%;
         height: 500px;
         padding: 25px 15px 0px 15px;
-        position: absolute; 
-        right: 105px;
         .image {
           width: 100%;
           height: 350px;
@@ -206,7 +216,6 @@ body.home {
     justify-content: flex-end;
   }
   .card-wrapper {
-    width: 307.5px;
     height: 235px;
     padding: 0px 15px 0;
   }
@@ -253,7 +262,7 @@ body.home {
     background: linear-gradient(to right, #66a6ff 0%, #5de3e8 100%);
     left: -10px;
     top: 18px;
-    width: 120px;
+    width: 43%;
     height: 24px;
     padding-left: 0.1em;
     line-height: 26px;
