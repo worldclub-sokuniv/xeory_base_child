@@ -36,7 +36,16 @@
 												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 										<?php } ?>
 										<div class ="titleset">
-											<h2 class="card-title"><?php the_title(); ?></h2>
+											<h2 class="card-title">
+												<?php
+												if(mb_strlen($post->post_title)>32) {
+													$title= mb_substr($post->post_title,0,32) ;
+														echo $title . '...';
+													} else {
+														echo $post->post_title;
+													}
+												?>
+											</h2>
 											<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
 										</div><!-- titleset -->
 									</article>
@@ -87,7 +96,16 @@
 												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 										<?php } ?>
 										<div class ="titleset">
-											<h2 class="card-title"><?php the_title(); ?></h2>
+											<h2 class="card-title">
+												<?php
+												if(mb_strlen($post->post_title)>32) {
+													$title= mb_substr($post->post_title,0,32) ;
+														echo $title . '...';
+													} else {
+														echo $post->post_title;
+													}
+												?>
+											</h2>
 											<span>
 												<i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?>
 											</span>
@@ -140,7 +158,16 @@
 													<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 													<?php } ?>
 													<div class ="titleset">
-														<h2 class="card-title"><?php the_title(); ?></h2>
+														<h2 class="card-title">
+															<?php
+															if(mb_strlen($post->post_title)>32) {
+																$title= mb_substr($post->post_title,0,32) ;
+																	echo $title . '...';
+																} else {
+																	echo $post->post_title;
+																}
+															?>
+														</h2>
 														<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
 													</div><!-- titleset -->
 												</article>
@@ -201,7 +228,16 @@
 													<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 													<?php } ?>
 													<div class ="titleset">
-														<h2 class="card-title"><?php the_title(); ?></h2>
+														<h2 class="card-title">
+															<?php
+															if(mb_strlen($post->post_title)>32) {
+																$title= mb_substr($post->post_title,0,32) ;
+																	echo $title . '...';
+																} else {
+																	echo $post->post_title;
+																}
+															?>
+														</h2>
 														<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
 													</div><!-- titleset -->
 												</article>
