@@ -32,7 +32,7 @@
 								<a href="<?php the_permalink(); ?>" class="card">
 									<article class="card-content-wrapper">
 										<?php if ( get_the_post_thumbnail() ) { ?>
-												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+											<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 										<?php } ?>
 										<div class ="titleset">
 											<h2 class="card-title">
@@ -88,11 +88,11 @@
 									setup_postdata( $post );
 							?>
 								<div class="card-wrapper  front-page-card">
-								<a href="http://worldclubsokalocal.local/category/article/interview/" class="label">インタビュー</a>
+								<a href="http://worldclubsokalocal.local/category/article/interview/" class="label">Interview</a>
 								<a href="<?php the_permalink(); ?>" class="card">
 									<article class="card-content-wrapper">
 										<?php if ( get_the_post_thumbnail() ) { ?>
-												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+											<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 										<?php } ?>
 										<div class ="titleset">
 											<h2 class="card-title">
@@ -154,22 +154,22 @@
 									<a href="<?php the_permalink(); ?>" class="card">
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>
-													<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
-													<?php } ?>
-													<div class ="titleset">
-														<h2 class="card-title">
-															<?php
-															if(mb_strlen($post->post_title)>32) {
-																$title= mb_substr($post->post_title,0,32) ;
-																	echo $title . '...';
-																} else {
-																	echo $post->post_title;
-																}
-															?>
-														</h2>
-														<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
-													</div><!-- titleset -->
-												</article>
+												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+											<?php } ?>
+												<div class ="titleset">
+													<h2 class="card-title">
+														<?php
+														if(mb_strlen($post->post_title)>32) {
+															$title= mb_substr($post->post_title,0,32) ;
+																echo $title . '...';
+															} else {
+																echo $post->post_title;
+															}
+														?>
+													</h2>
+													<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
+												</div><!-- titleset -->
+										</article>
 											</a>
 											<!-- <h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2> -->
 										</div><!-- card-warapper -->
@@ -224,27 +224,27 @@
 									<a href="<?php the_permalink(); ?>" class="card">
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>
-													<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
-													<?php } ?>
-													<div class ="titleset">
-														<h2 class="card-title">
-															<?php
-															if(mb_strlen($post->post_title)>32) {
-																$title= mb_substr($post->post_title,0,32) ;
-																	echo $title . '...';
-																} else {
-																	echo $post->post_title;
-																}
-															?>
-														</h2>
-														<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
-													</div><!-- titleset -->
-												</article>
-											</a>
-											<!-- <h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2> -->
-										</div><!-- card-warapper -->
-										<?php endforeach; ?>
-										<?php
+												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+												<?php } ?>
+												<div class ="titleset">
+													<h2 class="card-title">
+														<?php
+														if(mb_strlen($post->post_title)>32) {
+															$title= mb_substr($post->post_title,0,32) ;
+																echo $title . '...';
+															} else {
+																echo $post->post_title;
+															}
+														?>
+													</h2>
+													<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>
+												</div><!-- titleset -->
+										</article>
+									</a>
+									<!-- <h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2> -->
+								</div><!-- card-warapper -->
+								<?php endforeach; ?>
+								<?php
 								endif;
 								wp_reset_postdata();
 								?>

@@ -27,33 +27,30 @@ body.home {
     margin-right: 0;
     width: 100%;
     .section1 {
-      justify-content: flex-end;
       @media only screen and (max-width: 800px) {
         height: 650px;
       }
       .section1-link {
         width: 50%;
-        height: 255px;
+        height: 237px;
         padding: 25px 15px 0px 15px;
         @media only screen and (max-width: 800px) {
           width: 100%;
+          height: 255px;
           padding: 15px 15px 0 0;
         }
         .image {
+          width: 100%;
+          object-fit: cover;
           @media only screen and (max-width: 800px) {
             height: 180px;
-            width: 100%;
-            object-fit: cover;
           }
         }
         .titleset {
           .card-title {
             font-size: 20px;
-            color: black;
             height: 90px;
-            width: 100%;
             padding: 0 0 0px;
-            text-align: justify;
             display: table-cell;
             vertical-align: middle;
             @media only screen and (max-width: 800px) {
@@ -63,7 +60,6 @@ body.home {
           }
         }
         .card {
-          width: 100%;
           height: 505px;
           @media only screen and (max-width: 800px) {
             height: auto;
@@ -75,7 +71,6 @@ body.home {
         @media only screen and (max-width: 800px) {
           width: 50%;
         }
-
       }
     }
     .section2, .section4 {
@@ -103,19 +98,16 @@ body.home {
               height: 150px;
             }
             img {
-              @media only screen and (max-width: 800px) {
-              height: 150px;
               object-fit: cover;
+              @media only screen and (max-width: 800px) {
+                height: 150px;
               }
             }
           }
           .titleset {
             .card-title {
               font-size: 17px;
-              color: black;
               height: 90px;
-              padding: 0 0 0px;
-              text-align: justify;
               display: table-cell;
               vertical-align: middle;
               @media only screen and (max-width: 800px) {
@@ -125,7 +117,6 @@ body.home {
           }
         }
         .card {
-          width: 100%;
           height: 235px;
           display: flex;
           @media only screen and (max-width: 800px) {
@@ -135,7 +126,6 @@ body.home {
       }
       .hoge-link {
         width: 25%;
-        height: 500px;
         padding: 25px 15px 0px 15px;
         @media only screen and (max-width: 800px) {
           width: 100%;
@@ -143,7 +133,6 @@ body.home {
           padding: 15px 15px 0 0;
         }
         .image {
-          width: 100%;
           height: 350px;
           background: pink;
           @media only screen and (max-width: 800px) {
@@ -153,18 +142,13 @@ body.home {
         .titleset {
           padding: 15px 20px 15px 20px;
           height: 150px;
-          width: 100%;
           @media only screen and (max-width: 800px) {
             height: 92px;
             padding: 12px;
           }
-          background: white;
           .card-title {
             font-size: 17px;
-            color: black;
             height: 90px;
-            padding: 0 0 0px;
-            text-align: justify;
             display: table-cell;
             vertical-align: middle;
             @media only screen and (max-width: 800px) {
@@ -173,8 +157,6 @@ body.home {
           }
         }
         .card {
-          width: 100%;
-          height: 500px;
           @media only screen and (max-width: 800px) {
             height: 272px;
           }
@@ -198,11 +180,6 @@ body.home {
           width: 100%;
         }
         .card-wrapper:first-child {
-          width: 50%;
-          height: 235px;
-          @media only screen and (max-width: 800px) {
-            height: 195px;
-          }
           .card-thumbnail {
             height: 355px;
             @media only screen and (max-width: 800px) {
@@ -210,19 +187,18 @@ body.home {
             }
           }
           .titleset {
-            padding: 15px 20px 15px 20px;
             height: 150px;
             @media only screen and (max-width: 800px) {
               height: 105px;
               padding: 12px;
             }
-          }
-          .card-title {
-            font-size: 17px;
-            height: 90px;
-            @media only screen and (max-width: 800px) {
-              font-size: 13px;
-              height: 42px;
+            .card-title {
+              font-size: 17px;
+              height: 90px;
+              @media only screen and (max-width: 800px) {
+                font-size: 13px;
+                height: 42px;
+              }
             }
           }
         }
@@ -232,7 +208,6 @@ body.home {
       }
       .section3-link {
         width: 50%;
-        height: 235px;
         padding: 25px 15px 0px 15px;
         @media only screen and (max-width: 800px) {
           width: 100%;
@@ -241,10 +216,10 @@ body.home {
         }
         img {
           height: 367px;
+          width: 100%;
+          object-fit: cover;
           @media only screen and (max-width: 800px) {
             height: 180px;
-            width: 100%;
-            object-fit: cover;
           }
         }
         .titleset {
@@ -276,82 +251,29 @@ body.home {
     @media only screen and (max-width: 800px) {
       height: 390px;
     }
-  }
-  .card-wrapper {
-    height: 235px;
-    padding: 0px 15px 0;
-    @media only screen and (max-width: 800px) {
-      padding: 0 15px 0 0;
-      height: 195px;
-    }
-    .titleset {
+    .card-wrapper {
+      height: 235px;
+      padding: 0px 15px 0;
       @media only screen and (max-width: 800px) {
-        height: 80px;
+        padding: 0 15px 0 0;
+        height: 195px;
       }
-    }
-  }
-  .card {
-    padding: 0;
-    &:hover{
-      box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
-      text-decoration: none;
-      transition: all ease .3s;
-    }
-  }
-  .card-thumbnail {
-    background-size: cover;
-    background-position: center center;
-    padding-top: 52.3%;
-    width: 100%;
-    height: auto;
-    @media only screen and (max-width: 800px) {
-      height: 100px;
-      padding: 0px;
-    }
-  }
-  .titleset {
-    padding: 15px 15px 10px 15px;
-    height: 93px;
-    width: 100%;
-    background-color: white;
-    @media only screen and (max-width: 800px) {
-      padding: 12px;
-      height: 70px;
-    }
-    .card-title {
-      font-size: 15px;
-      padding: 0 0 0px;
-      height: 48px;
-      text-align: justify;
-      @media only screen and (max-width: 800px) {
-        font-size: 13px;
-        height: 36px;
+      .titleset {
+        @media only screen and (max-width: 800px) {
+          height: 80px;
+        }
       }
-    }
-    h2 {
-      overflow: hidden;
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-    }
-    i, span {
-      font-size: 12px;
-      vertical-align: middle;
     }
   }
   .label {
-    background-color: #66a6ff;
     background: linear-gradient(to right, #66a6ff 0%, #5de3e8 100%);
     left: -10px;
     top: 18px;
     width: 43%;
     height: 24px;
-    padding-left: 0.1em;
     line-height: 26px;
     font-size: 12px;
     color: #fff;
-    letter-spacing: 0.1em;
     text-align: center;
     z-index: 2;
     display: inline-block;
@@ -375,6 +297,42 @@ body.home {
       padding-left: 0.1em;
       line-height: 18px;
       font-size: 10px;
+    }
+  }
+  .card {
+    padding: 0;
+    &:hover{
+      box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+      text-decoration: none;
+      transition: all ease .3s;
+    }
+    .card-thumbnail {
+      padding-top: 52.3%;
+      @media only screen and (max-width: 800px) {
+        height: 100px;
+        padding: 0px;
+      }
+    }
+    .titleset {
+      padding: 15px 15px 10px 15px;
+      height: 93px;
+      @media only screen and (max-width: 800px) {
+        padding: 12px;
+        height: 70px;
+      }
+      .card-title {
+        font-size: 15px;
+        height: 48px;
+        text-align: justify;
+        overflow: hidden;
+        @media only screen and (max-width: 800px) {
+          font-size: 13px;
+          height: 36px;
+        }
+      }
+      i, span {
+        font-size: 12px;
+      }
     }
   }
   .tags {
