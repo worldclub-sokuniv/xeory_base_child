@@ -37,8 +37,8 @@
 										<div class ="titleset">
 											<h2 class="card-title">
 												<?php
-												if(mb_strlen($post->post_title)>32) {
-													$title= mb_substr($post->post_title,0,32) ;
+												if(mb_strlen($post->post_title)>24) {
+													$title= mb_substr($post->post_title,0,24) ;
 														echo $title . '...';
 													} else {
 														echo $post->post_title;
@@ -97,8 +97,8 @@
 										<div class ="titleset">
 											<h2 class="card-title">
 												<?php
-												if(mb_strlen($post->post_title)>32) {
-													$title= mb_substr($post->post_title,0,32) ;
+												if(mb_strlen($post->post_title)>24) {
+													$title= mb_substr($post->post_title,0,24) ;
 														echo $title . '...';
 													} else {
 														echo $post->post_title;
@@ -159,8 +159,8 @@
 												<div class ="titleset">
 													<h2 class="card-title">
 														<?php
-														if(mb_strlen($post->post_title)>32) {
-															$title= mb_substr($post->post_title,0,32) ;
+														if(mb_strlen($post->post_title)>24) {
+															$title= mb_substr($post->post_title,0,24) ;
 																echo $title . '...';
 															} else {
 																echo $post->post_title;
@@ -229,8 +229,8 @@
 												<div class ="titleset">
 													<h2 class="card-title">
 														<?php
-														if(mb_strlen($post->post_title)>32) {
-															$title= mb_substr($post->post_title,0,32) ;
+														if(mb_strlen($post->post_title)>24) {
+															$title= mb_substr($post->post_title,0,24) ;
 																echo $title . '...';
 															} else {
 																echo $post->post_title;
