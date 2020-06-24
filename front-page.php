@@ -17,8 +17,7 @@
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="section1-link">
 									<a href="http://worldclubsokalocal.local/category/article/" class="card">
-									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685308-768x512.jpg"> 
-									<div class="image"></div>
+									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685308-768x512.jpg" class="image"> 
 									<div class="titleset">
 										<h2 class="card-title">最新記事一覧</h2>
 									</div><!-- /titleset -->
@@ -50,7 +49,7 @@
 										</div><!-- titleset -->
 									</article>
 								</a>
-								<h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2>
+								<!-- <h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2> -->
 								</div><!-- card-warapper -->
 							<?php endforeach; ?>
 							<?php
@@ -112,7 +111,7 @@
 										</div><!-- titleset -->
 									</article>
 								</a>
-								<h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2>
+								<!-- <h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2> -->
 								</div><!-- card-warapper -->
 							<?php endforeach; ?>
 							<?php
@@ -172,7 +171,7 @@
 													</div><!-- titleset -->
 												</article>
 											</a>
-											<h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2>
+											<!-- <h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2> -->
 										</div><!-- card-warapper -->
 										<?php endforeach; ?>
 										<?php
@@ -242,7 +241,7 @@
 													</div><!-- titleset -->
 												</article>
 											</a>
-											<h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2>
+											<!-- <h2 class="tags"><?php the_tags( '#', ' #' ); ?></h2> -->
 										</div><!-- card-warapper -->
 										<?php endforeach; ?>
 										<?php
