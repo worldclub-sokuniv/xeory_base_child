@@ -550,6 +550,9 @@ body.home #content .wrap {
   height: 48px;
   text-align: justify;
   overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 @media only screen and (max-width: 800px) {
