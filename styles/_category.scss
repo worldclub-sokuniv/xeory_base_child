@@ -1,5 +1,8 @@
 .articles {
   .category-interview{
+    .post-header {
+      padding: 56px 64px 0 64px;
+    }
     .post-content{
       display: flex;
       flex-wrap: wrap;
@@ -12,7 +15,6 @@
       }
     }
     .post-title {
-      margin: auto;
       font-size: 28px;
       clear: both;
       font-weight: bold;
@@ -22,7 +24,7 @@
       background: #fff;
       float: left;
       margin: -0.7em 0px;
-      padding-right: 24px;
+      padding: 0 24px 0 0;
       font-size: 14px;
     }
   }
