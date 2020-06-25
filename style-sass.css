@@ -23,6 +23,10 @@
   width: 100%;
 }
 
+.articles .category-interview .post-meta {
+  width: 100%;
+}
+
 .articles .category-interview .post-meta li {
   background: #fff;
   float: left;
@@ -122,11 +126,14 @@
   width: 80%;
 }
 
+.category-interview .post-meta {
+  width: 80%;
+  margin: auto;
+}
+
 .category-interview .post-meta li {
   background: #fff;
   float: left;
-  margin: -0.7em 20px 0 63px;
-  padding: 0 24px 0 24px;
   font-size: 14px;
 }
 

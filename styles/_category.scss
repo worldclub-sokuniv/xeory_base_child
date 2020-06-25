@@ -20,12 +20,15 @@
       font-weight: bold;
       width: 100%;
     }
-    .post-meta li {
-      background: #fff;
-      float: left;
-      margin: -0.7em 0px;
-      padding: 0 24px 0 0;
-      font-size: 14px;
+    .post-meta {
+      width: 100%;
+      li {
+        background: #fff;
+        float: left;
+        margin: -0.7em 0px;
+        padding: 0 24px 0 0;
+        font-size: 14px;
+      }
     }
   }
 }

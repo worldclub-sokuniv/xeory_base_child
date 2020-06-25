@@ -41,11 +41,13 @@
    font-weight: bold;
    width: 80%;
   }
-  .post-meta li {
-    background: #fff;
-    float: left;
-    margin: -0.7em 20px 0 63px;
-    padding: 0 24px 0 24px;
-    font-size: 14px;
+  .post-meta {
+    width: 80%;
+    margin: auto;
+    li {
+      background: #fff;
+      float: left;
+      font-size: 14px;
+    }
   }
 }
