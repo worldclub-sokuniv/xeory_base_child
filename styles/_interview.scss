@@ -30,24 +30,9 @@
     p{
       width: 80%;
     }
-    .post-thumbnail{
-      margin-left: 0;
-    }
   }
-  .post-title {
+  .post-title, .post-meta {
    margin: auto;
-   font-size: 28px;
-   clear: both;
-   font-weight: bold;
    width: 80%;
-  }
-  .post-meta {
-    width: 80%;
-    margin: auto;
-    li {
-      background: #fff;
-      float: left;
-      font-size: 14px;
-    }
   }
 }

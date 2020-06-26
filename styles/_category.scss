@@ -1,17 +1,14 @@
 .articles {
-  .category-interview{
+  .category-interview, .category-useful-info, .category-how-to {
     .post-header {
-      padding: 56px 64px 0 64px;
+      padding: 56px 64px 0;
     }
-    .post-content{
+    .post-content {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       p{
         width: 100%;
-      }
-      .post-thumbnail{
-        margin-left: 0;
       }
     }
     .post-title {
@@ -19,16 +16,11 @@
       clear: both;
       font-weight: bold;
       width: 100%;
+      margin: 0 0 36px;
     }
     .post-meta {
       width: 100%;
-      li {
-        background: #fff;
-        float: left;
-        margin: -0.7em 0px;
-        padding: 0 24px 0 0;
-        font-size: 14px;
-      }
+      margin-bottom: 42px;
     }
   }
 }
