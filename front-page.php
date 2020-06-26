@@ -16,7 +16,7 @@
 						if( $posts ): ?>
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="section1-link">
-									<a href="category/article/" class="card">
+									<a href="<?php $uri = get_theme_file_uri(); ?>category/article/" class="card">
 										<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685308-768x512.jpg" class="image"> 
 										<div class="titleset">
 											<h2 class="card-title">最新記事一覧</h2>
@@ -28,7 +28,7 @@
 										setup_postdata( $post );
 								?>
 								<div class="card-wrapper  front-page-card">
-									<a href="category/article/" class="label">NEW</a>
+									<a href="<?php $uri = get_theme_file_uri(); ?>category/article/" class="label">NEW</a>
 									<a href="<?php the_permalink(); ?>" class="card">
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>
@@ -63,7 +63,7 @@
 						<div class="post-loop">
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="section2-link">
-									<a href="category/interview/" class="card">
+									<a href="<?php $uri = get_theme_file_uri(); ?>category/interview/" class="card">
 										<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685324-1024x682.jpg" width="50%" height="235px"> 
 										<div class="image"></div>
 										<div class="titleset">
@@ -76,7 +76,7 @@
 										setup_postdata( $post );
 								?>
 								<div class="card-wrapper  front-page-card">
-								<a href="category/interview/" class="label">Interview</a>
+								<a href="<?php $uri = get_theme_file_uri(); ?>category/interview/" class="label">Interview</a>
 								<a href="<?php the_permalink(); ?>" class="card">
 									<article class="card-content-wrapper">
 										<?php if ( get_the_post_thumbnail() ) { ?>
@@ -126,7 +126,7 @@
 										setup_postdata( $post );
 								?>
 								<div class="card-wrapper  front-page-card">
-									<a href="category/how-to/" class="label">How to</a>
+									<a href="<?php $uri = get_theme_file_uri(); ?>category/how-to/" class="label">How to</a>
 									<a href="<?php the_permalink(); ?>" class="card">
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>
@@ -148,7 +148,7 @@
 							</div><!-- /post-loop-wrap -->
 						</div><!-- /post-loop -->
 						<div class="section3-link">
-							<a href="category/how-to/" class="card">
+							<a href="<?php $uri = get_theme_file_uri(); ?>category/how-to/" class="card">
 								<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/soccer_1567685338-1024x587.jpg">
 								<div class="image"></div>
 								<div class="titleset">
@@ -171,7 +171,7 @@
 						<div class="post-loop">
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="section4-link">
-									<a href="category/article/" class="card">
+									<a href="<?php $uri = get_theme_file_uri(); ?>category/article/" class="card">
 									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/question_1567857425-768x512.jpg" width="50%" height="235px"> 
 									<div class="image"></div>
 									<div class="titleset">
@@ -184,7 +184,7 @@
 										setup_postdata( $post );
 								?>
 								<div class="card-wrapper  front-page-card">
-									<a href="category/article/" class="label">POPS</a>
+									<a href="<?php $uri = get_theme_file_uri(); ?>category/article/" class="label">POPS</a>
 									<a href="<?php the_permalink(); ?>" class="card">
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>

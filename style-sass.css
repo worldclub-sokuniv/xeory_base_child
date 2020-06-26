@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .post-content {
   display: flex;
   flex-wrap: wrap;
@@ -10,6 +11,10 @@
 
 .post-content .post-thumbnail {
   margin-left: 0;
+}
+
+.card-title {
+  font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Hiragino Kaku Gothic ProN, YuGothic, Yu Gothic, "游ゴシック", Meiryo,sans-serif;
 }
 
 .category-interview {
@@ -547,6 +552,7 @@ body.home #content .wrap {
 
 .front-page .card .titleset .card-title {
   font-size: 15px;
+  color: #333;
   height: 48px;
   text-align: justify;
   overflow: hidden;
