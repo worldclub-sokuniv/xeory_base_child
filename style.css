@@ -577,6 +577,9 @@ dialog[open]{
 		padding: 10px 0;
 		width: 100%;
 	}
+	.front-page #main .main-inner{
+		padding: 0;
+	}
 	.sns-btn{
 		font-size: 40px;
 	}
