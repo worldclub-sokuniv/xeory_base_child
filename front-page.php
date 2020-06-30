@@ -101,12 +101,24 @@
 							</div><!-- /post-loop-wrap -->
 						</div><!-- /post-loop -->
 						<div class="sub-section">
-							<a href="<?php echo $url."/purpose-for-study-abroad"; ?>" class="card">
-							<div class="image"></div>
+							<?php
+								$data = ["posts_per_page" => 1, 
+								"orderby" => "date",
+								"order" => "DESC",
+								"category_name" => "article ",
+								"cat_title" => "article "
+								];
+								$posts = get_posts( $data );
+								foreach ( $posts as $post ) :
+									setup_postdata( $post );
+							?>
+							<a href="<?php echo $url."/howto-20200630 "; ?>" class="card">
+							<div class="image" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
 							<div class="titleset">
-								<h2 class="card-title">?????</h2>
+								<h2 class="card-title"><?php the_title(); ?></h2>
 							</div><!-- /titleset -->
 							</a><!-- /card -->
+							<?php endforeach; ?>
 						</div><!-- /sub-section -->
 				</div><!-- /section2 -->
 				<div class="section3"> 
@@ -206,14 +218,8 @@
 								?>
 							</div><!-- /post-loop-wrap -->
 						</div><!-- /post-loop -->
-						<div class="sub-link">
-							<a href="<?php echo $url."/purpose-for-study-abroad"; ?>" class="card">
-							<div class="image"></div>
-							<div class="titleset">
-							<h2 class="card-title">??????</h2>
-							</div><!-- /titleset -->
-							</a><!-- /card -->
-						</div><!-- /sub-link -->
+						<!-- <div class="sub-section"> -->
+						<!-- </div>/sub-section -->
 				</div><!-- /section4 -->
 			</div><!-- /sections -->
 		</div><!-- /main -->

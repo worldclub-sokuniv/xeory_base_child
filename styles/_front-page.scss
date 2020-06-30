@@ -120,7 +120,7 @@ body.home {
           }
         }
       }
-      .sub-link {
+      .sub-section {
         width: 25%;
         padding: 25px 15px 0px 15px;
         @media only screen and (max-width: 800px) {
@@ -130,7 +130,8 @@ body.home {
         }
         .image {
           height: 350px;
-          background: pink;
+          background-size: cover;
+          background-position: center center;
           @media only screen and (max-width: 800px) {
             height: 180px;
           }
