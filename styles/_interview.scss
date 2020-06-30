@@ -14,6 +14,9 @@
     font-weight: bold;
     margin: 50px 0;
   }
+  .post-header {
+    padding: 56px 42px 0;
+  }
   .post-thumbnail{
     @include responsive-img(80%);
   }
@@ -29,5 +32,17 @@
     width: 75%;
     margin: 0 auto;
     float: none;
+  }
+  .post-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    p{
+      width: 80%;
+    }
+  }
+  .post-title, .post-meta {
+   margin: auto;
+   width: 80%;
   }
 }

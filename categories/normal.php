@@ -54,7 +54,7 @@ $my_query = new wp_query( $args );
 					<?php } ?>
 				</section>
 
-				<div class="post-loop-wrap">
+				<div class="post-loop-wrap articles">
         <?php
 				if ( $my_query->have_posts() ) :
 					while (  $my_query->have_posts() ) :
@@ -74,7 +74,7 @@ $my_query = new wp_query( $args );
 								<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 							<?php } ?>
 							<?php the_excerpt(); ?>
-							<a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a>
+							<pre><a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a></pre>
 							</section>
 						</article>
 							<?php
