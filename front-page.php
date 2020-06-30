@@ -100,14 +100,14 @@
 								?>
 							</div><!-- /post-loop-wrap -->
 						</div><!-- /post-loop -->
-						<!-- <div class="hoge-link">
-							<a href="URL" class="card">
+						<div class="sub-section">
+							<a href="<?php echo $url."/purpose-for-study-abroad"; ?>" class="card">
 							<div class="image"></div>
 							<div class="titleset">
-								<h2 class="card-title">??????</h2>
+								<h2 class="card-title">?????</h2>
 							</div><!-- /titleset -->
 							</a><!-- /card -->
-						<!-- </div>/hoge-link -->
+						</div><!-- /sub-section -->
 				</div><!-- /section2 -->
 				<div class="section3"> 
 					<?php
@@ -206,14 +206,14 @@
 								?>
 							</div><!-- /post-loop-wrap -->
 						</div><!-- /post-loop -->
-						<!-- <div class="hoge-link">
-							<a href="URL" class="card">
+						<div class="sub-link">
+							<a href="<?php echo $url."/purpose-for-study-abroad"; ?>" class="card">
 							<div class="image"></div>
 							<div class="titleset">
 							<h2 class="card-title">??????</h2>
 							</div><!-- /titleset -->
 							</a><!-- /card -->
-						<!-- </div>/hoge-link -->
+						</div><!-- /sub-link -->
 				</div><!-- /section4 -->
 			</div><!-- /sections -->
 		</div><!-- /main -->

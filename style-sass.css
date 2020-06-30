@@ -273,43 +273,43 @@ body.home #content .wrap {
   }
 }
 
-.front-page .sections .section2 .hoge-link, .front-page .sections .section4 .hoge-link {
+.front-page .sections .section2 .sub-link, .front-page .sections .section4 .sub-link {
   width: 25%;
   padding: 25px 15px 0px 15px;
 }
 
 @media only screen and (max-width: 800px) {
-  .front-page .sections .section2 .hoge-link, .front-page .sections .section4 .hoge-link {
+  .front-page .sections .section2 .sub-link, .front-page .sections .section4 .sub-link {
     width: 100%;
     height: 277px;
     padding: 15px 15px 0 0;
   }
 }
 
-.front-page .sections .section2 .hoge-link .image, .front-page .sections .section4 .hoge-link .image {
+.front-page .sections .section2 .sub-link .image, .front-page .sections .section4 .sub-link .image {
   height: 350px;
   background: pink;
 }
 
 @media only screen and (max-width: 800px) {
-  .front-page .sections .section2 .hoge-link .image, .front-page .sections .section4 .hoge-link .image {
+  .front-page .sections .section2 .sub-link .image, .front-page .sections .section4 .sub-link .image {
     height: 180px;
   }
 }
 
-.front-page .sections .section2 .hoge-link .titleset, .front-page .sections .section4 .hoge-link .titleset {
+.front-page .sections .section2 .sub-link .titleset, .front-page .sections .section4 .sub-link .titleset {
   padding: 15px 20px 15px 20px;
   height: 150px;
 }
 
 @media only screen and (max-width: 800px) {
-  .front-page .sections .section2 .hoge-link .titleset, .front-page .sections .section4 .hoge-link .titleset {
+  .front-page .sections .section2 .sub-link .titleset, .front-page .sections .section4 .sub-link .titleset {
     height: 92px;
     padding: 12px;
   }
 }
 
-.front-page .sections .section2 .hoge-link .titleset .card-title, .front-page .sections .section4 .hoge-link .titleset .card-title {
+.front-page .sections .section2 .sub-link .titleset .card-title, .front-page .sections .section4 .sub-link .titleset .card-title {
   font-size: 17px;
   height: 90px;
   display: table-cell;
@@ -317,13 +317,13 @@ body.home #content .wrap {
 }
 
 @media only screen and (max-width: 800px) {
-  .front-page .sections .section2 .hoge-link .titleset .card-title, .front-page .sections .section4 .hoge-link .titleset .card-title {
+  .front-page .sections .section2 .sub-link .titleset .card-title, .front-page .sections .section4 .sub-link .titleset .card-title {
     font-size: 15px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .front-page .sections .section2 .hoge-link .card, .front-page .sections .section4 .hoge-link .card {
+  .front-page .sections .section2 .sub-link .card, .front-page .sections .section4 .sub-link .card {
     height: 272px;
   }
 }
