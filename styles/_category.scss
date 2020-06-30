@@ -24,3 +24,11 @@
     }
   }
 }
+
+@media screen and (max-width: 991px){
+  .category-interview, .category-useful-info, .category-how-to {
+    .post-header {
+      padding: 20px !important;
+    }
+  }
+}

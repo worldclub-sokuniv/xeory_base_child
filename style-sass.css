@@ -26,6 +26,12 @@
   margin-bottom: 42px;
 }
 
+@media screen and (max-width: 991px) {
+  .category-interview .post-header, .category-useful-info .post-header, .category-how-to .post-header {
+    padding: 20px !important;
+  }
+}
+
 .category-interview {
   padding-bottom: 20px;
 }
@@ -112,7 +118,8 @@
 }
 
 .interview-wrapper .post-content p {
-  width: 80%;
+  margin: 0 10% 1.6em;
+  width: 100%;
 }
 
 .interview-wrapper .post-title, .interview-wrapper .post-meta {
