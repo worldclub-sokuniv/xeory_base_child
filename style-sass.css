@@ -1,20 +1,29 @@
 @charset "UTF-8";
-.post-content {
+.articles .category-interview .post-header, .articles .category-useful-info .post-header, .articles .category-how-to .post-header {
+  padding: 56px 64px 0;
+}
+
+.articles .category-interview .post-content, .articles .category-useful-info .post-content, .articles .category-how-to .post-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.post-content p {
+.articles .category-interview .post-content p, .articles .category-useful-info .post-content p, .articles .category-how-to .post-content p {
   width: 100%;
 }
 
-.post-content .post-thumbnail {
-  margin-left: 0;
+.articles .category-interview .post-title, .articles .category-useful-info .post-title, .articles .category-how-to .post-title {
+  font-size: 28px;
+  clear: both;
+  font-weight: bold;
+  width: 100%;
+  margin: 0 0 36px;
 }
 
-.card-title {
-  font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Hiragino Kaku Gothic ProN, YuGothic, Yu Gothic, "游ゴシック", Meiryo,sans-serif;
+.articles .category-interview .post-meta, .articles .category-useful-info .post-meta, .articles .category-how-to .post-meta {
+  width: 100%;
+  margin-bottom: 42px;
 }
 
 .category-interview {
@@ -38,6 +47,10 @@
   margin: 50px 0;
 }
 
+.category-interview .post-header {
+  padding: 56px 42px 0;
+}
+
 .category-interview .post-thumbnail {
   position: relative;
   overflow: hidden;
@@ -57,7 +70,7 @@
   bottom: 0;
   left: 0;
   width: 100%;
-  margin: auto;
+  margin: 0;
 }
 
 .category-interview .wp-block-image {
@@ -79,7 +92,32 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  margin: 0;
+}
+
+.category-interview .wp-block-image figcaption {
+  text-align: center;
+}
+
+.interview-wrapper #main {
+  width: 75%;
+  margin: 0 auto;
+  float: none;
+}
+
+.interview-wrapper .post-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.interview-wrapper .post-content p {
+  width: 80%;
+}
+
+.interview-wrapper .post-title, .interview-wrapper .post-meta {
   margin: auto;
+  width: 80%;
 }
 
 .chip-wrapper .chip {
@@ -579,4 +617,8 @@ body.home #content .wrap {
   right: -100px;
   top: -30px;
   color: #2581c4;
+}
+
+.card-title {
+  font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Hiragino Kaku Gothic ProN, YuGothic, Yu Gothic, "游ゴシック", Meiryo,sans-serif;
 }
