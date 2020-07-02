@@ -44,15 +44,15 @@ $my_query = new wp_query( $args );
 		<div id="main" <?php bzb_layout_main(); ?>>
 			<div class="main-inner">
 
-				<section class="cat-content">
-					<header class="cat-header">
-            <h1 class="post-title"><?php bzb_title(); ?></h1>
-            <?php tag_filter($tags, $tagIDs); ?>
-					</header>
-					<?php if ( is_category() ) { ?>
-						<?php bzb_category_description(); ?>
-					<?php } ?>
-				</section>
+				<!-- <section class="cat-content"> -->
+					<!-- <header class="cat-header"> -->
+            <!-- <h1 class="post-title"></*?php bzb_title(); ?*/></h1> -->
+            </*?php tag_filter($tags, $tagIDs); ?*/>
+					<!-- </header> -->
+					</*?php if ( is_category() ) { ?*/>
+						</*?php bzb_category_description(); ?*/>
+					</*?php } ?*/>
+				<!-- </section> -->
 
 				<div class="post-loop-wrap articles">
         <?php
@@ -102,8 +102,7 @@ $my_query = new wp_query( $args );
 			</div><!-- /main-inner -->
 		</div><!-- /main -->
 
-	<!-- <?php get_sidebar(); ?> -->
-
+		</*?php get_sidebar(); ?*/>
 	</div><!-- /wrap -->
 
 </div><!-- /content -->
