@@ -41,10 +41,9 @@
     flex-wrap: wrap;
     justify-content: center;
     p{
-      margin: 0 10% 1.6em;
-      width: 100%;
+      width: 80%;
       @media screen and (max-width: 800px) {
-        margin: 0 0% 1.6em;
+        width: 100%;
       }
     }
   }
