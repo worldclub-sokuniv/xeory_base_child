@@ -22,6 +22,9 @@
   }
   .wp-block-image{
     @include responsive-img(80%);
+    @media screen and (max-width: 800px) {
+      width: 100%;
+    }
     figcaption {
       text-align: center;
     }
@@ -40,10 +43,17 @@
     p{
       margin: 0 10% 1.6em;
       width: 100%;
+      @media screen and (max-width: 800px) {
+        margin: 0 0% 1.6em;
+      }
     }
   }
   .post-title, .post-meta {
    margin: auto;
    width: 80%;
+   @media screen and (max-width: 800px) {
+    font-size: 20px;
+    width: 100%;
+   }
   }
 }
