@@ -627,6 +627,16 @@ body.home #content .wrap {
   color: #2581c4;
 }
 
+.header-content {
+  min-width: 1200px;
+}
+
+@media only screen and (max-width: 991px) {
+  .header-content {
+    min-width: 100%;
+  }
+}
+
 .card-title {
   font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Hiragino Kaku Gothic ProN, YuGothic, Yu Gothic, "游ゴシック", Meiryo,sans-serif;
 }
