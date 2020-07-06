@@ -28,7 +28,7 @@
 </header>
 
 <?php }else{ ?>
-
+<div class="header-content">
 <header id="header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
   <div class="wrap">
     <?php
@@ -76,3 +76,5 @@
 <?php } ?>
 
 <?php } // if is_singular('lp') ?>
+
+</div>
