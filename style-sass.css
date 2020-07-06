@@ -101,6 +101,12 @@
   margin: 0;
 }
 
+@media screen and (max-width: 800px) {
+  .category-interview .wp-block-image {
+    width: 100%;
+  }
+}
+
 .category-interview .wp-block-image figcaption {
   text-align: center;
 }
@@ -118,13 +124,25 @@
 }
 
 .interview-wrapper .post-content p {
-  margin: 0 10% 1.6em;
-  width: 100%;
+  width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .interview-wrapper .post-content p {
+    width: 100%;
+  }
 }
 
 .interview-wrapper .post-title, .interview-wrapper .post-meta {
   margin: auto;
   width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .interview-wrapper .post-title, .interview-wrapper .post-meta {
+    font-size: 20px;
+    width: 100%;
+  }
 }
 
 .chip-wrapper .chip {
