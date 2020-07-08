@@ -10,105 +10,52 @@ body.home #content {
     }
   }
 }
-.front-page .sections{
-  .section1 {
-    @media only screen and (max-width: 991px) {
-      height: 650px;
-    }
-  }
-  .section1-link, .section3-link {
-    width: 50%;
-    height: 237px;
-    padding: 25px 15px 0px 15px;
-    @media only screen and (max-width: 991px) {
-      width: 100%;
-      height: 255px;
-      padding: 15px 15px 0 0;
-    }
-    .image {
-      width: 100%;
-      height: 380px;
-      object-fit: cover;
+.front-page {
+  .sections{
+    .section1 {
       @media only screen and (max-width: 991px) {
-        height: 180px;
+        height: 650px;
       }
     }
-    .titleset .card-title {
-      font-size: 20px;
-      height: 90px;
-      display: table-cell;
-      vertical-align: middle;
-      @media only screen and (max-width: 991px) {
-        font-size: 15px;
-        height: 40px;
-      }
-    }
-    .card {
-      height: 505px;
-      @media only screen and (max-width: 991px) {
-        height: auto;
-      }
-    }
-  }
-  .section2, .section4 {
-    display: flex;
-    @media only screen and (max-width: 991px) {
-      display: block;
-    }
-    .post-loop {
-      width: 75%;
+    .section1-link, .section3-link {
+      width: 50%;
+      height: 237px;
+      padding: 25px 15px 0px 15px;
       @media only screen and (max-width: 991px) {
         width: 100%;
-        height: 560px;
+        height: 255px;
+        padding: 15px 15px 0 0;
       }
-      .section2-link, .section4-link {
-        width: 66.66%;
-        height: 235px;
-        padding: 25px 15px 0px 15px;
-        @media only screen and (max-width: 991px) {
-          width: 100%;
-          height: 160px;
-          padding: 20px 15px 0 0;
-        }
-        .card {
-          @media only screen and (max-width: 991px) {
-            height: 150px;
-          }
-          .image {
-            width: 50%;
-            object-fit: cover;
-          }
-        }
-        .titleset .card-title {
-          font-size: 17px;
-          height: 90px;
-          display: table-cell;
-          vertical-align: middle;
-          @media only screen and (max-width: 991px) {
-            font-size: 15px;
-          }
-        }
-      }
-      .card-wrapper {
-        width: 33.3%;
-        @media only screen and (max-width: 991px) {
-          width: 50%;
-        }
-      }
-      .card {
-        height: 235px;
-        display: flex;
+      .image {
+        width: 100%;
+        height: 380px;
+        object-fit: cover;
         @media only screen and (max-width: 991px) {
           height: 180px;
         }
       }
+      .titleset .card-title {
+        font-size: 20px;
+        height: 90px;
+        display: table-cell;
+        vertical-align: middle;
+        @media only screen and (max-width: 991px) {
+          font-size: 15px;
+          height: 40px;
+        }
+      }
+      .card {
+        height: 505px;
+        @media only screen and (max-width: 991px) {
+          height: auto;
+        }
+      }
     }
-    .sub-section {
+    .sub-section, .section3 .post-loop .card-wrapper:first-child {
       width: 25%;
       padding: 25px 15px 0px 15px;
       @media only screen and (max-width: 991px) {
         width: 100%;
-        height: 277px;
         padding: 15px 15px 0 0;
       }
       .image {
@@ -119,11 +66,17 @@ body.home #content {
           height: 180px;
         }
       }
+      .card-thumbnail {
+        height: 355px;
+        @media only screen and (max-width: 991px) {
+          height: 270px;
+        }
+      }
       .titleset {
         padding: 15px 20px 15px 20px;
         height: 150px;
         @media only screen and (max-width: 991px) {
-          height: 92px;
+          height: 70px;
           padding: 12px;
         }
         .card-title {
@@ -133,42 +86,92 @@ body.home #content {
           vertical-align: middle;
           @media only screen and (max-width: 991px) {
             font-size: 15px;
+            height: 40px;
           }
         }
       }
     }
-  }
-  .section3 {
-    display: flex;
-    @media only screen and (max-width: 991px) {
-      display: block;
-    }
-    .post-loop {
-      width: 50%;
+    .section2, .section4 {
+      display: flex;
       @media only screen and (max-width: 991px) {
-        width: 100%;
+        display: block;
       }
-      .card-wrapper {
-        width: 50%;
-        &:first-child {
-          .card-thumbnail {
-            height: 355px;
+      .post-loop {
+        width: 75%;
+        @media only screen and (max-width: 991px) {
+          width: 100%;
+          height: 560px;
+        }
+        .section2-link, .section4-link {
+          width: 66.66%;
+          height: 235px;
+          padding: 25px 15px 0px 15px;
+          @media only screen and (max-width: 991px) {
+            width: 100%;
+            height: 160px;
+            padding: 20px 15px 0 0;
+          }
+          .card {
             @media only screen and (max-width: 991px) {
-              height: 270px;
+              height: 150px;
+            }
+            .image {
+              width: 50%;
+              object-fit: cover;
             }
           }
-          .titleset {
-            height: 150px;
+          .titleset .card-title {
+            font-size: 17px;
+            height: 90px;
+            display: table-cell;
+            vertical-align: middle;
             @media only screen and (max-width: 991px) {
-              height: 105px;
-              padding: 12px;
+              font-size: 15px;
             }
-            .card-title {
-              font-size: 17px;
-              height: 90px;
+          }
+        }
+        .card-wrapper {
+          width: 33.3%;
+          @media only screen and (max-width: 991px) {
+            width: 50%;
+          }
+        }
+        .card {
+          height: 235px;
+          display: flex;
+          @media only screen and (max-width: 991px) {
+            height: 180px;
+          }
+        }
+      }
+    }
+    .section3 {
+      display: flex;
+      @media only screen and (max-width: 991px) {
+        display: block;
+      }
+      .post-loop {
+        width: 50%;
+        @media only screen and (max-width: 991px) {
+          width: 100%;
+        }
+        .card-wrapper {
+          width: 50%;
+          &:first-child {
+            width: 50%;
+            padding: 0 15px;
+            height: 105px;
+            @media only screen and (max-width: 991px) {
+              padding: 0 15px 0 0;
+            }
+            .titleset {
               @media only screen and (max-width: 991px) {
-                font-size: 13px;
-                height: 42px;
+                height: 105px;
+              }
+              .card-title {
+                @media only screen and (max-width: 991px) {
+                  height: 60px;
+                }
               }
             }
           }
