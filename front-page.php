@@ -65,8 +65,7 @@
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="section2-link">
 									<a href="<?php echo $url."/category/interview/"; ?>" class="card">
-										<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685324-1024x682.jpg" width="50%" height="235px"> 
-										<div class="image"></div>
+										<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/happy_1567685324-1024x682.jpg" class="image"> 
 										<div class="titleset">
 											<h2 class="card-title">インタビュー記事一覧</h2>
 										</div><!-- /titleset -->
@@ -162,8 +161,7 @@
 						</div><!-- /post-loop -->
 						<div class="section3-link">
 							<a href="<?php echo $url."/category/how-to/"; ?>" class="card">
-								<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/soccer_1567685338-1024x587.jpg">
-								<div class="image"></div>
+								<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/soccer_1567685338-1024x587.jpg" class="image">
 								<div class="titleset">
 									<h2 class="card-title">How to記事一覧</h2>
 								</div><!-- /titleset -->
@@ -185,8 +183,7 @@
 							<div class="post-loop-wrap cards-section-wrapper">
 								<div class="section4-link">
 									<a href="<?php echo $url."/category/article/"; ?>" class="card">
-									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/question_1567857425-768x512.jpg" width="50%" height="235px"> 
-									<div class="image"></div>
+									<img src="https://worldclub-soka.com/wp-content/uploads/2019/09/question_1567857425-768x512.jpg" class="image"> 
 									<div class="titleset">
 										<h2 class="card-title">人気記事一覧</h2>
 									</div><!-- /titleset -->

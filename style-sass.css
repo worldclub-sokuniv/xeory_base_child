@@ -168,11 +168,9 @@
 
 body.home #content {
   padding: 0 0 30px 0;
-  height: auto;
 }
 
 body.home #content .wrap {
-  height: auto;
   width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -185,79 +183,59 @@ body.home #content .wrap {
   }
 }
 
-.front-page .main {
-  width: 100%;
-  height: auto;
-}
-
-.front-page .sections {
-  margin-right: 0;
-  width: 100%;
-}
-
 @media only screen and (max-width: 991px) {
   .front-page .sections .section1 {
     height: 650px;
   }
 }
 
-.front-page .sections .section1 .section1-link {
+.front-page .sections .section1-link, .front-page .sections .section3-link {
   width: 50%;
   height: 237px;
   padding: 25px 15px 0px 15px;
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .sections .section1 .section1-link {
+  .front-page .sections .section1-link, .front-page .sections .section3-link {
     width: 100%;
     height: 255px;
     padding: 15px 15px 0 0;
   }
 }
 
-.front-page .sections .section1 .section1-link .image {
+.front-page .sections .section1-link .image, .front-page .sections .section3-link .image {
   width: 100%;
+  height: 380px;
   object-fit: cover;
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .sections .section1 .section1-link .image {
+  .front-page .sections .section1-link .image, .front-page .sections .section3-link .image {
     height: 180px;
   }
 }
 
-.front-page .sections .section1 .section1-link .titleset .card-title {
+.front-page .sections .section1-link .titleset .card-title, .front-page .sections .section3-link .titleset .card-title {
   font-size: 20px;
   height: 90px;
-  padding: 0 0 0px;
   display: table-cell;
   vertical-align: middle;
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .sections .section1 .section1-link .titleset .card-title {
+  .front-page .sections .section1-link .titleset .card-title, .front-page .sections .section3-link .titleset .card-title {
     font-size: 15px;
     height: 40px;
   }
 }
 
-.front-page .sections .section1 .section1-link .card {
+.front-page .sections .section1-link .card, .front-page .sections .section3-link .card {
   height: 505px;
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .sections .section1 .section1-link .card {
+  .front-page .sections .section1-link .card, .front-page .sections .section3-link .card {
     height: auto;
-  }
-}
-
-.front-page .sections .section1 .card-wrapper {
-  width: 25%;
-}
-
-@media only screen and (max-width: 991px) {
-  .front-page .sections .section1 .card-wrapper {
-    width: 50%;
   }
 }
 
@@ -302,14 +280,9 @@ body.home #content .wrap {
   }
 }
 
-.front-page .sections .section2 .post-loop .section2-link .card img, .front-page .sections .section2 .post-loop .section4-link .card img, .front-page .sections .section4 .post-loop .section2-link .card img, .front-page .sections .section4 .post-loop .section4-link .card img {
+.front-page .sections .section2 .post-loop .section2-link .card .image, .front-page .sections .section2 .post-loop .section4-link .card .image, .front-page .sections .section4 .post-loop .section2-link .card .image, .front-page .sections .section4 .post-loop .section4-link .card .image {
+  width: 50%;
   object-fit: cover;
-}
-
-@media only screen and (max-width: 991px) {
-  .front-page .sections .section2 .post-loop .section2-link .card img, .front-page .sections .section2 .post-loop .section4-link .card img, .front-page .sections .section4 .post-loop .section2-link .card img, .front-page .sections .section4 .post-loop .section4-link .card img {
-    height: 150px;
-  }
 }
 
 .front-page .sections .section2 .post-loop .section2-link .titleset .card-title, .front-page .sections .section2 .post-loop .section4-link .titleset .card-title, .front-page .sections .section4 .post-loop .section2-link .titleset .card-title, .front-page .sections .section4 .post-loop .section4-link .titleset .card-title {
@@ -322,6 +295,16 @@ body.home #content .wrap {
 @media only screen and (max-width: 991px) {
   .front-page .sections .section2 .post-loop .section2-link .titleset .card-title, .front-page .sections .section2 .post-loop .section4-link .titleset .card-title, .front-page .sections .section4 .post-loop .section2-link .titleset .card-title, .front-page .sections .section4 .post-loop .section4-link .titleset .card-title {
     font-size: 15px;
+  }
+}
+
+.front-page .sections .section2 .post-loop .card-wrapper, .front-page .sections .section4 .post-loop .card-wrapper {
+  width: 33.3%;
+}
+
+@media only screen and (max-width: 991px) {
+  .front-page .sections .section2 .post-loop .card-wrapper, .front-page .sections .section4 .post-loop .card-wrapper {
+    width: 50%;
   }
 }
 
@@ -386,22 +369,6 @@ body.home #content .wrap {
   }
 }
 
-@media only screen and (max-width: 991px) {
-  .front-page .sections .section2 .sub-section .card, .front-page .sections .section4 .sub-section .card {
-    height: 272px;
-  }
-}
-
-.front-page .sections .section2 .card-wrapper, .front-page .sections .section4 .card-wrapper {
-  width: 33.3%;
-}
-
-@media only screen and (max-width: 991px) {
-  .front-page .sections .section2 .card-wrapper, .front-page .sections .section4 .card-wrapper {
-    width: 50%;
-  }
-}
-
 .front-page .sections .section3 {
   display: flex;
 }
@@ -420,6 +387,10 @@ body.home #content .wrap {
   .front-page .sections .section3 .post-loop {
     width: 100%;
   }
+}
+
+.front-page .sections .section3 .post-loop .card-wrapper {
+  width: 50%;
 }
 
 .front-page .sections .section3 .post-loop .card-wrapper:first-child .card-thumbnail {
@@ -455,93 +426,39 @@ body.home #content .wrap {
   }
 }
 
-.front-page .sections .section3 .post-loop .card-wrapper {
-  width: 50%;
-}
-
-.front-page .sections .section3 .section3-link {
-  width: 50%;
-  padding: 25px 15px 0px 15px;
-}
-
-@media only screen and (max-width: 991px) {
-  .front-page .sections .section3 .section3-link {
-    width: 100%;
-    height: 282px;
-    padding: 15px 15px 0 0;
-  }
-}
-
-.front-page .sections .section3 .section3-link img {
-  height: 367px;
-  width: 100%;
-  object-fit: cover;
-}
-
-@media only screen and (max-width: 991px) {
-  .front-page .sections .section3 .section3-link img {
-    height: 180px;
-  }
-}
-
-.front-page .sections .section3 .section3-link .titleset {
-  height: 137px;
-}
-
-@media only screen and (max-width: 991px) {
-  .front-page .sections .section3 .section3-link .titleset {
-    height: 92px;
-  }
-}
-
-.front-page .sections .section3 .section3-link .titleset .card-title {
-  font-size: 17px;
-  color: black;
-  height: 90px;
-  padding: 0 0 0px;
-  text-align: justify;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-@media only screen and (max-width: 991px) {
-  .front-page .sections .section3 .section3-link .titleset .card-title {
-    height: 48px;
-    font-size: 15px;
-  }
-}
-
-.front-page .cards-section-wrapper {
+.front-page .sections .cards-section-wrapper {
   margin-bottom: 10px;
   height: 534px;
   justify-content: flex-end;
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .cards-section-wrapper {
+  .front-page .sections .cards-section-wrapper {
     height: 390px;
   }
 }
 
-.front-page .cards-section-wrapper .card-wrapper {
+.front-page .sections .cards-section-wrapper .card-wrapper {
   height: 235px;
   padding: 0px 15px 0;
+  width: 25%;
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .cards-section-wrapper .card-wrapper {
+  .front-page .sections .cards-section-wrapper .card-wrapper {
     padding: 0 15px 0 0;
     height: 195px;
+    width: 50%;
   }
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .cards-section-wrapper .card-wrapper .titleset {
+  .front-page .sections .cards-section-wrapper .card-wrapper .titleset {
     height: 80px;
   }
 }
 
-.front-page .label {
+.front-page .sections .label {
   background: linear-gradient(to right, #66a6ff 0%, #5de3e8 100%);
   left: -10px;
   top: 18px;
@@ -551,26 +468,17 @@ body.home #content .wrap {
   font-size: 12px;
   color: #fff;
   text-align: center;
-  z-index: 2;
   display: inline-block;
   position: relative;
 }
 
-.front-page .label:hover {
+.front-page .sections .label:hover {
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
 }
 
-.front-page .label:after {
-  position: absolute;
-  content: '';
-  width: 0px;
-  height: 0px;
-  z-index: 1;
-}
-
 @media only screen and (max-width: 991px) {
-  .front-page .label {
+  .front-page .sections .label {
     left: -6px;
     top: 14px;
     width: 96px;
@@ -581,40 +489,39 @@ body.home #content .wrap {
   }
 }
 
-.front-page .card {
+.front-page .sections .card {
   padding: 0;
 }
 
-.front-page .card:hover {
+.front-page .sections .card:hover {
   box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.3);
   text-decoration: none;
   transition: all ease .3s;
 }
 
-.front-page .card .card-thumbnail {
+.front-page .sections .card .card-thumbnail {
   padding-top: 52.3%;
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .card .card-thumbnail {
+  .front-page .sections .card .card-thumbnail {
     height: 100px;
     padding: 0px;
   }
 }
 
-.front-page .card .titleset {
+.front-page .sections .card .titleset {
   padding: 15px 15px 10px 15px;
-  height: 93px;
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .card .titleset {
+  .front-page .sections .card .titleset {
     padding: 12px;
     height: 70px;
   }
 }
 
-.front-page .card .titleset .card-title {
+.front-page .sections .card .titleset .card-title {
   font-size: 15px;
   color: #333;
   height: 48px;
@@ -626,17 +533,17 @@ body.home #content .wrap {
 }
 
 @media only screen and (max-width: 991px) {
-  .front-page .card .titleset .card-title {
+  .front-page .sections .card .titleset .card-title {
     font-size: 13px;
     height: 36px;
   }
 }
 
-.front-page .card .titleset i, .front-page .card .titleset span {
+.front-page .sections .card .titleset i, .front-page .sections .card .titleset span {
   font-size: 12px;
 }
 
-.front-page .tags {
+.front-page .sections .tags {
   font-size: 11px;
   display: inline-block;
   position: relative;
