@@ -1,0 +1,9 @@
+.header-content {
+  min-width: 1200px;
+  @media only screen and (max-width: 991px) {
+    min-width: 100%;
+  }
+}
+.card-title {
+  font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Hiragino Kaku Gothic ProN, YuGothic, Yu Gothic, "游ゴシック", Meiryo,sans-serif;
+}
