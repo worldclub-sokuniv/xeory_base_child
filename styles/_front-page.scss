@@ -37,8 +37,8 @@ body.home #content {
       .titleset .card-title {
         font-size: 20px;
         height: 90px;
-        display: table-cell;
-        vertical-align: middle;
+        display: flex;
+        align-items: center;
         @media only screen and (max-width: 991px) {
           font-size: 15px;
           height: 40px;
@@ -82,8 +82,8 @@ body.home #content {
         .card-title {
           font-size: 17px;
           height: 90px;
-          display: table-cell;
-          vertical-align: middle;
+          display: flex;
+          align-items: center;
           @media only screen and (max-width: 991px) {
             font-size: 15px;
             height: 40px;
@@ -123,8 +123,8 @@ body.home #content {
           .titleset .card-title {
             font-size: 17px;
             height: 90px;
-            display: table-cell;
-            vertical-align: middle;
+            display: flex;
+            align-items: center;
             @media only screen and (max-width: 991px) {
               font-size: 15px;
             }

@@ -218,8 +218,8 @@ body.home #content .wrap {
 .front-page .sections .section1-link .titleset .card-title, .front-page .sections .section3-link .titleset .card-title {
   font-size: 20px;
   height: 90px;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 991px) {
@@ -288,8 +288,8 @@ body.home #content .wrap {
 .front-page .sections .sub-section .titleset .card-title, .front-page .sections .section3 .post-loop .card-wrapper:first-child .titleset .card-title {
   font-size: 17px;
   height: 90px;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 991px) {
@@ -348,8 +348,8 @@ body.home #content .wrap {
 .front-page .sections .section2 .post-loop .section2-link .titleset .card-title, .front-page .sections .section2 .post-loop .section4-link .titleset .card-title, .front-page .sections .section4 .post-loop .section2-link .titleset .card-title, .front-page .sections .section4 .post-loop .section4-link .titleset .card-title {
   font-size: 17px;
   height: 90px;
-  display: table-cell;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }
 
 @media only screen and (max-width: 991px) {
