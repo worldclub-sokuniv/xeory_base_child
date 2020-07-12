@@ -167,7 +167,7 @@
 }
 
 body.home #content {
-  padding: 0 0 30px 0;
+  padding: 0 0 30px;
 }
 
 body.home #content .wrap {
@@ -192,7 +192,7 @@ body.home #content .wrap {
 .front-page .sections .section1-link, .front-page .sections .section3-link {
   width: 50%;
   height: 237px;
-  padding: 25px 15px 0px 15px;
+  padding: 25px 15px 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -241,7 +241,7 @@ body.home #content .wrap {
 
 .front-page .sections .sub-section, .front-page .sections .section3 .post-loop .card-wrapper:first-child {
   width: 25%;
-  padding: 25px 15px 0px 15px;
+  padding: 25px 15px 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -274,14 +274,12 @@ body.home #content .wrap {
 }
 
 .front-page .sections .sub-section .titleset, .front-page .sections .section3 .post-loop .card-wrapper:first-child .titleset {
-  padding: 15px 20px 15px 20px;
   height: 150px;
 }
 
 @media only screen and (max-width: 991px) {
   .front-page .sections .sub-section .titleset, .front-page .sections .section3 .post-loop .card-wrapper:first-child .titleset {
     height: 70px;
-    padding: 12px;
   }
 }
 
@@ -323,7 +321,7 @@ body.home #content .wrap {
 .front-page .sections .section2 .post-loop .section2-link, .front-page .sections .section2 .post-loop .section4-link, .front-page .sections .section4 .post-loop .section2-link, .front-page .sections .section4 .post-loop .section4-link {
   width: 66.66%;
   height: 235px;
-  padding: 25px 15px 0px 15px;
+  padding: 25px 15px 0;
 }
 
 @media only screen and (max-width: 991px) {
@@ -441,7 +439,7 @@ body.home #content .wrap {
 
 .front-page .cards-section-wrapper .card-wrapper {
   height: 235px;
-  padding: 0px 15px 0;
+  padding: 0 15px;
   width: 25%;
 }
 
@@ -507,12 +505,12 @@ body.home #content .wrap {
 @media only screen and (max-width: 991px) {
   .front-page .card .card-thumbnail {
     height: 100px;
-    padding: 0px;
+    padding: 0;
   }
 }
 
 .front-page .card .titleset {
-  padding: 15px 15px 10px 15px;
+  padding: 15px 15px 10px;
 }
 
 @media only screen and (max-width: 991px) {

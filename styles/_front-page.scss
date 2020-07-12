@@ -1,5 +1,17 @@
+$large-card-font-size: 20px;
+$middle-card-font-size: 17px;
+$small-card-font-size: 15px;
+$larger-card-padding: 25px 15px 0;
+$larger-card-padding-smart: 15px 15px 0 0;
+$small-card-padding: 0 15px;
+$small-card-padding-smart: 0 15px 0 0;
+$large-card-image-height-smart: 180px;
+$larger-card-title-height: 90px;
+$larger-card-title-height-smart: 40px;
+$small-card-height: 235px;
+
 body.home #content {
-  padding: 0 0 30px 0;
+  padding: 0 0 30px;
   .wrap {
     width: 1200px;
     margin: 0 auto;
@@ -20,28 +32,28 @@ body.home #content {
     .section1-link, .section3-link {
       width: 50%;
       height: 237px;
-      padding: 25px 15px 0px 15px;
+      padding: $larger-card-padding;
       @media only screen and (max-width: 991px) {
         width: 100%;
         height: 255px;
-        padding: 15px 15px 0 0;
+        padding: $larger-card-padding-smart;
       }
       .image {
         width: 100%;
         height: 380px;
         object-fit: cover;
         @media only screen and (max-width: 991px) {
-          height: 180px;
+          height: $large-card-image-height-smart;
         }
       }
       .titleset .card-title {
-        font-size: 20px;
-        height: 90px;
+        font-size: $large-card-font-size;
+        height: $larger-card-title-height;
         display: flex;
         align-items: center;
         @media only screen and (max-width: 991px) {
-          font-size: 15px;
-          height: 40px;
+          font-size: $small-card-font-size;
+          height: $larger-card-title-height-smart;
         }
       }
       .card {
@@ -53,17 +65,17 @@ body.home #content {
     }
     .sub-section, .section3 .post-loop .card-wrapper:first-child {
       width: 25%;
-      padding: 25px 15px 0px 15px;
+      padding: $larger-card-padding;
       @media only screen and (max-width: 991px) {
         width: 100%;
-        padding: 15px 15px 0 0;
+        padding: $larger-card-padding-smart;
       }
       .image {
         height: 350px;
         background-size: cover;
         background-position: center center;
         @media only screen and (max-width: 991px) {
-          height: 180px;
+          height: $large-card-image-height-smart;
         }
       }
       .card-thumbnail {
@@ -73,20 +85,18 @@ body.home #content {
         }
       }
       .titleset {
-        padding: 15px 20px 15px 20px;
         height: 150px;
         @media only screen and (max-width: 991px) {
           height: 70px;
-          padding: 12px;
         }
         .card-title {
-          font-size: 17px;
-          height: 90px;
+          font-size: $middle-card-font-size;
+          height: $larger-card-title-height;
           display: flex;
           align-items: center;
           @media only screen and (max-width: 991px) {
-            font-size: 15px;
-            height: 40px;
+            font-size: $small-card-font-size;
+            height: $larger-card-title-height-smart;
           }
         }
       }
@@ -104,8 +114,8 @@ body.home #content {
         }
         .section2-link, .section4-link {
           width: 66.66%;
-          height: 235px;
-          padding: 25px 15px 0px 15px;
+          height: $small-card-height;
+          padding: $larger-card-padding;
           @media only screen and (max-width: 991px) {
             width: 100%;
             height: 160px;
@@ -121,12 +131,12 @@ body.home #content {
             }
           }
           .titleset .card-title {
-            font-size: 17px;
-            height: 90px;
+            font-size: $middle-card-font-size;
+            height: $larger-card-title-height;
             display: flex;
             align-items: center;
             @media only screen and (max-width: 991px) {
-              font-size: 15px;
+              font-size: $small-card-font-size;
             }
           }
         }
@@ -137,7 +147,7 @@ body.home #content {
           }
         }
         .card {
-          height: 235px;
+          height: $small-card-height;
           display: flex;
           @media only screen and (max-width: 991px) {
             height: 180px;
@@ -159,10 +169,10 @@ body.home #content {
           width: 50%;
           &:first-child {
             width: 50%;
-            padding: 0 15px;
+            padding: $small-card-padding;
             height: 105px;
             @media only screen and (max-width: 991px) {
-              padding: 0 15px 0 0;
+              padding: $small-card-padding-smart;
             }
             .titleset {
               @media only screen and (max-width: 991px) {
@@ -187,11 +197,11 @@ body.home #content {
       height: 390px;
     }
     .card-wrapper {
-      height: 235px;
-      padding: 0px 15px 0;
+      height: $small-card-height;
+      padding: $small-card-padding;
       width: 25%;
       @media only screen and (max-width: 991px) {
-        padding: 0 15px 0 0;
+        padding: $small-card-padding-smart;
         height: 195px;
         width: 50%;
       }
@@ -239,17 +249,17 @@ body.home #content {
       padding-top: 52.3%;
       @media only screen and (max-width: 991px) {
         height: 100px;
-        padding: 0px;
+        padding: 0;
       }
     }
     .titleset {
-      padding: 15px 15px 10px 15px;
+      padding: 15px 15px 10px;
       @media only screen and (max-width: 991px) {
         padding: 12px;
         height: 70px;
       }
       .card-title {
-        font-size: 15px;
+        font-size: $small-card-font-size;
         color: #333;
         height: 48px;
         text-align: justify;
