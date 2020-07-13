@@ -124,11 +124,14 @@ function add_meta_to_head() {
 add_action( 'wp_footer', 'add_function_to_bottom_of_body' );
 function add_function_to_bottom_of_body() {
   echo '<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>';
-  if ( in_category( array( 'interview' )) ){
-    echo '<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">';
-    echo '<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>';
-    echo '<script src="'. get_template_directory_uri() . '_child/libs/js/tag-filter.js"></script>';
-  }
+  // if ( in_category( array( 'interview' )) ){
+  //   echo '<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">';
+  //   echo '<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>';
+  //   echo '<script src="'. get_template_directory_uri() . '_child/libs/js/tag-filter.js"></script>';
+	// }
+	echo '<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">';
+	echo '<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>';
+	echo '<script src="'. get_template_directory_uri() . '_child/libs/js/tag-filter.js"></script>';
 }
 
 add_action( 'wp_enqueue_scripts', 'twpp_enqueue_scripts' );
