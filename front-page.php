@@ -113,7 +113,7 @@
 									setup_postdata( $post );
 							?>
 							<a href="<?php echo $url."/howto-20200630 "; ?>" class="card">
-							<div class="image" style="background-image: url(<?php the_post_thumbnail_url(); ?>)"></div>
+							<div class="image" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 							<div class="titleset">
 								<h2 class="card-title"><?php the_title(); ?></h2>
 							</div><!-- /titleset -->
