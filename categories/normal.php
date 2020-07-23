@@ -46,8 +46,8 @@ $my_query = new wp_query( $args );
 
 				<section class="cat-content"> 
 					<header class="cat-header">
-            <h1 class="post-title"><?php bzb_title(); ?></h1>
-            <?php tag_filter($tags, $tagIDs); ?>
+						<h1 class="post-title"><?php bzb_title(); ?></h1>
+						<?php tag_filter($tags, $tagIDs); ?>
 					</header>
 					<?php if ( is_category() ) { ?>
 						<?php bzb_category_description(); ?>
