@@ -1,3 +1,8 @@
+.chip-name {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
 .articles {
   .category-interview, .category-useful-info, .category-how-to {
     .post-header {

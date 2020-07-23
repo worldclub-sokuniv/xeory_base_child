@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.chip-name {
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 .articles .category-interview .post-header, .articles .category-useful-info .post-header, .articles .category-how-to .post-header {
   padding: 56px 64px 0;
 }
