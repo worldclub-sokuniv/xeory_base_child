@@ -1,12 +1,12 @@
 $large-card-font-size: 20px;
 $middle-card-font-size: 17px;
-$small-card-font-size: 15px;
+$large-card-font-size-smart: 15px;
 $larger-card-padding: 25px 15px 0;
 $larger-card-padding-smart: 15px 15px 0 0;
 $small-card-padding: 0 15px;
 $small-card-padding-smart: 0 15px 0 0;
 $large-card-image-height-smart: 180px;
-$larger-card-title-height: 90px;
+$large-and-midlle-card-title-height: 90px;
 $larger-card-title-height-smart: 40px;
 $small-card-height: 235px;
 
@@ -48,11 +48,11 @@ body.home #content {
       }
       .titleset .card-title {
         font-size: $large-card-font-size;
-        height: $larger-card-title-height;
+        height: $large-and-midlle-card-title-height;
         display: flex;
         align-items: center;
         @media only screen and (max-width: 991px) {
-          font-size: $small-card-font-size;
+          font-size: $large-card-font-size-smart;
           height: $larger-card-title-height-smart;
         }
       }
@@ -91,11 +91,11 @@ body.home #content {
         }
         .card-title {
           font-size: $middle-card-font-size;
-          height: $larger-card-title-height;
+          height: $large-and-midlle-card-title-height;
           display: flex;
           align-items: center;
           @media only screen and (max-width: 991px) {
-            font-size: $small-card-font-size;
+            font-size: $large-card-font-size-smart;
             height: $larger-card-title-height-smart;
           }
         }
@@ -114,7 +114,7 @@ body.home #content {
         }
         .section2-link, .section4-link {
           width: 66.66%;
-          height: $small-card-height;
+          height: 235px;
           padding: $larger-card-padding;
           @media only screen and (max-width: 991px) {
             width: 100%;
@@ -132,11 +132,11 @@ body.home #content {
           }
           .titleset .card-title {
             font-size: $middle-card-font-size;
-            height: $larger-card-title-height;
+            height: $large-and-midlle-card-title-height;
             display: flex;
             align-items: center;
             @media only screen and (max-width: 991px) {
-              font-size: $small-card-font-size;
+              font-size: $large-card-font-size-smart;
             }
           }
         }
@@ -259,7 +259,7 @@ body.home #content {
         height: 70px;
       }
       .card-title {
-        font-size: $small-card-font-size;
+        font-size: 15px;
         color: #333;
         height: 48px;
         text-align: justify;
