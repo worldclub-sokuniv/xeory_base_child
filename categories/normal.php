@@ -15,8 +15,6 @@ if ( isset( $_POST ) ) {
 		$tagIDs = array_map('intval', explode(",", $_POST["selectedTagIds"]));
 		if (count($tagIDs) >= 2) {
 			$args["tag__in"] = $tagIDs;
-		} else {
-			$args["tag__not_in"] = $tagIDs;
 		}
 	}
 }
