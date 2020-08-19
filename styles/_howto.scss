@@ -1,17 +1,10 @@
-.post-content {
-  ul {
-    width: 100%;
-    margin: 0 0 1.6em;
-  }
-
-  h3 {
+.has-text-align-left {
     width: 80%;
     margin: 0 auto 1.6em;
-  }
 }
 
 .to-do {
-  border: solid 2px skyblue;
+  border: solid 2px $howto-todo-color;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
   margin: 0 0 1.6em;
@@ -27,12 +20,12 @@
       content: "\02714";
       position: absolute;
       left: 1em;
-      color: skyblue;
+      color: $howto-todo-color;
     }
   }
 }
 
-.child {
+.child-list-pointing {
   border: none !important;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
@@ -44,10 +37,10 @@
 
     &:before {
       font-family: "Font Awesome 5 Free";
-      content: "" !important;
+      content: "\f0a4" !important;
       left: 0px !important;
       position: absolute;
-      color: skyblue;
+      color: $howto-todo-color;
     }
   }
 }
@@ -56,9 +49,8 @@
   width: 80%;
 
   ul {
-    background: #dadada;
+    background: $index-background-color;
     border-radius: 8px;
-    box-shadow: 0px 0px 5px silver;
     padding: 0.5em 0.5em 0.5em 2em;
     margin: 0 0 1.6em;
 

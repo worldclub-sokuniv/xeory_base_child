@@ -32,75 +32,6 @@
   margin-bottom: 42px;
 }
 
-.post-content ul{
-  width: 100%;
-  margin: 0 0 1.6em;  
-} 
-
-.post-content h3{
-  width: 80%;
-  margin: 0 auto 1.6em;  
-} 
-
-.to-do{
-  border: solid 2px skyblue;
-  padding: 0.5em 1em 0.5em 2.3em;
-  position: relative;
-  margin: 0 0 1.6em;
-  width: 80%;
-}
-
-.to-do li {
-  line-height: 1.5;
-  padding: 0.5em 0;
-  list-style-type: none!important;
-}
-
-.to-do li:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\02714";
-  position: absolute;
-  left : 1em; /*左端からのアイコンまで*/
-  color:skyblue; /*アイコン色*/
-}
-
-.child{
-  border: none!important;
-  padding: 0.5em 1em 0.5em 2.3em;
-  position: relative;
-}
-
-.child li {
-  line-height: 1.5;
-  padding: 0.5em 0;
-  list-style-type: none!important;
-}
-
-.child li:before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f0a4"!important;
-  left: 0px!important;
-  position: absolute; 
-  color:skyblue; /*アイコン色*/
-}
-
-.index{
-  width: 80%;
-}
-
-.index ul {
-  background: #dadada;/*灰色に*/
-  border-radius :8px;
-  box-shadow :0px 0px 5px silver;
-  padding: 0.5em 0.5em 0.5em 2em;
-  margin: 0 0 1.6em;
-}
-.index ul li {
-  line-height: 1.5;
-  padding: 0.5em 0;
-  list-style-type: none!important;
-}
-
 @media screen and (max-width: 991px) {
   .category-interview .post-header, .category-useful-info .post-header, .category-how-to .post-header {
     padding: 20px !important;
@@ -640,16 +571,72 @@ body.home #content .wrap {
   font-family: 'Roboto Condensed', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Hiragino Kaku Gothic ProN, YuGothic, Yu Gothic, "游ゴシック", Meiryo,sans-serif;
 }
 
-@media screen and (max-width: 767px){
-  .index{
-    width: 100%;
-  }
+.has-text-align-left {
+  width: 80%;
+  margin: 0 auto 1.6em;
+}
 
-  .to-do{
-    width: 100%;
-  }
+.to-do {
+  border: solid 2px skyblue;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+  margin: 0 0 1.6em;
+  width: 80%;
+}
 
-  .post-content h3{
+.to-do li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none !important;
+}
+
+.to-do li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\02714";
+  position: absolute;
+  left: 1em;
+  color: skyblue;
+}
+
+.child-list-pointing {
+  border: none !important;
+  padding: 0.5em 1em 0.5em 2.3em;
+  position: relative;
+}
+
+.child-list-pointing li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none !important;
+}
+
+.child-list-pointing li:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0a4" !important;
+  left: 0px !important;
+  position: absolute;
+  color: skyblue;
+}
+
+.index {
+  width: 80%;
+}
+
+.index ul {
+  background: #dadada;
+  border-radius: 8px;
+  padding: 0.5em 0.5em 0.5em 2em;
+  margin: 0 0 1.6em;
+}
+
+.index ul li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+  list-style-type: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .index, .to-do, .post-content h3 {
     width: 100%;
   }
 }
