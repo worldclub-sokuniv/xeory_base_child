@@ -1,4 +1,10 @@
 <?php 
+function str_to_int($n) {
+	if (strlen($n)!=0) {
+		return intval($n);
+	}
+}
+
 $qobj = get_queried_object();
 $catID = $qobj->cat_ID;
 
@@ -10,12 +16,10 @@ $args = array(
 );
 
 $tagIDs = [];
-if ( isset( $_POST ) ) {
-	if (!is_null($_POST["selectedTagIds"])) {
-		$tagIDs = array_map('intval', explode(",", $_POST["selectedTagIds"]));
-		if (count($tagIDs) >= 2) {
-			$args["tag__in"] = $tagIDs;
-		}
+if ( isset( $_POST ) && !is_null($_POST["selectedTagIds"])) {
+	$tagIDs = array_map('my_intval', explode(",", $_POST["selectedTagIds"]));
+	if (count($tagIDs) == 1 && !is_null($tagIDs[0])) {
+		$args["tag__in"] = $tagIDs;
 	}
 }
 
