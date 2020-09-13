@@ -3,12 +3,6 @@
   padding: 0;
 }
 
-body {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
-
 #main {
   max-width: 960px;
 }
@@ -38,8 +32,15 @@ article.seo101 {
 
 .articles .category-interview .post-content, .articles .category-useful-info .post-content, .articles .category-how-to .post-content {
   padding: 0;
-  display: flex;
   background: rgba(0, 0, 0, 0.5);
+}
+
+.articles .category-interview .post-content a, .articles .category-useful-info .post-content a, .articles .category-how-to .post-content a {
+  display: flex;
+}
+
+.articles .category-interview .post-content a:hover, .articles .category-useful-info .post-content a:hover, .articles .category-how-to .post-content a:hover {
+  text-decoration: none;
 }
 
 .articles .category-interview .post-content dl, .articles .category-useful-info .post-content dl, .articles .category-how-to .post-content dl {
@@ -73,7 +74,6 @@ article.seo101 {
   width: 230px;
   height: 153.3px;
   padding-top: 0;
-  float: left;
 }
 
 .articles .category-interview .post-title, .articles .category-useful-info .post-title, .articles .category-how-to .post-title {
@@ -81,9 +81,6 @@ article.seo101 {
   clear: both;
   font-weight: bold;
   padding: 0;
-}
-
-.articles .category-interview .post-title a, .articles .category-useful-info .post-title a, .articles .category-how-to .post-title a {
   color: #ffff;
 }
 
@@ -91,6 +88,12 @@ article.seo101 {
   .category-interview .post-header, .category-useful-info .post-header, .category-how-to .post-header {
     padding: 20px !important;
   }
+}
+
+#side {
+  width: 290px;
+  float: none;
+  margin-left: 0;
 }
 
 .category-interview {

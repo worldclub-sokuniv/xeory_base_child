@@ -45,21 +45,21 @@ $my_query = new wp_query( $args );
 
 <?php get_header(); ?>
 <div id="content">
-	<body style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/09/color-2174065-1.png);" class="background-image">
+	<!-- <body style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/09/color-2174065-1.png);" class="background-image"> -->
 	<div class="wrap">
 		<?php bzb_breadcrumb(); ?>
 		<div id="main" <?php bzb_layout_main(); ?>>
 			<div class="main-inner">
 
-				<section class="cat-content"> 
+				<!-- <section class="cat-content"> 
 					<header class="cat-header">
-						<h1 class="post-title"><?php bzb_title(); ?></h1>
-						<?php tag_filter($tags, $tagIDs); ?>
+						<h1 class="post-title"><*?php bzb_title(); ?></h1>
+						<*?php tag_filter($tags, $tagIDs); ?>
 					</header>
-					<?php if ( is_category() ) { ?>
-						<?php bzb_category_description(); ?>
-					<?php } ?>
-				</section>
+					<*?php if ( is_category() ) { ?>
+						<*?php bzb_category_description(); ?>
+					<*?php } ?>
+				</section> -->
 
 				<div class="post-loop-wrap articles">
         <?php
@@ -74,19 +74,21 @@ $my_query = new wp_query( $args );
 							</header> -->
 
 							<section class="post-content" itemprop="text">
+								<a href="<?php the_permalink(); ?>" >
 								<?php if ( get_the_post_thumbnail() ) { ?>
 									<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 								<?php } ?>
 								<dl>
-									<h2 class="post-title" itemprop="headline"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
+									<h2 class="post-title" itemprop="headline"><?php the_title(); ?></h2>
 									<!-- <?php the_excerpt(); ?> -->
 									<!-- <?php the_tags( '#', ' #' ); ?> -->
 									<ul class="post-meta list-inline">
 										<li class="date updated" itemprop="datePublished" datetime="<?php the_time( 'c' ); ?>"><i class="fa fa-clock-o"></i> <?php the_time( 'Y.m.d' ); ?></li>
 									</ul>
-									</section>
 									<!-- <pre><a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a></pre> -->
 								</dl>
+								</a>
+							</section>
 							</article>
 							<?php
 
@@ -110,10 +112,22 @@ $my_query = new wp_query( $args );
 				}
 				?>
 				</div><!-- /post-loop-wrap -->
+				<div class="category-list">
+					
+				</div>
 			</div><!-- /main-inner -->
 		</div><!-- /main -->
 
 		</*?php get_sidebar(); ?*/>
+		<div id="side" <?php bzb_layout_side(); ?> role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+			<div class="side-inner">
+					<div class="side-widget-area <?php echo 'side-2'?>">		
+						<?php if( dynamic_sidebar( 'side-2') ){ dynamic_sidebar(); } ?>
+					</div>
+				<?php wp_reset_postdata(); ?> 
+				</div><!-- //side-widget-area -->
+			</div>
+		</div><!-- /side -->
 	</div><!-- /wrap -->
 
 </div><!-- /content -->

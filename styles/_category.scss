@@ -1,11 +1,11 @@
 #content {
   padding: 0;
 }
-body {
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-}
+// body {
+//   background-attachment: fixed;
+//   background-size: cover;
+//   background-position: center;
+// }
 #main {
   max-width: 960px;
 }
@@ -30,7 +30,7 @@ article.seo101{
     padding-bottom: 0;
     .post-content {
       padding: 0;
-      display: flex;
+      // display: flex;
       // flex-wrap: wrap;
       background: rgba(0,0,0, 0.5);
       // color: #ffff;
@@ -38,10 +38,17 @@ article.seo101{
       // p{
       //   width: 100%;
       // }
+      a {
+        display: flex;
+        &:hover {
+          text-decoration: none;
+        }
+      }
       dl {
         padding: 15px;
         margin: 0;
         width: 490px;
+        // display: flex;
         h2 {
           border-left: none;
           background: none;
@@ -66,16 +73,15 @@ article.seo101{
       width: 230px;
       height: 153.3px;
       padding-top: 0;
-      float: left;
+      // float: left;
     }
     .post-title {
       font-size: 22px;
       clear: both;
       font-weight: bold;
       padding: 0;
-      a {
-        color: #ffff;
-      }
+      color: #ffff;
+
       // width: 100%;
       // margin: 0 0 36px;
     }
@@ -92,4 +98,10 @@ article.seo101{
       padding: 20px !important;
     }
   }
+}
+
+#side {
+  width: 290px;
+  float: none;
+  margin-left: 0;
 }
