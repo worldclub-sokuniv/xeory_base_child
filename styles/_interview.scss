@@ -25,6 +25,12 @@
     @media screen and (max-width: 800px) {
       width: 100%;
     }
+    img {
+      position: unset;
+    }
+    &:before {
+      padding-top: 0%;
+    }
     figcaption {
       text-align: center;
     }
