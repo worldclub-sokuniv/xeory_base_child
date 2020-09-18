@@ -5,6 +5,7 @@
 
 #main {
   max-width: 960px;
+  display: flex;
 }
 
 .chip-name {
@@ -21,7 +22,7 @@ article.seo101 {
 }
 
 .cat-content {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.4);
   margin-bottom: 25px;
   padding: 20px;
 }
@@ -32,7 +33,7 @@ article.seo101 {
 
 .articles .category-interview .post-content, .articles .category-useful-info .post-content, .articles .category-how-to .post-content {
   padding: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .articles .category-interview .post-content a, .articles .category-useful-info .post-content a, .articles .category-how-to .post-content a {
@@ -91,9 +92,46 @@ article.seo101 {
 }
 
 #side {
-  width: 290px;
+  width: 224px;
   float: none;
-  margin-left: 0;
+  margin: 0 0 5px 16px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+#side .widget {
+  padding: 15px 20px;
+}
+
+#side h2 {
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: top;
+  color: #fff;
+}
+
+#side ul {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#side ul .children {
+  border-top: none;
+}
+
+#side a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.4;
+  /* text-decoration: none; */
+  display: block;
+  padding: 10px 0;
+  position: relative;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#side a span {
+  float: right;
 }
 
 .category-interview {

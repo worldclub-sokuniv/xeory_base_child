@@ -48,18 +48,19 @@ $my_query = new wp_query( $args );
 	<!-- <body style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/09/color-2174065-1.png);" class="background-image"> -->
 	<div class="wrap">
 		<?php bzb_breadcrumb(); ?>
+		<!-- <div class="main-content"> -->
 		<div id="main" <?php bzb_layout_main(); ?>>
 			<div class="main-inner">
 
-				<!-- <section class="cat-content"> 
+				<section class="cat-content"> 
 					<header class="cat-header">
-						<h1 class="post-title"><*?php bzb_title(); ?></h1>
-						<*?php tag_filter($tags, $tagIDs); ?>
+						<h1 class="post-title"><?php bzb_title(); ?></h1>
+						<?php tag_filter($tags, $tagIDs); ?>
 					</header>
-					<*?php if ( is_category() ) { ?>
-						<*?php bzb_category_description(); ?>
-					<*?php } ?>
-				</section> -->
+					<?php if ( is_category() ) { ?>
+						<?php bzb_category_description(); ?>
+					<?php } ?>
+				</section>
 
 				<div class="post-loop-wrap articles">
         <?php
@@ -116,18 +117,19 @@ $my_query = new wp_query( $args );
 					
 				</div>
 			</div><!-- /main-inner -->
-		</div><!-- /main -->
-
-		</*?php get_sidebar(); ?*/>
-		<div id="side" <?php bzb_layout_side(); ?> role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-			<div class="side-inner">
+			
+			</*?php get_sidebar(); ?*/>
+			<div id="side" <?php bzb_layout_side(); ?> role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+				<div class="side-inner">
 					<div class="side-widget-area <?php echo 'side-2'?>">		
 						<?php if( dynamic_sidebar( 'side-2') ){ dynamic_sidebar(); } ?>
 					</div>
-				<?php wp_reset_postdata(); ?> 
+					<?php wp_reset_postdata(); ?> 
 				</div><!-- //side-widget-area -->
 			</div>
 		</div><!-- /side -->
+	</div><!-- /main -->
+		<!-- </div> -->
 	</div><!-- /wrap -->
 
 </div><!-- /content -->
