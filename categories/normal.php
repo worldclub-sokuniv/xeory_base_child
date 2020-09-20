@@ -52,15 +52,15 @@ $my_query = new wp_query( $args );
 		<div id="main" <?php bzb_layout_main(); ?>>
 			<div class="main-inner">
 
-				<section class="cat-content"> 
+				<!-- <section class="cat-content"> 
 					<header class="cat-header">
-						<h1 class="post-title"><?php bzb_title(); ?></h1>
-						<?php tag_filter($tags, $tagIDs); ?>
+						<h1 class="post-title"><*?php bzb_title(); ?></h1>
+						<*?php tag_filter($tags, $tagIDs); ?>
 					</header>
-					<?php if ( is_category() ) { ?>
-						<?php bzb_category_description(); ?>
-					<?php } ?>
-				</section>
+					<*?php if ( is_category() ) { ?>
+						<*?php bzb_category_description(); ?>
+					<*?php } ?>
+				</section> -->
 
 				<div class="post-loop-wrap articles">
         <?php
@@ -75,7 +75,7 @@ $my_query = new wp_query( $args );
 							</header> -->
 
 							<section class="post-content" itemprop="text">
-								<a href="<?php the_permalink(); ?>" >
+								<a href="<?php the_permalink(); ?>">
 								<?php if ( get_the_post_thumbnail() ) { ?>
 									<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
 								<?php } ?>

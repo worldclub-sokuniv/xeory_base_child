@@ -1,17 +1,11 @@
 #content {
   padding: 0;
 }
-// body {
-//   background-attachment: fixed;
-//   background-size: cover;
-//   background-position: center;
-// }
 #main {
   max-width: 960px;
   display: flex;
+  background: #fff;
 }
-// .main-content {
-// }
 .chip-name {
   user-select: none;
   -webkit-user-select: none;
@@ -21,10 +15,8 @@
 article.page, article.wp101,
 article.seo101{
   margin: 0 0 5px;
-  background: none;
 }
 .cat-content {
-  background: rgba(255, 255, 255, 0.4);
   margin-bottom: 25px;
   padding: 20px;
 }
@@ -33,45 +25,25 @@ article.seo101{
     padding-bottom: 0;
     .post-content {
       padding: 0;
-      // display: flex;
-      // flex-wrap: wrap;
       background: rgba(0,0,0, 0.4);
-      // color: #ffff;
-      // justify-content: center;
-      // p{
-      //   width: 100%;
-      // }
       a {
         display: flex;
         &:hover {
-          text-decoration: none;
-          // box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
+          color: #ffff;
         }
       }
-      // .aaaaa {
-      //   &:hover {
-      //     box-shadow: 0 10px 20px -5px rgba(0,0,0,.3);
-      //   }
-      // }
       dl {
         padding: 15px;
-        margin: 0;
-        width: 490px;
-        // display: flex;
         h2 {
           border-left: none;
           background: none;
-          margin: 0;
         }
         ul {
           list-style: none;
-          margin: 0;
           padding: 0;
           border: none;
           li {
             margin: 0;
-            padding-right: 0;
-            font-size: 14px;
             background: none;
             color: rgba(255,255,255, 0.7);
           }
@@ -79,10 +51,8 @@ article.seo101{
       }
     }
     .card-thumbnail {
-      width: 230px;
       height: 153.3px;
       padding-top: 0;
-      // float: left;
     }
     .post-title {
       font-size: 22px;
@@ -90,14 +60,7 @@ article.seo101{
       font-weight: bold;
       padding: 0;
       color: #ffff;
-
-      // width: 100%;
-      // margin: 0 0 36px;
     }
-    // .post-meta {
-      // width: 100%;
-      // margin-bottom: 42px;
-    // }
   }
 }
 
@@ -110,9 +73,9 @@ article.seo101{
 }
 
 #side {
-  width: 224px;
+  width: 229px;
   float: none;
-  margin: 0 0 5px 16px;
+  margin: 0 0 5px 10px;
   background: rgba(0, 0, 0, 0.4);
   .widget {
     padding: 15px 20px;
@@ -122,7 +85,6 @@ article.seo101{
     font-size: 18px;
     text-align: center;
     vertical-align: top;
-    color: #fff;
   }
   ul {
     border-top: 1px solid rgba(255,255,255, 0.2);
@@ -131,10 +93,8 @@ article.seo101{
     }
   }
   a {
-    color: #fff;
     font-size: 14px;
     line-height: 1.4;
-    /* text-decoration: none; */
     display: block;
     padding: 10px 0;
     position: relative;

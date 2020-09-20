@@ -6,6 +6,7 @@
 #main {
   max-width: 960px;
   display: flex;
+  background: #fff;
 }
 
 .chip-name {
@@ -22,7 +23,6 @@ article.seo101 {
 }
 
 .cat-content {
-  background: rgba(255, 255, 255, 0.4);
   margin-bottom: 25px;
   padding: 20px;
 }
@@ -41,7 +41,7 @@ article.seo101 {
 }
 
 .articles .category-interview .post-content a:hover, .articles .category-useful-info .post-content a:hover, .articles .category-how-to .post-content a:hover {
-  text-decoration: none;
+  color: #ffff;
 }
 
 .articles .category-interview .post-content dl, .articles .category-useful-info .post-content dl, .articles .category-how-to .post-content dl {
@@ -92,9 +92,9 @@ article.seo101 {
 }
 
 #side {
-  width: 224px;
+  width: 229px;
   float: none;
-  margin: 0 0 5px 16px;
+  margin: 0 0 5px 10px;
   background: rgba(0, 0, 0, 0.4);
 }
 
@@ -168,11 +168,9 @@ article.seo101 {
 .category-interview .post-thumbnail:before {
   content: "";
   display: block;
-  padding-top: 56.25%;
 }
 
 .category-interview .post-thumbnail img {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -190,11 +188,9 @@ article.seo101 {
 .category-interview .wp-block-image:before {
   content: "";
   display: block;
-  padding-top: 56.25%;
 }
 
 .category-interview .wp-block-image img {
-  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;

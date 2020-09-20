@@ -17,11 +17,7 @@
   .post-header {
     padding: 56px 42px 0;
   }
-  .post-thumbnail{
-    @include responsive-img(80%);
-  }
   .wp-block-image{
-    @include responsive-img(80%);
     @media screen and (max-width: 800px) {
       width: 100%;
     }
