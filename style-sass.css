@@ -576,7 +576,7 @@ body.home #content .wrap {
   margin: 0 auto 1.6em;
 }
 
-.category-how-to .post-content > .to-do {
+.category-how-to .to-do {
   border: solid 2px skyblue;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
@@ -584,13 +584,13 @@ body.home #content .wrap {
   width: 80%;
 }
 
-.category-how-to .post-content > .to-do li {
+.category-how-to .to-do li {
   line-height: 1.5;
   padding: 0.5em 0;
-  list-style-type: none !important;
+  list-style-type: none;
 }
 
-.category-how-to .post-content > .to-do li:before {
+.category-how-to .to-do li:before {
   font-family: "Font Awesome 5 Free";
   content: "\02714";
   position: absolute;
@@ -598,22 +598,22 @@ body.home #content .wrap {
   color: skyblue;
 }
 
-.child-list-pointing {
-  border: none !important;
+.category-how-to .child-list-pointing {
+  border: none;
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
 }
 
-.child-list-pointing li {
+.category-how-to .child-list-pointing li {
   line-height: 1.5;
   padding: 0.5em 0;
-  list-style-type: none !important;
+  list-style-type: none;
 }
 
-.child-list-pointing li:before {
+.category-how-to .child-list-pointing li:before {
   font-family: "Font Awesome 5 Free";
-  content: "\f0a4" !important;
-  left: 0px !important;
+  content: "\f0a4";
+  left: 0px;
   position: absolute;
   color: skyblue;
 }
@@ -632,7 +632,7 @@ body.home #content .wrap {
 .index ul li {
   line-height: 1.5;
   padding: 0.5em 0;
-  list-style-type: none !important;
+  list-style-type: none;
 }
 
 @media screen and (max-width: 767px) {
