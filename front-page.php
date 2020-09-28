@@ -101,11 +101,10 @@
 						</div><!-- /post-loop -->
 						<div class="sub-section">
 							<?php
-								$data = ["posts_per_page" => 1, 
-								"orderby" => "date",
-								"order" => "DESC",
-								"category_name" => "article ",
-								"cat_title" => "article "
+								$data = ['name'           => 'howto-20200630',
+                'post_type'      => 'post',
+                'post_status'    => 'publish',
+                'posts_per_page' => 1,
 								];
 								$posts = get_posts( $data );
 								foreach ( $posts as $post ) :
