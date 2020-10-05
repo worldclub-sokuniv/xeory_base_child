@@ -1,21 +1,21 @@
-// @mixin responsive-img($width: 100%){
-//   //this mixin sholud be included 
-//   //to the class that contains img 
-//   position: relative;
-//   overflow: hidden;
-//   width: $width;
-//   &:before{
-//     content: "";
-//     display: block;
-//     // padding-top: 56.25%;
-//   }
-//   img{
-//     // position: absolute;
-//     top: 0;
-//     right: 0;
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
-//     margin: 0;
-//   }
-//  }
+@mixin responsive-img($width: 100%){
+  //this mixin sholud be included 
+  //to the class that contains img 
+  position: relative;
+  overflow: hidden;
+  width: $width;
+  &:before{
+    content: "";
+    display: block;
+    // padding-top: 56.25%;
+  }
+  img{
+    // position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+  }
+ }

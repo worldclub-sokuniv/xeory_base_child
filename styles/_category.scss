@@ -12,8 +12,7 @@
   -ms-user-select: none;
 }
 .cat-content, article.post, 
-article.page, article.wp101,
-article.seo101{
+article.page {
   margin: 0 0 5px;
 }
 .cat-content {
@@ -34,9 +33,11 @@ article.seo101{
       }
       dl {
         padding: 15px;
+        margin: 0;
         h2 {
           border-left: none;
           background: none;
+          margin: 0;
         }
         ul {
           list-style: none;
@@ -77,6 +78,7 @@ article.seo101{
   float: none;
   margin: 0 0 5px 10px;
   background: rgba(0, 0, 0, 0.4);
+  color: #fff;
   .widget {
     padding: 15px 20px;
   }
@@ -99,6 +101,7 @@ article.seo101{
     padding: 10px 0;
     position: relative;
     font-weight: normal;
+    color: #fff;
     border-bottom: 1px solid rgba(255,255,255, 0.2);
     span {
       float: right;

@@ -16,10 +16,8 @@
 }
 
 .cat-content, article.post,
-article.page, article.wp101,
-article.seo101 {
+article.page {
   margin: 0 0 5px;
-  background: none;
 }
 
 .cat-content {
@@ -47,7 +45,6 @@ article.seo101 {
 .articles .category-interview .post-content dl, .articles .category-useful-info .post-content dl, .articles .category-how-to .post-content dl {
   padding: 15px;
   margin: 0;
-  width: 490px;
 }
 
 .articles .category-interview .post-content dl h2, .articles .category-useful-info .post-content dl h2, .articles .category-how-to .post-content dl h2 {
@@ -58,21 +55,17 @@ article.seo101 {
 
 .articles .category-interview .post-content dl ul, .articles .category-useful-info .post-content dl ul, .articles .category-how-to .post-content dl ul {
   list-style: none;
-  margin: 0;
   padding: 0;
   border: none;
 }
 
 .articles .category-interview .post-content dl ul li, .articles .category-useful-info .post-content dl ul li, .articles .category-how-to .post-content dl ul li {
   margin: 0;
-  padding-right: 0;
-  font-size: 14px;
   background: none;
   color: rgba(255, 255, 255, 0.7);
 }
 
 .articles .category-interview .card-thumbnail, .articles .category-useful-info .card-thumbnail, .articles .category-how-to .card-thumbnail {
-  width: 230px;
   height: 153.3px;
   padding-top: 0;
 }
@@ -96,6 +89,7 @@ article.seo101 {
   float: none;
   margin: 0 0 5px 10px;
   background: rgba(0, 0, 0, 0.4);
+  color: #fff;
 }
 
 #side .widget {
@@ -107,7 +101,6 @@ article.seo101 {
   font-size: 18px;
   text-align: center;
   vertical-align: top;
-  color: #fff;
 }
 
 #side ul {
@@ -119,14 +112,13 @@ article.seo101 {
 }
 
 #side a {
-  color: #fff;
   font-size: 14px;
   line-height: 1.4;
-  /* text-decoration: none; */
   display: block;
   padding: 10px 0;
   position: relative;
   font-weight: normal;
+  color: #fff;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -203,10 +195,6 @@ article.seo101 {
   .category-interview .wp-block-image {
     width: 100%;
   }
-}
-
-.category-interview .wp-block-image figcaption {
-  text-align: center;
 }
 
 .interview-wrapper #main {

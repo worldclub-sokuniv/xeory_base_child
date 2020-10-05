@@ -78,7 +78,9 @@ $my_query = new wp_query( $args );
 								<a href="<?php the_permalink(); ?>">
 								<?php if ( get_the_post_thumbnail() ) { ?>
 									<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
-								<?php } ?>
+									<?php } else {?>
+									<div class="card-thumbnail" style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/10/wp-header-logo-21-300x225-1.png)"></div>
+									<?php } ?>
 								<dl>
 									<h2 class="post-title" itemprop="headline"><?php the_title(); ?></h2>
 									<!-- <?php the_excerpt(); ?> -->
@@ -118,16 +120,7 @@ $my_query = new wp_query( $args );
 				</div>
 			</div><!-- /main-inner -->
 			
-			</*?php get_sidebar(); ?*/>
-			<div id="side" <?php bzb_layout_side(); ?> role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-				<div class="side-inner">
-					<div class="side-widget-area <?php echo 'side-2'?>">		
-						<?php if( dynamic_sidebar( 'side-2') ){ dynamic_sidebar(); } ?>
-					</div>
-					<?php wp_reset_postdata(); ?> 
-				</div><!-- //side-widget-area -->
-			</div>
-		</div><!-- /side -->
+			<?php get_sidebar(); ?>
 	</div><!-- /main -->
 		<!-- </div> -->
 	</div><!-- /wrap -->
