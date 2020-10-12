@@ -45,12 +45,15 @@ article.page {
 .articles .category-interview .post-content dl, .articles .category-useful-info .post-content dl, .articles .category-how-to .post-content dl {
   padding: 15px;
   margin: 0;
+  width: 200%;
 }
 
 .articles .category-interview .post-content dl h2, .articles .category-useful-info .post-content dl h2, .articles .category-how-to .post-content dl h2 {
   border-left: none;
   background: none;
   margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .articles .category-interview .post-content dl ul, .articles .category-useful-info .post-content dl ul, .articles .category-how-to .post-content dl ul {
@@ -85,7 +88,7 @@ article.page {
 }
 
 #side {
-  width: 229px;
+  width: 35%;
   float: none;
   margin: 0 0 5px 10px;
   background: rgba(0, 0, 0, 0.4);
