@@ -25,6 +25,9 @@ article.page {
     .post-content {
       padding: 0;
       background: rgba(0,0,0, 0.4);
+      @media only screen and (max-width: 991px) {
+        padding: 0px !important;
+      }
       a {
         display: flex;
         &:hover {
@@ -35,12 +38,15 @@ article.page {
         padding: 15px;
         margin: 0;
         width: 200%;
+        height: 153.3px;
         h2 {
           border-left: none;
           background: none;
           margin: 0;
           overflow: hidden;
-          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
         }
         ul {
           list-style: none;

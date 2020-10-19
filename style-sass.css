@@ -34,6 +34,12 @@ article.page {
   background: rgba(0, 0, 0, 0.4);
 }
 
+@media only screen and (max-width: 991px) {
+  .articles .category-interview .post-content, .articles .category-useful-info .post-content, .articles .category-how-to .post-content {
+    padding: 0px !important;
+  }
+}
+
 .articles .category-interview .post-content a, .articles .category-useful-info .post-content a, .articles .category-how-to .post-content a {
   display: flex;
 }
@@ -46,6 +52,7 @@ article.page {
   padding: 15px;
   margin: 0;
   width: 200%;
+  height: 153.3px;
 }
 
 .articles .category-interview .post-content dl h2, .articles .category-useful-info .post-content dl h2, .articles .category-how-to .post-content dl h2 {
@@ -53,7 +60,9 @@ article.page {
   background: none;
   margin: 0;
   overflow: hidden;
-  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
 
 .articles .category-interview .post-content dl ul, .articles .category-useful-info .post-content dl ul, .articles .category-how-to .post-content dl ul {
@@ -165,15 +174,6 @@ article.page {
   display: block;
 }
 
-.category-interview .post-thumbnail img {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
-}
-
 .category-interview .wp-block-image {
   position: relative;
   overflow: hidden;
@@ -183,15 +183,6 @@ article.page {
 .category-interview .wp-block-image:before {
   content: "";
   display: block;
-}
-
-.category-interview .wp-block-image img {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
 }
 
 @media screen and (max-width: 800px) {
