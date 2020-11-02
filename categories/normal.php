@@ -45,10 +45,8 @@ $my_query = new wp_query( $args );
 
 <?php get_header(); ?>
 <div id="content">
-	<!-- <body style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/09/color-2174065-1.png);" class="background-image"> -->
 	<div class="wrap">
 		<?php bzb_breadcrumb(); ?>
-		<!-- <div class="main-content"> -->
 		<div id="main" <?php bzb_layout_main(); ?>>
 			<div class="main-inner">
 
@@ -70,9 +68,6 @@ $my_query = new wp_query( $args );
         ?>
 
 						<article id="post-<?php echo the_ID(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-							<!-- <header class="post-header">
-							
-							</header> -->
 
 							<section class="post-content" itemprop="text">
 								<a href="<?php the_permalink(); ?>">
@@ -115,9 +110,6 @@ $my_query = new wp_query( $args );
 				}
 				?>
 				</div><!-- /post-loop-wrap -->
-				<div class="category-list">
-					
-				</div>
 			</div><!-- /main-inner -->
 			
 			<?php get_sidebar(); ?>
