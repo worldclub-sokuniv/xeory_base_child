@@ -17,7 +17,7 @@ EOF;
   $selectedTags = join(",", $selectedTags);
   $form = <<< EOF
     <form class="filter-by-tags" action="" method="post">
-      <button id="send" type="submit" style="display:none;">検索</button>
+      <button id="send" type="submit">検索</button>
       <div id="filter-tags" class="chip-wrapper">{$chips}</div>
       <input id=selectedTagIds name=selectedTagIds type="hidden" value={$selectedTags}>
     </form>
