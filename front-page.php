@@ -34,6 +34,8 @@
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>
 												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+											<?php } else { ?>
+												<div class="card-thumbnail" style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/10/wp-header-logo-21-300x225-1.png)"></div>
 											<?php } ?>
 											<div class ="titleset">
 												<h2 class="card-title"><?php the_title(); ?></h2>
@@ -81,6 +83,8 @@
 									<article class="card-content-wrapper">
 										<?php if ( get_the_post_thumbnail() ) { ?>
 											<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+										<?php } else { ?>
+											<div class="card-thumbnail" style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/10/wp-header-logo-21-300x225-1.png)"></div>
 										<?php } ?>
 										<div class ="titleset">
 											<h2 class="card-title"><?php the_title(); ?></h2>
@@ -142,6 +146,8 @@
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>
 												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+											<?php } else { ?>
+												<div class="card-thumbnail" style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/10/wp-header-logo-21-300x225-1.png)"></div>
 											<?php } ?>
 												<div class ="titleset">
 													<h2 class="card-title"><?php the_title(); ?></h2>
@@ -198,7 +204,9 @@
 										<article class="card-content-wrapper">
 											<?php if ( get_the_post_thumbnail() ) { ?>
 												<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
-												<?php } ?>
+											<?php } else { ?>
+												<div class="card-thumbnail" style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/10/wp-header-logo-21-300x225-1.png)"></div>
+											<?php } ?>
 												<div class ="titleset">
 													<h2 class="card-title"><?php the_title(); ?></h2>
 													<span><i class="fa fa-clock-o"></i><?php the_time( 'Y.m.d' ); ?></span>

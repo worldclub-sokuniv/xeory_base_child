@@ -1,31 +1,75 @@
+#content {
+  padding: 0;
+}
+#main {
+  max-width: 960px;
+  display: flex;
+  background: #fff;
+}
 .chip-name {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+.cat-content, article.post, 
+article.page {
+  margin: 0 0 5px;
+}
+.cat-content {
+  margin-bottom: 25px;
+  padding: 20px;
+}
 .articles {
   .category-interview, .category-useful-info, .category-how-to {
-    .post-header {
-      padding: 56px 64px 0;
-    }
+    padding-bottom: 0;
     .post-content {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      p{
-        width: 100%;
+      padding: 0;
+      background: rgba(0,0,0, 0.4);
+      @media only screen and (max-width: 991px) {
+        padding: 0px !important;
+      }
+      a {
+        display: flex;
+        &:hover {
+          color: #ffff;
+        }
+      }
+      dl {
+        padding: 15px;
+        margin: 0;
+        width: 200%;
+        height: 153.3px;
+        h2 {
+          border-left: none;
+          background: none;
+          margin: 0;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          border: none;
+          li {
+            margin: 0;
+            background: none;
+            color: rgba(255,255,255, 0.7);
+          }
+        }
       }
     }
+    .card-thumbnail {
+      height: 153.3px;
+      padding-top: 0;
+    }
     .post-title {
-      font-size: 28px;
+      font-size: 22px;
       clear: both;
       font-weight: bold;
-      width: 100%;
-      margin: 0 0 36px;
-    }
-    .post-meta {
-      width: 100%;
-      margin-bottom: 42px;
+      padding: 0;
+      color: #ffff;
     }
   }
 }
@@ -34,6 +78,42 @@
   .category-interview, .category-useful-info, .category-how-to {
     .post-header {
       padding: 20px !important;
+    }
+  }
+}
+
+#side {
+  width: 35%;
+  float: none;
+  margin: 0 0 5px 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  .widget {
+    padding: 15px 20px;
+  }
+  h2 {
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: top;
+  }
+  ul {
+    border-top: 1px solid rgba(255,255,255, 0.2);
+    .children {
+      border-top: none;
+    }
+  }
+  a {
+    font-size: 14px;
+    line-height: 1.4;
+    display: block;
+    padding: 10px 0;
+    position: relative;
+    font-weight: normal;
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255, 0.2);
+    span {
+      float: right;
     }
   }
 }

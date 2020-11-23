@@ -9,7 +9,7 @@ $qobj = get_queried_object();
 $catID = $qobj->cat_ID;
 
 $args = array(
-  'posts_per_page' => 5,
+  'posts_per_page' => 10,
   'orderby'        => 'date',
   'order'          => 'DESC',
   'category'       => $catID,
@@ -17,7 +17,7 @@ $args = array(
 
 $tagIDs = [];
 if ( isset( $_POST ) && !is_null($_POST["selectedTagIds"])) {
-	$tagIDs = array_map('my_intval', explode(",", $_POST["selectedTagIds"]));
+	$tagIDs = array_map('str_to_int', explode(",", $_POST["selectedTagIds"]));
 	if (count($tagIDs) == 1 && !is_null($tagIDs[0])) {
 		$args["tag__in"] = $tagIDs;
 	}
@@ -50,15 +50,15 @@ $my_query = new wp_query( $args );
 		<div id="main" <?php bzb_layout_main(); ?>>
 			<div class="main-inner">
 
-				<section class="cat-content"> 
+				<!-- <section class="cat-content"> 
 					<header class="cat-header">
-						<h1 class="post-title"><?php bzb_title(); ?></h1>
-						<?php tag_filter($tags, $tagIDs); ?>
+						<h1 class="post-title"><*?php bzb_title(); ?></h1>
+						<*?php tag_filter($tags, $tagIDs); ?>
 					</header>
-					<?php if ( is_category() ) { ?>
-						<?php bzb_category_description(); ?>
-					<?php } ?>
-				</section>
+					<*?php if ( is_category() ) { ?>
+						<*?php bzb_category_description(); ?>
+					<*?php } ?>
+				</section> -->
 
 				<div class="post-loop-wrap articles">
         <?php
@@ -68,21 +68,26 @@ $my_query = new wp_query( $args );
         ?>
 
 						<article id="post-<?php echo the_ID(); ?>" <?php post_class(); ?> itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
-							<header class="post-header">
-								<ul class="post-meta list-inline">
-									<li class="date updated" itemprop="datePublished" datetime="<?php the_time( 'c' ); ?>"><i class="fa fa-clock-o"></i> <?php the_time( 'Y.m.d' ); ?></li>
-								</ul>
-								<h2 class="post-title" itemprop="headline"><a href="<?php the_permalink(); ?>" ><?php the_title(); ?></a></h2>
-							</header>
 
 							<section class="post-content" itemprop="text">
-							<?php if ( get_the_post_thumbnail() ) { ?>
-								<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
-							<?php } ?>
-							<?php the_excerpt(); ?>
-							<pre><a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a></pre>
+								<a href="<?php the_permalink(); ?>">
+								<?php if ( get_the_post_thumbnail() ) { ?>
+									<div class="card-thumbnail" style="background-image: url(<?php the_post_thumbnail_url("full"); ?>)"></div>
+									<?php } else {?>
+									<div class="card-thumbnail" style="background-image: url(https://worldclub-soka.com/wp-content/uploads/2020/10/wp-header-logo-21-300x225-1.png)"></div>
+									<?php } ?>
+								<dl>
+									<h2 class="post-title" itemprop="headline"><?php the_title(); ?></h2>
+									<!-- <?php the_excerpt(); ?> -->
+									<!-- <?php the_tags( '#', ' #' ); ?> -->
+									<ul class="post-meta list-inline">
+										<li class="date updated" itemprop="datePublished" datetime="<?php the_time( 'c' ); ?>"><i class="fa fa-clock-o"></i> <?php the_time( 'Y.m.d' ); ?></li>
+									</ul>
+									<!-- <pre><a href="<?php the_permalink(); ?>" class="hover-btn read_more">続きを読む</a></pre> -->
+								</dl>
+								</a>
 							</section>
-						</article>
+							</article>
 							<?php
 
 					endwhile;
@@ -106,9 +111,10 @@ $my_query = new wp_query( $args );
 				?>
 				</div><!-- /post-loop-wrap -->
 			</div><!-- /main-inner -->
-		</div><!-- /main -->
-
-		</*?php get_sidebar(); ?*/>
+			
+			<?php get_sidebar(); ?>
+	</div><!-- /main -->
+		<!-- </div> -->
 	</div><!-- /wrap -->
 
 </div><!-- /content -->

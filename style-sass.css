@@ -1,41 +1,141 @@
 @charset "UTF-8";
+#content {
+  padding: 0;
+}
+
+#main {
+  max-width: 960px;
+  display: flex;
+  background: #fff;
+}
+
 .chip-name {
   user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
 }
 
-.articles .category-interview .post-header, .articles .category-useful-info .post-header, .articles .category-how-to .post-header {
-  padding: 56px 64px 0;
+.cat-content, article.post,
+article.page {
+  margin: 0 0 5px;
+}
+
+.cat-content {
+  margin-bottom: 25px;
+  padding: 20px;
+}
+
+.articles .category-interview, .articles .category-useful-info, .articles .category-how-to {
+  padding-bottom: 0;
 }
 
 .articles .category-interview .post-content, .articles .category-useful-info .post-content, .articles .category-how-to .post-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
-.articles .category-interview .post-content p, .articles .category-useful-info .post-content p, .articles .category-how-to .post-content p {
-  width: 100%;
+@media only screen and (max-width: 991px) {
+  .articles .category-interview .post-content, .articles .category-useful-info .post-content, .articles .category-how-to .post-content {
+    padding: 0px !important;
+  }
+}
+
+.articles .category-interview .post-content a, .articles .category-useful-info .post-content a, .articles .category-how-to .post-content a {
+  display: flex;
+}
+
+.articles .category-interview .post-content a:hover, .articles .category-useful-info .post-content a:hover, .articles .category-how-to .post-content a:hover {
+  color: #ffff;
+}
+
+.articles .category-interview .post-content dl, .articles .category-useful-info .post-content dl, .articles .category-how-to .post-content dl {
+  padding: 15px;
+  margin: 0;
+  width: 200%;
+  height: 153.3px;
+}
+
+.articles .category-interview .post-content dl h2, .articles .category-useful-info .post-content dl h2, .articles .category-how-to .post-content dl h2 {
+  border-left: none;
+  background: none;
+  margin: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.articles .category-interview .post-content dl ul, .articles .category-useful-info .post-content dl ul, .articles .category-how-to .post-content dl ul {
+  list-style: none;
+  padding: 0;
+  border: none;
+}
+
+.articles .category-interview .post-content dl ul li, .articles .category-useful-info .post-content dl ul li, .articles .category-how-to .post-content dl ul li {
+  margin: 0;
+  background: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.articles .category-interview .card-thumbnail, .articles .category-useful-info .card-thumbnail, .articles .category-how-to .card-thumbnail {
+  height: 153.3px;
+  padding-top: 0;
 }
 
 .articles .category-interview .post-title, .articles .category-useful-info .post-title, .articles .category-how-to .post-title {
-  font-size: 28px;
+  font-size: 22px;
   clear: both;
   font-weight: bold;
-  width: 100%;
-  margin: 0 0 36px;
-}
-
-.articles .category-interview .post-meta, .articles .category-useful-info .post-meta, .articles .category-how-to .post-meta {
-  width: 100%;
-  margin-bottom: 42px;
+  padding: 0;
+  color: #ffff;
 }
 
 @media screen and (max-width: 991px) {
   .category-interview .post-header, .category-useful-info .post-header, .category-how-to .post-header {
     padding: 20px !important;
   }
+}
+
+#side {
+  width: 35%;
+  float: none;
+  margin: 0 0 5px 10px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+#side .widget {
+  padding: 15px 20px;
+}
+
+#side h2 {
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: center;
+  vertical-align: top;
+}
+
+#side ul {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#side ul .children {
+  border-top: none;
+}
+
+#side a {
+  font-size: 14px;
+  line-height: 1.4;
+  display: block;
+  padding: 10px 0;
+  position: relative;
+  font-weight: normal;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#side a span {
+  float: right;
 }
 
 .category-interview {
@@ -72,17 +172,6 @@
 .category-interview .post-thumbnail:before {
   content: "";
   display: block;
-  padding-top: 56.25%;
-}
-
-.category-interview .post-thumbnail img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
 }
 
 .category-interview .wp-block-image {
@@ -94,27 +183,12 @@
 .category-interview .wp-block-image:before {
   content: "";
   display: block;
-  padding-top: 56.25%;
-}
-
-.category-interview .wp-block-image img {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  margin: 0;
 }
 
 @media screen and (max-width: 800px) {
   .category-interview .wp-block-image {
     width: 100%;
   }
-}
-
-.category-interview .wp-block-image figcaption {
-  text-align: center;
 }
 
 .interview-wrapper #main {
