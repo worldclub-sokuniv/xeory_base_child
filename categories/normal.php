@@ -12,7 +12,7 @@ $args = array(
   'posts_per_page' => 5,
   'orderby'        => 'date',
   'order'          => 'DESC',
-  'category'       => $catID,
+  'cat'       => $catID,
 );
 
 $tagIDs = [];
